@@ -2,9 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/../Language Files/WebGen.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/../Language Files/runtime/WebGen.runtime.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/../Language Files/sandbox/WebGen.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/WebGen/WebGen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/WebGen/runtime/WebGen.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/WebGen/sandbox/WebGen.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
