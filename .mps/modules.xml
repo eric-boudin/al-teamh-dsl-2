@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/../Language Files/WebGen.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/../Language Files/runtime/WebGen.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/../Language Files/sandbox/WebGen.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
