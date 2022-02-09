@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import {
-  Grommet,
-} from 'grommet';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import * as Grommet from 'grommet';
+import * as Icons from 'grommet-icons';
 
 const theme = {
   global: {
@@ -13,24 +13,36 @@ const theme = {
   },
 };
 
-class App extends Component {
-  render() {
-    return (
-      <Grommet theme={theme}>
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            href="https://v2.grommet.io/"
-            target="_blank"
-          >
-            Learn Grommet
-          </a>
-        </header>
-      </Grommet>
-    );
-  }
+const NavBar = () => {
+  return (
+    <Grommet.Nav direction="row" background="neutral-3" pad="xxsmall">
+      <Grommet.Anchor href='.' icon={<Icons.Home color='plain'/>} />
+      <Grommet.Anchor href='profile' icon={<Icons.User color='plain'/>} />
+    </Grommet.Nav>
+  );
+}
+const Home = () => {
+  return (
+    <Grommet.Text>We are in home page !</Grommet.Text>
+  );
 }
 
-export default App;
+const Profile = () => {
+  return (
+    <Grommet.Text>We are in profile page !</Grommet.Text>
+  );
+};
+
+export const App = () => {
+  return (
+    <BrowserRouter>
+      <Grommet.Grommet theme={theme}>
+        <NavBar/>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path="/profile" element={<Profile/>}/>
+        </Routes>
+      </Grommet.Grommet>
+    </BrowserRouter>
+  );
+}
