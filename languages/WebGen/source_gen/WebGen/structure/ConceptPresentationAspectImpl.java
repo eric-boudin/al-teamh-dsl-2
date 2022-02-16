@@ -9,19 +9,31 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Anchor;
   private ConceptPresentation props_App;
   private ConceptPresentation props_Component;
+  private ConceptPresentation props_Home;
+  private ConceptPresentation props_Icon;
   private ConceptPresentation props_NavBar;
+  private ConceptPresentation props_Profile;
+  private ConceptPresentation props_Theme;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Anchor:
+        if (props_Anchor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("anchor");
+          props_Anchor = cpb.create();
+        }
+        return props_Anchor;
       case LanguageConceptSwitch.App:
         if (props_App == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("app");
           props_App = cpb.create();
         }
         return props_App;
@@ -31,6 +43,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Component = cpb.create();
         }
         return props_Component;
+      case LanguageConceptSwitch.Home:
+        if (props_Home == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Home");
+          props_Home = cpb.create();
+        }
+        return props_Home;
+      case LanguageConceptSwitch.Icon:
+        if (props_Icon == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Icon");
+          props_Icon = cpb.create();
+        }
+        return props_Icon;
       case LanguageConceptSwitch.NavBar:
         if (props_NavBar == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -38,6 +64,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_NavBar = cpb.create();
         }
         return props_NavBar;
+      case LanguageConceptSwitch.Profile:
+        if (props_Profile == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Profile");
+          props_Profile = cpb.create();
+        }
+        return props_Profile;
+      case LanguageConceptSwitch.Theme:
+        if (props_Theme == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("theme");
+          props_Theme = cpb.create();
+        }
+        return props_Theme;
     }
     return null;
   }

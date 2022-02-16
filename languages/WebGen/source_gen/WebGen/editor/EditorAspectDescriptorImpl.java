@@ -18,9 +18,19 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt = ((SAbstractConcept) concept);
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new App_Editor());
+        return Collections.<ConceptEditor>singletonList(new Anchor_Editor());
       case 1:
+        return Collections.<ConceptEditor>singletonList(new App_Editor());
+      case 2:
+        return Collections.<ConceptEditor>singletonList(new Home_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new Icon_Editor());
+      case 4:
         return Collections.<ConceptEditor>singletonList(new NavBar_Editor());
+      case 5:
+        return Collections.<ConceptEditor>singletonList(new Profile_Editor());
+      case 6:
+        return Collections.<ConceptEditor>singletonList(new Theme_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -28,5 +38,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05b23b8L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb8dL), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309e671aL), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb96L), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05b23b8L), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573099f5f5L), MetaIdFactory.conceptId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309494aeL)).seal();
 }

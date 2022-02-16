@@ -23,8 +23,20 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public TextGenDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
     switch (myIndex.index(concept)) {
+      case LanguageConceptSwitch.Anchor:
+        return new Anchor_TextGen();
       case LanguageConceptSwitch.App:
         return new App_TextGen();
+      case LanguageConceptSwitch.Home:
+        return new Home_TextGen();
+      case LanguageConceptSwitch.Icon:
+        return new Icon_TextGen();
+      case LanguageConceptSwitch.NavBar:
+        return new NavBar_TextGen();
+      case LanguageConceptSwitch.Profile:
+        return new Profile_TextGen();
+      case LanguageConceptSwitch.Theme:
+        return new Theme_TextGen();
     }
     return null;
   }

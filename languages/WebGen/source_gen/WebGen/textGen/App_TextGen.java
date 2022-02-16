@@ -5,6 +5,9 @@ package WebGen.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -18,10 +21,75 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("import * as Grommet from 'grommet';");
     tgs.newLine();
-    tgs.append("\n");
+    tgs.newLine();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.theme$EryS));
+    tgs.newLine();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.navbar$$EWc));
+    tgs.newLine();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.home$GQ4m));
+    tgs.newLine();
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.profile$GR0q));
+    tgs.newLine();
     tgs.append("export const App = () => {");
     tgs.newLine();
-
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("return (");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<BrowserRouter>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<Grommet.Grommet theme={theme}>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<NavBar />");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<Grommet.Box align='center'>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<Routes>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<Route index element={<Home />}/>");
+    tgs.newLine();
+    tgs.indent();
+    tgs.append("<Route path=\"/profile\" element={<Profile />}/>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</Routes>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</Grommet.Box>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</Grommet.Grommet>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</BrowserRouter>");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append(");");
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink theme$EryS = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L, 0x472658573094acb1L, "theme");
+    /*package*/ static final SContainmentLink navbar$$EWc = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L, 0x733cadfcf05cbcaaL, "navbar");
+    /*package*/ static final SContainmentLink home$GQ4m = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L, 0x47265857309e6711L, "home");
+    /*package*/ static final SContainmentLink profile$GR0q = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L, 0x47265857309e6715L, "profile");
   }
 }
