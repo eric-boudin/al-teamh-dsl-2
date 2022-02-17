@@ -49,6 +49,7 @@
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" version="0" />
         <module reference="251c92ab-56bc-48f4-bf9e-25f791bca554(WebGen.generator)" version="0" />
+        <module reference="356c8d26-fc47-4f10-9163-cc5eb0007b68(WebGen.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />

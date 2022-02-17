@@ -4,23 +4,27 @@ package WebGen.structure;
 
 import jetbrains.mps.smodel.runtime.BaseStructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptDescriptor;
+import jetbrains.mps.smodel.runtime.EnumerationDescriptor;
 import java.util.Collection;
 import java.util.Arrays;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
+import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  /*package*/ final ConceptDescriptor myConceptAnchor = createDescriptorForAnchor();
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
-  /*package*/ final ConceptDescriptor myConceptComponent = createDescriptorForComponent();
-  /*package*/ final ConceptDescriptor myConceptHome = createDescriptorForHome();
+  /*package*/ final ConceptDescriptor myConceptButton = createDescriptorForButton();
+  /*package*/ final ConceptDescriptor myConceptClickable = createDescriptorForClickable();
+  /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
+  /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptIcon = createDescriptorForIcon();
-  /*package*/ final ConceptDescriptor myConceptNavBar = createDescriptorForNavBar();
-  /*package*/ final ConceptDescriptor myConceptProfile = createDescriptorForProfile();
-  /*package*/ final ConceptDescriptor myConceptTheme = createDescriptorForTheme();
+  /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
+  /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
+  /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
+  /*package*/ final EnumerationDescriptor myEnumerationIcons = new EnumerationDescriptor_Icons();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -35,116 +39,129 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAnchor, myConceptApp, myConceptComponent, myConceptHome, myConceptIcon, myConceptNavBar, myConceptProfile, myConceptTheme);
+    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptSearch, myConceptTemplate, myConceptTemplateElement);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
-      case LanguageConceptSwitch.Anchor:
-        return myConceptAnchor;
       case LanguageConceptSwitch.App:
         return myConceptApp;
-      case LanguageConceptSwitch.Component:
-        return myConceptComponent;
-      case LanguageConceptSwitch.Home:
-        return myConceptHome;
+      case LanguageConceptSwitch.Button:
+        return myConceptButton;
+      case LanguageConceptSwitch.Clickable:
+        return myConceptClickable;
+      case LanguageConceptSwitch.Configuration:
+        return myConceptConfiguration;
+      case LanguageConceptSwitch.Grid:
+        return myConceptGrid;
       case LanguageConceptSwitch.Icon:
         return myConceptIcon;
-      case LanguageConceptSwitch.NavBar:
-        return myConceptNavBar;
-      case LanguageConceptSwitch.Profile:
-        return myConceptProfile;
-      case LanguageConceptSwitch.Theme:
-        return myConceptTheme;
+      case LanguageConceptSwitch.Search:
+        return myConceptSearch;
+      case LanguageConceptSwitch.Template:
+        return myConceptTemplate;
+      case LanguageConceptSwitch.TemplateElement:
+        return myConceptTemplateElement;
       default:
         return null;
     }
   }
 
+  @Override
+  public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
+    return Arrays.asList(myEnumerationIcons);
+  }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
-  private static ConceptDescriptor createDescriptorForAnchor() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Anchor", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb8dL);
-    b.class_(false, false, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5126882357308423053");
-    b.version(2);
-    b.property("href", 0x472658573095fb8eL).type(PrimitiveTypeId.STRING).origin("5126882357308423054").done();
-    b.aggregate("icon", 0x472658573096051bL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb96L).optional(true).ordered(true).multiple(false).origin("5126882357308425499").done();
-    b.alias("anchor");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForApp() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "App", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e05L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "App", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL);
     b.class_(false, false, true);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8303703114840305157");
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777612");
     b.version(2);
-    b.aggregate("navbar", 0x733cadfcf05cbcaaL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e24L).optional(false).ordered(true).multiple(false).origin("8303703114840325290").done();
-    b.aggregate("theme", 0x472658573094acb1L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309494aeL).optional(false).ordered(true).multiple(false).origin("5126882357308337329").done();
-    b.aggregate("home", 0x47265857309e6711L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309e671aL).optional(false).ordered(true).multiple(false).origin("5126882357308974865").done();
-    b.aggregate("profile", 0x47265857309e6715L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573099f5f5L).optional(false).ordered(true).multiple(false).origin("5126882357308974869").done();
+    b.aggregate("templates", 0x4b0f3085b2fa290dL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(true).ordered(true).multiple(true).origin("5408595028286777613").done();
     b.alias("app");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForComponent() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Component", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e24L);
-    b.class_(false, true, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8303703114840305188");
+  private static ConceptDescriptor createDescriptorForButton() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Button", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f89485L);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.Clickable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286674053");
     b.version(2);
-    b.alias("component");
+    b.property("text", 0x4b0f3085b2f89486L).type(PrimitiveTypeId.STRING).origin("5408595028286674054").done();
+    b.alias("button");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForHome() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Home", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309e671aL);
-    b.class_(false, false, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5126882357308974874");
+  private static ConceptDescriptor createDescriptorForClickable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Clickable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L);
+    b.class_(false, true, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286691587");
     b.version(2);
-    b.property("size", 0x4726585730a107c2L).type(PrimitiveTypeId.STRING).origin("5126882357309147074").done();
+    b.property("functionName", 0x4b0f3085b2f8d906L).type(PrimitiveTypeId.STRING).origin("5408595028286691590").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForConfiguration() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Configuration", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL);
+    b.class_(false, false, false);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777615");
+    b.version(2);
+    b.property("json", 0x4b0f3085b2fa2910L).type(PrimitiveTypeId.STRING).origin("5408595028286777616").done();
+    b.alias("configuration");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForGrid() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Grid", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706886");
+    b.version(2);
+    b.aggregate("templateElements", 0x4b0f3085b2f914c7L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L).optional(true).ordered(true).multiple(true).origin("5408595028286706887").done();
+    b.alias("grid");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForIcon() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Icon", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb96L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Icon", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L);
     b.class_(false, false, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5126882357308423062");
+    b.super_("WebGen.structure.Clickable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286626521");
     b.version(2);
-    b.property("type", 0x472658573095fb97L).type(PrimitiveTypeId.STRING).origin("5126882357308423063").done();
-    b.property("color", 0x472658573095fb99L).type(PrimitiveTypeId.STRING).origin("5126882357308423065").done();
+    b.property("size", 0x4b0f3085b2f7dadeL).type(PrimitiveTypeId.STRING).origin("5408595028286626526").done();
+    b.property("color", 0x4b0f3085b2f7dae0L).type(PrimitiveTypeId.STRING).origin("5408595028286626528").done();
+    b.associate("icon", 0x4b0f3085b2f7dadcL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L).optional(true).origin("5408595028286626524").done();
+    b.alias("icon");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForNavBar() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "NavBar", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05b23b8L);
+  private static ConceptDescriptor createDescriptorForSearch() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Search", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8f7a6L);
     b.class_(false, false, false);
-    b.super_("WebGen.structure.Component", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x733cadfcf05c6e24L);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8303703114840220600");
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286699430");
     b.version(2);
-    b.property("direction", 0x733cadfcf05b23b9L).type(PrimitiveTypeId.STRING).origin("8303703114840220601").done();
-    b.property("background", 0x4726585730962faaL).type(PrimitiveTypeId.STRING).origin("5126882357308436394").done();
-    b.property("pad", 0x4726585730962fadL).type(PrimitiveTypeId.STRING).origin("5126882357308436397").done();
-    b.aggregate("anchors", 0x472658573096309fL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb8dL).optional(false).ordered(true).multiple(true).origin("5126882357308436639").done();
-    b.alias("navbar");
+    b.property("functionName", 0x4b0f3085b2f8f7a7L).type(PrimitiveTypeId.STRING).origin("5408595028286699431").done();
+    b.alias("searchBar");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForProfile() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Profile", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573099f5f5L);
+  private static ConceptDescriptor createDescriptorForTemplate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Template", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L);
     b.class_(false, false, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5126882357308683765");
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706889");
     b.version(2);
-    b.property("text", 0x4726585730a10296L).type(PrimitiveTypeId.STRING).origin("5126882357309145750").done();
+    b.aggregate("templateElements", 0x4b0f3085b2f914ccL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L).optional(false).ordered(true).multiple(true).origin("5408595028286706892").done();
+    b.alias("template");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForTheme() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Theme", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x47265857309494aeL);
-    b.class_(false, false, false);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5126882357308331182");
+  private static ConceptDescriptor createDescriptorForTemplateElement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.class_(false, true, false);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706883");
     b.version(2);
-    b.property("family", 0x47265857309494b1L).type(PrimitiveTypeId.STRING).origin("5126882357308331185").done();
-    b.property("size", 0x47265857309494ffL).type(PrimitiveTypeId.STRING).origin("5126882357308331263").done();
-    b.property("height", 0x4726585730949502L).type(PrimitiveTypeId.STRING).origin("5126882357308331266").done();
-    b.alias("theme");
     return b.create();
   }
 }

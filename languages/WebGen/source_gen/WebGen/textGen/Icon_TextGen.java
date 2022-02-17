@@ -5,23 +5,41 @@ package WebGen.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class Icon_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("<Icons.");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.type$lrql));
-    tgs.append(" color='");
-    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.color$lrSn));
-    tgs.append("' />");
+    tgs.indent();
+    tgs.append("<");
+    tgs.append(String.valueOf(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.icon$2h0R)));
+    if (!(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.color$2hWV).isBlank())) {
+      tgs.append(" color='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.color$2hWV));
+      tgs.append("'");
+    }
+    if (!(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.size$2huT).isBlank())) {
+      tgs.append(" color='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.size$2huT));
+      tgs.append("'");
+    }
+    tgs.appendNode(SNodeOperations.getParent(ctx.getPrimaryInput()));
+    tgs.append(" />");
+    tgs.newLine();
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SReferenceLink icon$2h0R = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L, 0x4b0f3085b2f7dadcL, "icon");
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty type$lrql = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb96L, 0x472658573095fb97L, "type");
-    /*package*/ static final SProperty color$lrSn = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x472658573095fb96L, 0x472658573095fb99L, "color");
+    /*package*/ static final SProperty color$2hWV = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L, 0x4b0f3085b2f7dae0L, "color");
+    /*package*/ static final SProperty size$2huT = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L, 0x4b0f3085b2f7dadeL, "size");
   }
 }

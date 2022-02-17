@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-2p0n2eoiglwstkvgjb0o3ijkmk4tbb6">
-  <files names="Anchor_Editor.java:Anchor_EditorBuilder_a.java:App_Editor.java:App_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Home_Editor.java:Home_EditorBuilder_a.java:Icon_Editor.java:Icon_EditorBuilder_a.java:NavBar_Editor.java:NavBar_EditorBuilder_a.java:Profile_Editor.java:Profile_EditorBuilder_a.java:Theme_Editor.java:Theme_EditorBuilder_a.java" />
+<product version="3" modelHash="44e04mdpkc6rhdlz1qkc58c9eawh0nm">
+  <files names="ClickFunction.java:ClickFunction_ComponentBuilder_a.java:EditorAspectDescriptorImpl.java" />
 </product>
 

@@ -9,25 +9,27 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Anchor = 0;
-  public static final int App = 1;
-  public static final int Component = 2;
-  public static final int Home = 3;
-  public static final int Icon = 4;
-  public static final int NavBar = 5;
-  public static final int Profile = 6;
-  public static final int Theme = 7;
+  public static final int App = 0;
+  public static final int Button = 1;
+  public static final int Clickable = 2;
+  public static final int Configuration = 3;
+  public static final int Grid = 4;
+  public static final int Icon = 5;
+  public static final int Search = 6;
+  public static final int Template = 7;
+  public static final int TemplateElement = 8;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x524c482858c411cL, 0x9a4ee783c820e868L);
-    builder.put(0x472658573095fb8dL, Anchor);
-    builder.put(0x733cadfcf05c6e05L, App);
-    builder.put(0x733cadfcf05c6e24L, Component);
-    builder.put(0x47265857309e671aL, Home);
-    builder.put(0x472658573095fb96L, Icon);
-    builder.put(0x733cadfcf05b23b8L, NavBar);
-    builder.put(0x472658573099f5f5L, Profile);
-    builder.put(0x47265857309494aeL, Theme);
+    builder.put(0x4b0f3085b2fa290cL, App);
+    builder.put(0x4b0f3085b2f89485L, Button);
+    builder.put(0x4b0f3085b2f8d903L, Clickable);
+    builder.put(0x4b0f3085b2fa290fL, Configuration);
+    builder.put(0x4b0f3085b2f914c6L, Grid);
+    builder.put(0x4b0f3085b2f7dad9L, Icon);
+    builder.put(0x4b0f3085b2f8f7a6L, Search);
+    builder.put(0x4b0f3085b2f914c9L, Template);
+    builder.put(0x4b0f3085b2f914c3L, TemplateElement);
     myIndex = builder.seal();
   }
 

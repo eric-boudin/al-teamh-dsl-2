@@ -9,27 +9,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Anchor;
   private ConceptPresentation props_App;
-  private ConceptPresentation props_Component;
-  private ConceptPresentation props_Home;
+  private ConceptPresentation props_Button;
+  private ConceptPresentation props_Clickable;
+  private ConceptPresentation props_Configuration;
+  private ConceptPresentation props_Grid;
   private ConceptPresentation props_Icon;
-  private ConceptPresentation props_NavBar;
-  private ConceptPresentation props_Profile;
-  private ConceptPresentation props_Theme;
+  private ConceptPresentation props_Search;
+  private ConceptPresentation props_Template;
+  private ConceptPresentation props_TemplateElement;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Anchor:
-        if (props_Anchor == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("anchor");
-          props_Anchor = cpb.create();
-        }
-        return props_Anchor;
       case LanguageConceptSwitch.App:
         if (props_App == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -37,47 +31,60 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
-      case LanguageConceptSwitch.Component:
-        if (props_Component == null) {
+      case LanguageConceptSwitch.Button:
+        if (props_Button == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Component = cpb.create();
+          cpb.rawPresentation("button");
+          props_Button = cpb.create();
         }
-        return props_Component;
-      case LanguageConceptSwitch.Home:
-        if (props_Home == null) {
+        return props_Button;
+      case LanguageConceptSwitch.Clickable:
+        if (props_Clickable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Home");
-          props_Home = cpb.create();
+          props_Clickable = cpb.create();
         }
-        return props_Home;
+        return props_Clickable;
+      case LanguageConceptSwitch.Configuration:
+        if (props_Configuration == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("configuration");
+          props_Configuration = cpb.create();
+        }
+        return props_Configuration;
+      case LanguageConceptSwitch.Grid:
+        if (props_Grid == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("grid");
+          props_Grid = cpb.create();
+        }
+        return props_Grid;
       case LanguageConceptSwitch.Icon:
         if (props_Icon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Icon");
+          cpb.rawPresentation("icon");
           props_Icon = cpb.create();
         }
         return props_Icon;
-      case LanguageConceptSwitch.NavBar:
-        if (props_NavBar == null) {
+      case LanguageConceptSwitch.Search:
+        if (props_Search == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("navbar");
-          props_NavBar = cpb.create();
+          cpb.rawPresentation("searchBar");
+          props_Search = cpb.create();
         }
-        return props_NavBar;
-      case LanguageConceptSwitch.Profile:
-        if (props_Profile == null) {
+        return props_Search;
+      case LanguageConceptSwitch.Template:
+        if (props_Template == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Profile");
-          props_Profile = cpb.create();
+          cpb.presentationByName();
+          props_Template = cpb.create();
         }
-        return props_Profile;
-      case LanguageConceptSwitch.Theme:
-        if (props_Theme == null) {
+        return props_Template;
+      case LanguageConceptSwitch.TemplateElement:
+        if (props_TemplateElement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("theme");
-          props_Theme = cpb.create();
+          props_TemplateElement = cpb.create();
         }
-        return props_Theme;
+        return props_TemplateElement;
     }
     return null;
   }
