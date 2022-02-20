@@ -15,9 +15,12 @@ public final class LanguageConceptSwitch {
   public static final int Configuration = 3;
   public static final int Grid = 4;
   public static final int Icon = 5;
-  public static final int Search = 6;
-  public static final int Template = 7;
-  public static final int TemplateElement = 8;
+  public static final int NavBar = 6;
+  public static final int Page = 7;
+  public static final int Route = 8;
+  public static final int Search = 9;
+  public static final int Template = 10;
+  public static final int TemplateElement = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x524c482858c411cL, 0x9a4ee783c820e868L);
@@ -27,6 +30,9 @@ public final class LanguageConceptSwitch {
     builder.put(0x4b0f3085b2fa290fL, Configuration);
     builder.put(0x4b0f3085b2f914c6L, Grid);
     builder.put(0x4b0f3085b2f7dad9L, Icon);
+    builder.put(0x2f6f0a41e01b4f85L, NavBar);
+    builder.put(0x2f6f0a41e01b9380L, Page);
+    builder.put(0x2f6f0a41e01ce203L, Route);
     builder.put(0x4b0f3085b2f8f7a6L, Search);
     builder.put(0x4b0f3085b2f914c9L, Template);
     builder.put(0x4b0f3085b2f914c3L, TemplateElement);

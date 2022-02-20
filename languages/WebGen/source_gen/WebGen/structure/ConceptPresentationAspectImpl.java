@@ -15,6 +15,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Configuration;
   private ConceptPresentation props_Grid;
   private ConceptPresentation props_Icon;
+  private ConceptPresentation props_NavBar;
+  private ConceptPresentation props_Page;
+  private ConceptPresentation props_Route;
   private ConceptPresentation props_Search;
   private ConceptPresentation props_Template;
   private ConceptPresentation props_TemplateElement;
@@ -47,7 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Configuration:
         if (props_Configuration == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("configuration");
+          cpb.presentationByName();
           props_Configuration = cpb.create();
         }
         return props_Configuration;
@@ -65,6 +68,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Icon = cpb.create();
         }
         return props_Icon;
+      case LanguageConceptSwitch.NavBar:
+        if (props_NavBar == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L, 0x2f6f0a41e01b4f86L, "template", "", "");
+          props_NavBar = cpb.create();
+        }
+        return props_NavBar;
+      case LanguageConceptSwitch.Page:
+        if (props_Page == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Page = cpb.create();
+        }
+        return props_Page;
+      case LanguageConceptSwitch.Route:
+        if (props_Route == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Route = cpb.create();
+        }
+        return props_Route;
       case LanguageConceptSwitch.Search:
         if (props_Search == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

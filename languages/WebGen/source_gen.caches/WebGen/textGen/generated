@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-72g9yex92g6t17ncwp87q6p8bvx5h7z">
-  <files names="Button_TextGen.java:Clickable_TextGen.java:Configuration_TextGen.java:Icon_TextGen.java:Search_TextGen.java:Template_TextGen.java:TextGenAspectDescriptor.java" />
+<product version="3" modelHash="4gau5fsu6vl2pyze2lfnn8foc2bu5lp">
+  <files names="App_TextGen.java:Button_TextGen.java:Clickable_TextGen.java:Configuration_TextGen.java:Icon_TextGen.java:NavBar_TextGen.java:Page_TextGen.java:Route_TextGen.java:Search_TextGen.java:Template_TextGen.java:TextGenAspectDescriptor.java" />
 </product>
 

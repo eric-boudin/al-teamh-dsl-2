@@ -486,7 +486,7 @@
                 <node concept="2OqwBi" id="2XJ2$7w6SX7" role="lb14g">
                   <node concept="117lpO" id="2XJ2$7w6S8k" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2XJ2$7w6T4M" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wmro:2XJ2$7w6OY6" resolve="template" />
+                    <ref role="3Tt5mk" to="wmro:7xrDTj7z6$j" resolve="template" />
                   </node>
                 </node>
               </node>

@@ -21,6 +21,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
   /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptIcon = createDescriptorForIcon();
+  /*package*/ final ConceptDescriptor myConceptNavBar = createDescriptorForNavBar();
+  /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
+  /*package*/ final ConceptDescriptor myConceptRoute = createDescriptorForRoute();
   /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
   /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
   /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
@@ -39,7 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptSearch, myConceptTemplate, myConceptTemplateElement);
+    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptTemplate, myConceptTemplateElement);
   }
 
   @Override
@@ -58,6 +61,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGrid;
       case LanguageConceptSwitch.Icon:
         return myConceptIcon;
+      case LanguageConceptSwitch.NavBar:
+        return myConceptNavBar;
+      case LanguageConceptSwitch.Page:
+        return myConceptPage;
+      case LanguageConceptSwitch.Route:
+        return myConceptRoute;
       case LanguageConceptSwitch.Search:
         return myConceptSearch;
       case LanguageConceptSwitch.Template:
@@ -84,6 +93,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777612");
     b.version(2);
     b.aggregate("templates", 0x4b0f3085b2fa290dL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(true).ordered(true).multiple(true).origin("5408595028286777613").done();
+    b.aggregate("pages", 0x2f6f0a41e01b9383L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L).optional(false).ordered(true).multiple(true).origin("3417961920246551427").done();
+    b.aggregate("theme", 0x2f6f0a41e01bdc8cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL).optional(false).ordered(true).multiple(false).origin("3417961920246570124").done();
     b.alias("app");
     return b.create();
   }
@@ -109,6 +120,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForConfiguration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Configuration", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL);
     b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777615");
     b.version(2);
     b.property("json", 0x4b0f3085b2fa2910L).type(PrimitiveTypeId.STRING).origin("5408595028286777616").done();
@@ -135,6 +147,36 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("color", 0x4b0f3085b2f7dae0L).type(PrimitiveTypeId.STRING).origin("5408595028286626528").done();
     b.associate("icon", 0x4b0f3085b2f7dadcL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L).optional(true).origin("5408595028286626524").done();
     b.alias("icon");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNavBar() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "NavBar", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L);
+    b.class_(false, false, false);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246534021");
+    b.version(2);
+    b.associate("template", 0x2f6f0a41e01b4f86L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).origin("3417961920246534022").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPage() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Page", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L);
+    b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246551424");
+    b.version(2);
+    b.associate("template", 0x2f6f0a41e01ce13cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).origin("3417961920246636860").done();
+    b.associate("route", 0x2f6f0a41e01d0876L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L).optional(false).origin("3417961920246646902").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRoute() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Route", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246637059");
+    b.version(2);
+    b.property("route", 0x2f6f0a41e01ce40fL).type(PrimitiveTypeId.STRING).origin("3417961920246637583").done();
+    b.property("isHome", 0x2f6f0a41e01b9386L).type(PrimitiveTypeId.BOOLEAN).origin("3417961920246551430").done();
+    b.associate("page", 0x2f6f0a41e01cfaf0L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L).optional(false).origin("3417961920246643440").done();
+    b.alias("route");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSearch() {

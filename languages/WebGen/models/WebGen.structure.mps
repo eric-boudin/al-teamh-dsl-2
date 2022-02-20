@@ -21,11 +21,13 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -199,11 +201,8 @@
     <property role="EcuMT" value="3417961920246534021" />
     <property role="TrG5h" value="NavBar" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyj" id="2XJ2$7w6OY6" role="1TKVEi">
-      <property role="IQ2ns" value="3417961920246534022" />
-      <property role="20kJfa" value="template" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4Gfc8mMYhj9" resolve="Template" />
+    <node concept="PrWs8" id="7xrDTj7z6$l" role="PzmwI">
+      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
   </node>
   <node concept="1TIwiD" id="2XJ2$7w6Te0">
@@ -214,11 +213,8 @@
     <node concept="PrWs8" id="2XJ2$7w6TBQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="2XJ2$7w7e4W" role="1TKVEi">
-      <property role="IQ2ns" value="3417961920246636860" />
-      <property role="20kJfa" value="template" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4Gfc8mMYhj9" resolve="Template" />
+    <node concept="PrWs8" id="7xrDTj7z6PU" role="PzmwI">
+      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
     <node concept="1TJgyj" id="2XJ2$7w7gxQ" role="1TKVEi">
       <property role="IQ2ns" value="3417961920246646902" />
@@ -250,6 +246,43 @@
       <property role="20kJfa" value="page" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2XJ2$7w6Te0" resolve="Page" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7xrDTj7z5oJ">
+    <property role="EcuMT" value="8672709764876883503" />
+    <property role="TrG5h" value="Templatable" />
+    <node concept="1TJgyj" id="7xrDTj7z6$j" role="1TKVEi">
+      <property role="IQ2ns" value="8672709764876888339" />
+      <property role="20kJfa" value="template" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4Gfc8mMYhj9" resolve="Template" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7xrDTj7z6PX">
+    <property role="EcuMT" value="8672709764876889469" />
+    <property role="TrG5h" value="Timeline" />
+    <property role="34LRSv" value="timeline" />
+    <property role="R4oN_" value="Object that represent the timeline where all the post are shown" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7xrDTj7z6PY" role="PzmwI">
+      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
+    </node>
+    <node concept="1TJgyj" id="7xrDTj7z6Q1" role="1TKVEi">
+      <property role="IQ2ns" value="8672709764876889473" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="posts" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7xrDTj7z6PZ" resolve="Post" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7xrDTj7z6PZ">
+    <property role="EcuMT" value="8672709764876889471" />
+    <property role="TrG5h" value="Post" />
+    <property role="R4oN_" value="Object that represent a post with title, message and image" />
+    <property role="34LRSv" value="post" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7xrDTj7z6Q0" role="PzmwI">
+      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
   </node>
 </model>
