@@ -33,7 +33,7 @@ const Home = () => {
           [...Array(10)].map((_, index) => {
             return (
               <Grommet.Box height="large" width="large" elevation="small" key={index} style={{borderRadius: 20, marginBottom: 10}}>
-                <Grommet.Box direction="row" gap="medium">
+                <Grommet.Box direction="row" gap="medium" style={{marginBottom: "1.5rem"}}>
                   <Grommet.Avatar background="accent-2"><Icons.UserNew color="accent-3" /></Grommet.Avatar>
                   <Grommet.Text>Some image from random user {index + 1}</Grommet.Text>
                 </Grommet.Box>
