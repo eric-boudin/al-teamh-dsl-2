@@ -200,7 +200,7 @@
   <node concept="1TIwiD" id="2XJ2$7w6OY5">
     <property role="EcuMT" value="3417961920246534021" />
     <property role="TrG5h" value="NavBar" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
     <node concept="PrWs8" id="7xrDTj7z6$l" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
@@ -283,6 +283,28 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7xrDTj7z6Q0" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="60m_Ur_lto4">
+    <property role="EcuMT" value="6923888220196689412" />
+    <property role="TrG5h" value="Texte" />
+    <property role="34LRSv" value="texte" />
+    <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
+    <node concept="1TJgyi" id="60m_Ur_lto7" role="1TKVEl">
+      <property role="IQ2nx" value="6923888220196689415" />
+      <property role="TrG5h" value="content" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="60m_Ur_lunB">
+    <property role="EcuMT" value="6923888220196693479" />
+    <property role="TrG5h" value="Image" />
+    <property role="34LRSv" value="img" />
+    <ref role="1TJDcQ" node="4Gfc8mMYd$3" resolve="Clickable" />
+    <node concept="1TJgyi" id="60m_Ur_lunE" role="1TKVEl">
+      <property role="IQ2nx" value="6923888220196693482" />
+      <property role="TrG5h" value="link" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
