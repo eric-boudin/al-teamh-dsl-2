@@ -15,12 +15,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Configuration;
   private ConceptPresentation props_Grid;
   private ConceptPresentation props_Icon;
+  private ConceptPresentation props_Image;
   private ConceptPresentation props_NavBar;
   private ConceptPresentation props_Page;
+  private ConceptPresentation props_Post;
   private ConceptPresentation props_Route;
   private ConceptPresentation props_Search;
+  private ConceptPresentation props_Templatable;
   private ConceptPresentation props_Template;
   private ConceptPresentation props_TemplateElement;
+  private ConceptPresentation props_Texte;
+  private ConceptPresentation props_Timeline;
 
   @Override
   @Nullable
@@ -68,10 +73,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Icon = cpb.create();
         }
         return props_Icon;
+      case LanguageConceptSwitch.Image:
+        if (props_Image == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("img");
+          props_Image = cpb.create();
+        }
+        return props_Image;
       case LanguageConceptSwitch.NavBar:
         if (props_NavBar == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L, 0x2f6f0a41e01b4f86L, "template", "", "");
+          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template", "", "");
           props_NavBar = cpb.create();
         }
         return props_NavBar;
@@ -81,6 +93,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Page = cpb.create();
         }
         return props_Page;
+      case LanguageConceptSwitch.Post:
+        if (props_Post == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Object that represent a post with title, message and image");
+          cpb.rawPresentation("post");
+          props_Post = cpb.create();
+        }
+        return props_Post;
       case LanguageConceptSwitch.Route:
         if (props_Route == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -95,6 +115,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Search = cpb.create();
         }
         return props_Search;
+      case LanguageConceptSwitch.Templatable:
+        if (props_Templatable == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_Templatable = cpb.create();
+        }
+        return props_Templatable;
       case LanguageConceptSwitch.Template:
         if (props_Template == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -108,6 +134,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TemplateElement = cpb.create();
         }
         return props_TemplateElement;
+      case LanguageConceptSwitch.Texte:
+        if (props_Texte == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("texte");
+          props_Texte = cpb.create();
+        }
+        return props_Texte;
+      case LanguageConceptSwitch.Timeline:
+        if (props_Timeline == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Object that represent the timeline where all the post are shown");
+          cpb.rawPresentation("timeline");
+          props_Timeline = cpb.create();
+        }
+        return props_Timeline;
     }
     return null;
   }

@@ -14,19 +14,19 @@ public class NavBar_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<Nav direction=\"row\" background=\"brand\" pad=\"medium\">");
+    tgs.append("<Grommet.Nav direction=\"row\" background=\"brand\" pad=\"xxsmall\" style={{marginBottom: \"1rem\"}}>");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$Q5Kl));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
-    tgs.append("</Nav>");
+    tgs.append("</Grommet.Nav>");
     tgs.newLine();
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink template$Q5Kl = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L, 0x2f6f0a41e01b4f86L, "template");
+    /*package*/ static final SReferenceLink template$4fqK = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template");
   }
 }

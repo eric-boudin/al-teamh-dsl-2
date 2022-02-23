@@ -33,6 +33,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Configuration_TextGen();
       case LanguageConceptSwitch.Icon:
         return new Icon_TextGen();
+      case LanguageConceptSwitch.Image:
+        return new Image_TextGen();
       case LanguageConceptSwitch.NavBar:
         return new NavBar_TextGen();
       case LanguageConceptSwitch.Page:
@@ -43,6 +45,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Search_TextGen();
       case LanguageConceptSwitch.Template:
         return new Template_TextGen();
+      case LanguageConceptSwitch.Texte:
+        return new Texte_TextGen();
     }
     return null;
   }

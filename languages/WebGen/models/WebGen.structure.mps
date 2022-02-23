@@ -182,6 +182,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4Gfc8mMYy$f" resolve="Configuration" />
     </node>
+    <node concept="1TJgyi" id="64nv7Tlc8JT" role="1TKVEl">
+      <property role="IQ2nx" value="6996197428180323321" />
+      <property role="TrG5h" value="scriptPath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Gfc8mMYy$f">
     <property role="EcuMT" value="5408595028286777615" />
@@ -263,24 +268,23 @@
     <property role="TrG5h" value="Timeline" />
     <property role="34LRSv" value="timeline" />
     <property role="R4oN_" value="Object that represent the timeline where all the post are shown" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
     <node concept="PrWs8" id="7xrDTj7z6PY" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
-    <node concept="1TJgyj" id="7xrDTj7z6Q1" role="1TKVEi">
-      <property role="IQ2ns" value="8672709764876889473" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="posts" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7xrDTj7z6PZ" resolve="Post" />
+    <node concept="1TJgyj" id="64nv7TlcagZ" role="1TKVEi">
+      <property role="IQ2ns" value="6996197428180329535" />
+      <property role="20kJfa" value="displayPost" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7xrDTj7z6PZ" resolve="DisplayPost" />
     </node>
   </node>
   <node concept="1TIwiD" id="7xrDTj7z6PZ">
     <property role="EcuMT" value="8672709764876889471" />
-    <property role="TrG5h" value="Post" />
+    <property role="TrG5h" value="DisplayPost" />
     <property role="R4oN_" value="Object that represent a post with title, message and image" />
     <property role="34LRSv" value="post" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
     <node concept="PrWs8" id="7xrDTj7z6Q0" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
@@ -305,6 +309,14 @@
       <property role="IQ2nx" value="6923888220196693482" />
       <property role="TrG5h" value="link" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="64nv7Tlc8JQ">
+    <property role="EcuMT" value="6996197428180323318" />
+    <property role="TrG5h" value="Tendance" />
+    <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
+    <node concept="PrWs8" id="64nv7Tlc8JR" role="PzmwI">
+      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
   </node>
 </model>

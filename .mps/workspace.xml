@@ -3,8 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="f741f7bd-3b9c-477a-bdca-f9cc3b135602" name="Changes" comment="Template + config concept / non testé">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +36,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="56b474a5-e73f-4f0b-b0c5-b4642141c3c7/r:8af99b57-5977-436a-9a69-a19ec546ce2c(TempModule56b474a5-e73f-4f0b-b0c5-b4642141c3c7/ConsoleModel_20835942778208)">
+            <model ref="6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/r:ee3cdb38-ace8-4086-9cb7-92fc790e3640(TempModule6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/ConsoleModel_601478854624400)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -37,11 +56,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="60m_Ur_liE_">
-                <node concept="3balQm" id="60m_Ur_liEA" role="aymYE" />
-                <node concept="2Clz$F" id="60m_Ur_liEB" role="aymYO" />
-                <node concept="2_V_lH" id="60m_Ur_liEC" role="1PhJh3">
-                  <ref role="2_V_lI" node="60m_Ur_liEB" resolve="CommandHolder" />
+              <node concept="aymSD" id="64nv7TlbDM2">
+                <node concept="3balQm" id="64nv7TlbDM3" role="aymYE" />
+                <node concept="2Clz$F" id="64nv7TlbDM4" role="aymYO" />
+                <node concept="2_V_lH" id="64nv7TlbDM5" role="1PhJh3">
+                  <ref role="2_V_lI" node="64nv7TlbDM4" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -129,6 +148,16 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -137,11 +166,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5126882357308653874" />
+              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -155,31 +180,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:1c3aaae8-19a3-4761-ba7f-4e2f4ccc9c3d(WebGen.editor) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/models/WebGen.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
+              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,7 +214,17 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:f5b44edf-73ac-47c5-8b7f-278bdfa09ceb(WebGen.textGen) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/models/WebGen.textGen.mps]" />
+              <option name="myItemId" value="WebGen.generator" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,57 +238,17 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5408595028286626516" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemId" value="WebGen.generator" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f5b44edf-73ac-47c5-8b7f-278bdfa09ceb(WebGen.textGen) in IdeaFile[path: /Users/lucas/Documents/Cours/SI5/DSL/al-teamh-dsl-2/languages/WebGen/models/WebGen.textGen.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5408595028286699436" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>

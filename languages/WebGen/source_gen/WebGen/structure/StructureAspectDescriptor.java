@@ -21,12 +21,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
   /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptIcon = createDescriptorForIcon();
+  /*package*/ final ConceptDescriptor myConceptImage = createDescriptorForImage();
   /*package*/ final ConceptDescriptor myConceptNavBar = createDescriptorForNavBar();
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
+  /*package*/ final ConceptDescriptor myConceptPost = createDescriptorForPost();
   /*package*/ final ConceptDescriptor myConceptRoute = createDescriptorForRoute();
   /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
+  /*package*/ final ConceptDescriptor myConceptTemplatable = createDescriptorForTemplatable();
   /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
   /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
+  /*package*/ final ConceptDescriptor myConceptTexte = createDescriptorForTexte();
+  /*package*/ final ConceptDescriptor myConceptTimeline = createDescriptorForTimeline();
   /*package*/ final EnumerationDescriptor myEnumerationIcons = new EnumerationDescriptor_Icons();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -42,7 +47,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptTemplate, myConceptTemplateElement);
+    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptPost, myConceptRoute, myConceptSearch, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTexte, myConceptTimeline);
   }
 
   @Override
@@ -61,18 +66,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptGrid;
       case LanguageConceptSwitch.Icon:
         return myConceptIcon;
+      case LanguageConceptSwitch.Image:
+        return myConceptImage;
       case LanguageConceptSwitch.NavBar:
         return myConceptNavBar;
       case LanguageConceptSwitch.Page:
         return myConceptPage;
+      case LanguageConceptSwitch.Post:
+        return myConceptPost;
       case LanguageConceptSwitch.Route:
         return myConceptRoute;
       case LanguageConceptSwitch.Search:
         return myConceptSearch;
+      case LanguageConceptSwitch.Templatable:
+        return myConceptTemplatable;
       case LanguageConceptSwitch.Template:
         return myConceptTemplate;
       case LanguageConceptSwitch.TemplateElement:
         return myConceptTemplateElement;
+      case LanguageConceptSwitch.Texte:
+        return myConceptTexte;
+      case LanguageConceptSwitch.Timeline:
+        return myConceptTimeline;
       default:
         return null;
     }
@@ -149,22 +164,42 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("icon");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForImage() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Image", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x601697a6e555e5e7L);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.Clickable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6923888220196693479");
+    b.version(2);
+    b.property("link", 0x601697a6e555e5eaL).type(PrimitiveTypeId.STRING).origin("6923888220196693482").done();
+    b.alias("img");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForNavBar() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "NavBar", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L);
     b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246534021");
     b.version(2);
-    b.associate("template", 0x2f6f0a41e01b4f86L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).origin("3417961920246534022").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPage() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Page", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L);
     b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246551424");
     b.version(2);
-    b.associate("template", 0x2f6f0a41e01ce13cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).origin("3417961920246636860").done();
     b.associate("route", 0x2f6f0a41e01d0876L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L).optional(false).origin("3417961920246646902").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPost() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Post", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL);
+    b.class_(false, false, false);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889471");
+    b.version(2);
+    b.alias("post");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRoute() {
@@ -189,6 +224,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("searchBar");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForTemplatable() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Templatable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
+    b.interface_();
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876883503");
+    b.version(2);
+    b.associate("template", 0x785ba794c78c6913L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).origin("8672709764876888339").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForTemplate() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Template", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L);
     b.class_(false, false, false);
@@ -204,6 +247,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706883");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTexte() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Texte", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x601697a6e555d604L);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6923888220196689412");
+    b.version(2);
+    b.property("content", 0x601697a6e555d607L).type(PrimitiveTypeId.STRING).origin("6923888220196689415").done();
+    b.alias("texte");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTimeline() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Timeline", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7dL);
+    b.class_(false, false, false);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889469");
+    b.version(2);
+    b.aggregate("posts", 0x785ba794c78c6d81L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL).optional(true).ordered(true).multiple(true).origin("8672709764876889473").done();
+    b.alias("timeline");
     return b.create();
   }
 }

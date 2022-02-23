@@ -266,7 +266,7 @@
           <node concept="3clFbS" id="4Gfc8mMYd$y" role="3clFbx">
             <node concept="lc7rE" id="4Gfc8mMYd$z" role="3cqZAp">
               <node concept="la8eA" id="4Gfc8mMYd$$" role="lcghm">
-                <property role="lacIc" value=" onClick={() =&gt; " />
+                <property role="lacIc" value=" onClick={() =&gt; MyScript." />
               </node>
               <node concept="l9hG8" id="4Gfc8mMYd$_" role="lcghm">
                 <node concept="2OqwBi" id="4Gfc8mMYd$A" role="lb14g">
@@ -549,6 +549,23 @@
             <property role="lacIc" value="import * as Grommet from 'grommet';" />
           </node>
           <node concept="l8MVK" id="2XJ2$7w6Xxg" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="64nv7Tlc9bL" role="3cqZAp">
+          <node concept="la8eA" id="64nv7Tlc9bM" role="lcghm">
+            <property role="lacIc" value="import * as MyScript from '" />
+          </node>
+          <node concept="l9hG8" id="64nv7Tlc9zs" role="lcghm">
+            <node concept="2OqwBi" id="64nv7Tlc9Es" role="lb14g">
+              <node concept="117lpO" id="64nv7Tlc9$k" role="2Oq$k0" />
+              <node concept="3TrcHB" id="64nv7Tlc9M7" role="2OqNvi">
+                <ref role="3TsBF5" to="wmro:64nv7Tlc8JT" resolve="scriptPath" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="64nv7Tlc9Pn" role="lcghm">
+            <property role="lacIc" value="' ;" />
+          </node>
+          <node concept="l8MVK" id="64nv7Tlc9bN" role="lcghm" />
         </node>
         <node concept="3clFbH" id="2XJ2$7w6Xx$" role="3cqZAp" />
         <node concept="lc7rE" id="2XJ2$7w6Xyr" role="3cqZAp">
