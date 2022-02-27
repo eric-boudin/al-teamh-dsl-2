@@ -5,15 +5,15 @@ package WebGen.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -26,6 +26,10 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("import * as Icons from 'grommet-icons';");
     tgs.newLine();
     tgs.append("import * as Grommet from 'grommet';");
+    tgs.newLine();
+    tgs.append("import * as MyScript from '");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.scriptPath$iGGG));
+    tgs.append("' ;");
     tgs.newLine();
 
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.theme$cCAv));
@@ -100,13 +104,14 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("}");
   }
 
+  private static final class PROPS {
+    /*package*/ static final SProperty scriptPath$iGGG = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, 0x61177c7e55308bf9L, "scriptPath");
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink theme$cCAv = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, 0x2f6f0a41e01bdc8cL, "theme");
     /*package*/ static final SContainmentLink pages$hjQ2 = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, 0x2f6f0a41e01b9383L, "pages");
     /*package*/ static final SReferenceLink route$M9Ni = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L, 0x2f6f0a41e01d0876L, "route");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

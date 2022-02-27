@@ -1,6 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <uses language="l:0524c482-858c-411c-9a4e-e783c820e868:WebGen" />
-  <uses module="356c8d26-fc47-4f10-9163-cc5eb0007b68(WebGen.runtime)" kind="rt" />
-</dependenciesRoot>
+<dependenciesRoot />
 

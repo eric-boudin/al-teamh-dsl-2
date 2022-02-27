@@ -14,7 +14,7 @@ public class Clickable_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     if (!(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$uM6c).isBlank())) {
-      tgs.append(" onClick={() => ");
+      tgs.append(" onClick={() => MyScript.");
       tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$uM6c));
       tgs.append("}");
     }

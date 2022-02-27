@@ -19,17 +19,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptButton = createDescriptorForButton();
   /*package*/ final ConceptDescriptor myConceptClickable = createDescriptorForClickable();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
+  /*package*/ final ConceptDescriptor myConceptDisplayPost = createDescriptorForDisplayPost();
   /*package*/ final ConceptDescriptor myConceptGrid = createDescriptorForGrid();
   /*package*/ final ConceptDescriptor myConceptIcon = createDescriptorForIcon();
   /*package*/ final ConceptDescriptor myConceptImage = createDescriptorForImage();
   /*package*/ final ConceptDescriptor myConceptNavBar = createDescriptorForNavBar();
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
-  /*package*/ final ConceptDescriptor myConceptPost = createDescriptorForPost();
   /*package*/ final ConceptDescriptor myConceptRoute = createDescriptorForRoute();
   /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
   /*package*/ final ConceptDescriptor myConceptTemplatable = createDescriptorForTemplatable();
   /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
   /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
+  /*package*/ final ConceptDescriptor myConceptTendance = createDescriptorForTendance();
   /*package*/ final ConceptDescriptor myConceptTexte = createDescriptorForTexte();
   /*package*/ final ConceptDescriptor myConceptTimeline = createDescriptorForTimeline();
   /*package*/ final EnumerationDescriptor myEnumerationIcons = new EnumerationDescriptor_Icons();
@@ -47,7 +48,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptPost, myConceptRoute, myConceptSearch, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTexte, myConceptTimeline);
+    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptDisplayPost, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTendance, myConceptTexte, myConceptTimeline);
   }
 
   @Override
@@ -62,6 +63,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptClickable;
       case LanguageConceptSwitch.Configuration:
         return myConceptConfiguration;
+      case LanguageConceptSwitch.DisplayPost:
+        return myConceptDisplayPost;
       case LanguageConceptSwitch.Grid:
         return myConceptGrid;
       case LanguageConceptSwitch.Icon:
@@ -72,8 +75,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNavBar;
       case LanguageConceptSwitch.Page:
         return myConceptPage;
-      case LanguageConceptSwitch.Post:
-        return myConceptPost;
       case LanguageConceptSwitch.Route:
         return myConceptRoute;
       case LanguageConceptSwitch.Search:
@@ -84,6 +85,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTemplate;
       case LanguageConceptSwitch.TemplateElement:
         return myConceptTemplateElement;
+      case LanguageConceptSwitch.Tendance:
+        return myConceptTendance;
       case LanguageConceptSwitch.Texte:
         return myConceptTexte;
       case LanguageConceptSwitch.Timeline:
@@ -107,6 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777612");
     b.version(2);
+    b.property("scriptPath", 0x61177c7e55308bf9L).type(PrimitiveTypeId.STRING).origin("6996197428180323321").done();
     b.aggregate("templates", 0x4b0f3085b2fa290dL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(true).ordered(true).multiple(true).origin("5408595028286777613").done();
     b.aggregate("pages", 0x2f6f0a41e01b9383L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L).optional(false).ordered(true).multiple(true).origin("3417961920246551427").done();
     b.aggregate("theme", 0x2f6f0a41e01bdc8cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL).optional(false).ordered(true).multiple(false).origin("3417961920246570124").done();
@@ -140,6 +144,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("json", 0x4b0f3085b2fa2910L).type(PrimitiveTypeId.STRING).origin("5408595028286777616").done();
     b.alias("configuration");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDisplayPost() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "DisplayPost", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889471");
+    b.version(2);
+    b.alias("post");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForGrid() {
@@ -193,15 +207,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("route", 0x2f6f0a41e01d0876L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L).optional(false).origin("3417961920246646902").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForPost() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Post", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL);
-    b.class_(false, false, false);
-    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
-    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889471");
-    b.version(2);
-    b.alias("post");
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForRoute() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Route", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L);
     b.class_(false, false, false);
@@ -249,6 +254,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForTendance() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Tendance", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x61177c7e55308bf6L);
+    b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6996197428180323318");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForTexte() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Texte", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x601697a6e555d604L);
     b.class_(false, false, false);
@@ -262,10 +276,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForTimeline() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Timeline", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7dL);
     b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
     b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889469");
     b.version(2);
-    b.aggregate("posts", 0x785ba794c78c6d81L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL).optional(true).ordered(true).multiple(true).origin("8672709764876889473").done();
+    b.associate("displayPost", 0x61177c7e5530a43fL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL).optional(false).origin("6996197428180329535").done();
     b.alias("timeline");
     return b.create();
   }

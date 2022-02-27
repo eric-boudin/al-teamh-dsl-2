@@ -13,17 +13,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Button;
   private ConceptPresentation props_Clickable;
   private ConceptPresentation props_Configuration;
+  private ConceptPresentation props_DisplayPost;
   private ConceptPresentation props_Grid;
   private ConceptPresentation props_Icon;
   private ConceptPresentation props_Image;
   private ConceptPresentation props_NavBar;
   private ConceptPresentation props_Page;
-  private ConceptPresentation props_Post;
   private ConceptPresentation props_Route;
   private ConceptPresentation props_Search;
   private ConceptPresentation props_Templatable;
   private ConceptPresentation props_Template;
   private ConceptPresentation props_TemplateElement;
+  private ConceptPresentation props_Tendance;
   private ConceptPresentation props_Texte;
   private ConceptPresentation props_Timeline;
 
@@ -59,6 +60,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Configuration = cpb.create();
         }
         return props_Configuration;
+      case LanguageConceptSwitch.DisplayPost:
+        if (props_DisplayPost == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Object that represent a post with title, message and image");
+          cpb.rawPresentation("post");
+          props_DisplayPost = cpb.create();
+        }
+        return props_DisplayPost;
       case LanguageConceptSwitch.Grid:
         if (props_Grid == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -93,14 +102,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Page = cpb.create();
         }
         return props_Page;
-      case LanguageConceptSwitch.Post:
-        if (props_Post == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Object that represent a post with title, message and image");
-          cpb.rawPresentation("post");
-          props_Post = cpb.create();
-        }
-        return props_Post;
       case LanguageConceptSwitch.Route:
         if (props_Route == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -134,6 +135,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TemplateElement = cpb.create();
         }
         return props_TemplateElement;
+      case LanguageConceptSwitch.Tendance:
+        if (props_Tendance == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template", "", "");
+          props_Tendance = cpb.create();
+        }
+        return props_Tendance;
       case LanguageConceptSwitch.Texte:
         if (props_Texte == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class NavBar_SubstituteMenu extends SubstituteMenuBase {
+public class Tendance_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_20wias_a(), CONCEPTS.NavBar$EN));
-    result.add(new SMP_Subconcepts_20wias_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_uc3bz5_a(), CONCEPTS.Tendance$Bi));
+    result.add(new SMP_Subconcepts_uc3bz5_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class NavBar_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for NavBar. Generated from implicit smart reference attribute.", new SNodePointer("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)", "3417961920246534021")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for Tendance. Generated from implicit smart reference attribute.", new SNodePointer("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)", "6996197428180323318")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class NavBar_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_20wias_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_uc3bz5_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_20wias_a() {
+    public SMP_ReferenceScope_uc3bz5_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.NavBar$EN, LINKS.template$4fqK);
+      super((SAbstractConcept) CONCEPTS.Tendance$Bi, LINKS.template$4fqK);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class NavBar_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_20wias_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_uc3bz5_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.NavBar$EN);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.Tendance$Bi);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "NavBar", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "Tendance", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,7 +88,7 @@ public class NavBar_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept NavBar$EN = MetaAdapterFactory.getConcept(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b4f85L, "WebGen.structure.NavBar");
+    /*package*/ static final SConcept Tendance$Bi = MetaAdapterFactory.getConcept(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x61177c7e55308bf6L, "WebGen.structure.Tendance");
   }
 
   private static final class LINKS {

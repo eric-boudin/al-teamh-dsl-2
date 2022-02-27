@@ -13,19 +13,20 @@ public final class LanguageConceptSwitch {
   public static final int Button = 1;
   public static final int Clickable = 2;
   public static final int Configuration = 3;
-  public static final int Grid = 4;
-  public static final int Icon = 5;
-  public static final int Image = 6;
-  public static final int NavBar = 7;
-  public static final int Page = 8;
-  public static final int Post = 9;
+  public static final int DisplayPost = 4;
+  public static final int Grid = 5;
+  public static final int Icon = 6;
+  public static final int Image = 7;
+  public static final int NavBar = 8;
+  public static final int Page = 9;
   public static final int Route = 10;
   public static final int Search = 11;
   public static final int Templatable = 12;
   public static final int Template = 13;
   public static final int TemplateElement = 14;
-  public static final int Texte = 15;
-  public static final int Timeline = 16;
+  public static final int Tendance = 15;
+  public static final int Texte = 16;
+  public static final int Timeline = 17;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x524c482858c411cL, 0x9a4ee783c820e868L);
@@ -33,17 +34,18 @@ public final class LanguageConceptSwitch {
     builder.put(0x4b0f3085b2f89485L, Button);
     builder.put(0x4b0f3085b2f8d903L, Clickable);
     builder.put(0x4b0f3085b2fa290fL, Configuration);
+    builder.put(0x785ba794c78c6d7fL, DisplayPost);
     builder.put(0x4b0f3085b2f914c6L, Grid);
     builder.put(0x4b0f3085b2f7dad9L, Icon);
     builder.put(0x601697a6e555e5e7L, Image);
     builder.put(0x2f6f0a41e01b4f85L, NavBar);
     builder.put(0x2f6f0a41e01b9380L, Page);
-    builder.put(0x785ba794c78c6d7fL, Post);
     builder.put(0x2f6f0a41e01ce203L, Route);
     builder.put(0x4b0f3085b2f8f7a6L, Search);
     builder.put(0x785ba794c78c562fL, Templatable);
     builder.put(0x4b0f3085b2f914c9L, Template);
     builder.put(0x4b0f3085b2f914c3L, TemplateElement);
+    builder.put(0x61177c7e55308bf6L, Tendance);
     builder.put(0x601697a6e555d604L, Texte);
     builder.put(0x785ba794c78c6d7dL, Timeline);
     myIndex = builder.seal();
