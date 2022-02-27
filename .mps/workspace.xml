@@ -3,24 +3,61 @@
   <component name="ChangeListManager">
     <list default="true" id="f741f7bd-3b9c-477a-bdca-f9cc3b135602" name="Changes" comment="Template + config concept / non testé">
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/ClickFunction_ComponentBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/ClickFunction_ComponentBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/NavBar_SubstituteMenu$CONCEPTS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/NavBar_SubstituteMenu$LINKS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/NavBar_SubstituteMenu$SMP_ReferenceScope_20wias_a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/NavBar_SubstituteMenu$SMP_Subconcepts_20wias_b.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/NavBar_SubstituteMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/StructureAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/App_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Icon_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Icon_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Icon_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Icon_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Page_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen$PROPS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/Route_TextGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/TextGenAspectDescriptor$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/TextGenAspectDescriptor$CONCEPTS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/TextGenAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/TextGenAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/sandbox/source_gen.caches/WebGen/sandbox/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/sandbox/source_gen.caches/WebGen/sandbox/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/sandbox/source_gen.caches/WebGen/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/sandbox/source_gen.caches/WebGen/sandbox/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/ClickFunction_ComponentBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/ClickFunction_ComponentBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/NavBar_SubstituteMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/editor/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/App_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/App_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Icon_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Icon_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Page_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Page_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Route_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Route_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" afterDir="false" />
@@ -36,7 +73,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/r:ee3cdb38-ace8-4086-9cb7-92fc790e3640(TempModule6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/ConsoleModel_601478854624400)">
+            <model ref="c1ac97cc-3ada-4f5a-b447-f0f7a5f10de5/r:d76f99ad-dfaa-4a66-939b-0d248dd69f5c(TempModulec1ac97cc-3ada-4f5a-b447-f0f7a5f10de5/ConsoleModel_3101492384000)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -56,11 +93,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="64nv7TlbDM2">
-                <node concept="3balQm" id="64nv7TlbDM3" role="aymYE" />
-                <node concept="2Clz$F" id="64nv7TlbDM4" role="aymYO" />
-                <node concept="2_V_lH" id="64nv7TlbDM5" role="1PhJh3">
-                  <ref role="2_V_lI" node="64nv7TlbDM4" resolve="CommandHolder" />
+              <node concept="aymSD" id="4QG5gECO7DX">
+                <node concept="3balQm" id="4QG5gECO7DY" role="aymYE" />
+                <node concept="2Clz$F" id="4QG5gECO7DZ" role="aymYO" />
+                <node concept="2_V_lH" id="4QG5gECO7E0" role="1PhJh3">
+                  <ref role="2_V_lI" node="4QG5gECO7DZ" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -84,6 +121,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MPSBookmarkManager">
     <option name="myBookmarkInfos">
@@ -139,6 +184,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="Scope" />
       <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
@@ -148,16 +194,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -166,7 +202,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
+              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -177,16 +213,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebGen" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,7 +250,29 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen.generator" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,6 +291,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:25fdb35a-c01d-40b7-8d0b-bf06733722af(WebGen.generator.templates@generator) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/generator/templates/WebGen.generator.templates@generator.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f5b44edf-73ac-47c5-8b7f-278bdfa09ceb(WebGen.textGen) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/models/WebGen.textGen.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:1c3aaae8-19a3-4761-ba7f-4e2f4ccc9c3d(WebGen.editor) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/models/WebGen.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -251,10 +347,25 @@
               <option name="myItemId" value="WebGen" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: E:/Cours/Poly/S10/DSL/DSL2/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5596871572440922435" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">

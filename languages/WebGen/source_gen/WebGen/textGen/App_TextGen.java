@@ -13,7 +13,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class App_TextGen extends TextGenDescriptorBase {
   @Override
@@ -59,15 +58,6 @@ public class App_TextGen extends TextGenDescriptorBase {
     tgs.append("}>");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.pages$hjQ2)).visitAll(new IVisitor<SNode>() {
-      public void visit(SNode it) {
-        tgs.indent();
-        tgs.append("<");
-        tgs.append(SPropertyOperations.getString(it, PROPS.name$MnvL));
-        tgs.append(" />");
-      }
-    });
-    tgs.newLine();
     tgs.indent();
     tgs.append("<Grommet.Box align='center'>");
     tgs.newLine();
@@ -78,7 +68,7 @@ public class App_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().increaseIndent();
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.pages$hjQ2)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        SLinkOperations.getTarget(it, LINKS.route$M9Ni);
+        tgs.appendNode(SLinkOperations.getTarget(it, LINKS.route$thON));
       }
     });
     ctx.getBuffer().area().decreaseIndent();
@@ -100,8 +90,10 @@ public class App_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append(");");
+    tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("}");
+    tgs.newLine();
   }
 
   private static final class PROPS {
@@ -112,6 +104,6 @@ public class App_TextGen extends TextGenDescriptorBase {
   private static final class LINKS {
     /*package*/ static final SContainmentLink theme$cCAv = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, 0x2f6f0a41e01bdc8cL, "theme");
     /*package*/ static final SContainmentLink pages$hjQ2 = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, 0x2f6f0a41e01b9383L, "pages");
-    /*package*/ static final SReferenceLink route$M9Ni = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L, 0x2f6f0a41e01d0876L, "route");
+    /*package*/ static final SContainmentLink route$thON = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L, 0x4dac150aa8dd8aa0L, "route");
   }
 }

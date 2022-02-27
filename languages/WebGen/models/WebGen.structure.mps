@@ -71,11 +71,6 @@
     <property role="TrG5h" value="Icon" />
     <property role="34LRSv" value="icon" />
     <ref role="1TJDcQ" node="4Gfc8mMYd$3" resolve="Clickable" />
-    <node concept="1TJgyj" id="4Gfc8mMXXFs" role="1TKVEi">
-      <property role="IQ2ns" value="5408595028286626524" />
-      <property role="20kJfa" value="icon" />
-      <ref role="20lvS9" node="4Gfc8mMXXFp" resolve="Icon" />
-    </node>
     <node concept="1TJgyi" id="4Gfc8mMXXFu" role="1TKVEl">
       <property role="IQ2nx" value="5408595028286626526" />
       <property role="TrG5h" value="size" />
@@ -85,6 +80,11 @@
       <property role="IQ2nx" value="5408595028286626528" />
       <property role="TrG5h" value="color" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4QG5gECOGMo" role="1TKVEl">
+      <property role="IQ2nx" value="5596871572440927384" />
+      <property role="TrG5h" value="icon" />
+      <ref role="AX2Wp" node="4Gfc8mMXXFk" resolve="Icons" />
     </node>
   </node>
   <node concept="1TIwiD" id="4Gfc8mMY9i5">
@@ -125,6 +125,9 @@
     <property role="R5$K7" value="true" />
     <property role="TrG5h" value="TemplateElement" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4QG5gECOGDk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Gfc8mMYhj6">
     <property role="EcuMT" value="5408595028286706886" />
@@ -165,7 +168,7 @@
       <property role="IQ2ns" value="5408595028286777613" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="templates" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="4Gfc8mMYhj9" resolve="Template" />
     </node>
     <node concept="1TJgyj" id="2XJ2$7w6Te3" role="1TKVEi">
@@ -192,6 +195,7 @@
     <property role="EcuMT" value="5408595028286777615" />
     <property role="TrG5h" value="Configuration" />
     <property role="34LRSv" value="configuration" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="4Gfc8mMYy$g" role="1TKVEl">
       <property role="IQ2nx" value="5408595028286777616" />
@@ -205,6 +209,7 @@
   <node concept="1TIwiD" id="2XJ2$7w6OY5">
     <property role="EcuMT" value="3417961920246534021" />
     <property role="TrG5h" value="NavBar" />
+    <property role="34LRSv" value="navbar" />
     <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
     <node concept="PrWs8" id="7xrDTj7z6$l" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
@@ -213,7 +218,7 @@
   <node concept="1TIwiD" id="2XJ2$7w6Te0">
     <property role="EcuMT" value="3417961920246551424" />
     <property role="TrG5h" value="Page" />
-    <property role="R5$K7" value="true" />
+    <property role="34LRSv" value="page" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2XJ2$7w6TBQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -221,8 +226,9 @@
     <node concept="PrWs8" id="7xrDTj7z6PU" role="PzmwI">
       <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
     </node>
-    <node concept="1TJgyj" id="2XJ2$7w7gxQ" role="1TKVEi">
-      <property role="IQ2ns" value="3417961920246646902" />
+    <node concept="1TJgyj" id="4QG5gECRoEw" role="1TKVEi">
+      <property role="IQ2ns" value="5596871572441631392" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="route" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2XJ2$7w7e83" resolve="Route" />
@@ -269,9 +275,6 @@
     <property role="34LRSv" value="timeline" />
     <property role="R4oN_" value="Object that represent the timeline where all the post are shown" />
     <ref role="1TJDcQ" node="4Gfc8mMYhj3" resolve="TemplateElement" />
-    <node concept="PrWs8" id="7xrDTj7z6PY" role="PzmwI">
-      <ref role="PrY4T" node="7xrDTj7z5oJ" resolve="Templatable" />
-    </node>
     <node concept="1TJgyj" id="64nv7TlcagZ" role="1TKVEi">
       <property role="IQ2ns" value="6996197428180329535" />
       <property role="20kJfa" value="displayPost" />

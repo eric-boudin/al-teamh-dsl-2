@@ -19,6 +19,10 @@ public class Route_TextGen extends TextGenDescriptorBase {
     tgs.append("<Route index");
     if (SPropertyOperations.getBoolean(ctx.getPrimaryInput(), PROPS.isHome$NU6q)) {
       tgs.append(" index");
+    } else {
+      tgs.append("path=\"");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.route$cthg));
+      tgs.append("\"");
     }
     tgs.append(" element={<");
     tgs.append(SPropertyOperations.getString(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.page$dbzl), PROPS.name$MnvL));
@@ -28,6 +32,7 @@ public class Route_TextGen extends TextGenDescriptorBase {
 
   private static final class PROPS {
     /*package*/ static final SProperty isHome$NU6q = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L, 0x2f6f0a41e01b9386L, "isHome");
+    /*package*/ static final SProperty route$cthg = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L, 0x2f6f0a41e01ce40fL, "route");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 

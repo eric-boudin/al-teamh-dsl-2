@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="44e04mdpkc6rhdlz1qkc58c9eawh0nm">
-  <files names="ClickFunction.java:ClickFunction_ComponentBuilder_a.java:EditorAspectDescriptorImpl.java:NavBar_SubstituteMenu.java:Tendance_SubstituteMenu.java" />
+<product version="3" modelHash="8xqfagz6kjlcuzi7akjlfv0nkw2v10r">
+  <files names="App_Editor.java:App_EditorBuilder_a.java:Button_Editor.java:Button_EditorBuilder_a.java:ClickFunction.java:ClickFunction_ComponentBuilder_a.java:Configuration_Editor.java:Configuration_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Icon_Editor.java:Icon_EditorBuilder_a.java:Image_Editor.java:Image_EditorBuilder_a.java:NavBar_Editor.java:NavBar_EditorBuilder_a.java:Page_Editor.java:Page_EditorBuilder_a.java:Route_Editor.java:Route_EditorBuilder_a.java:Search_Editor.java:Search_EditorBuilder_a.java:Template_Editor.java:Template_EditorBuilder_a.java:Tendance_Editor.java:Tendance_EditorBuilder_a.java:Tendance_SubstituteMenu.java:Texte_Editor.java:Texte_EditorBuilder_a.java:Timeline_Editor.java:Timeline_EditorBuilder_a.java" />
 </product>
 

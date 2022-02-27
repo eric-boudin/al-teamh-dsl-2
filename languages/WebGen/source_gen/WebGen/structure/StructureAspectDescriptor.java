@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.DataTypeDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
@@ -111,7 +112,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777612");
     b.version(2);
     b.property("scriptPath", 0x61177c7e55308bf9L).type(PrimitiveTypeId.STRING).origin("6996197428180323321").done();
-    b.aggregate("templates", 0x4b0f3085b2fa290dL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(true).ordered(true).multiple(true).origin("5408595028286777613").done();
+    b.aggregate("templates", 0x4b0f3085b2fa290dL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L).optional(false).ordered(true).multiple(true).origin("5408595028286777613").done();
     b.aggregate("pages", 0x2f6f0a41e01b9383L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L).optional(false).ordered(true).multiple(true).origin("3417961920246551427").done();
     b.aggregate("theme", 0x2f6f0a41e01bdc8cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL).optional(false).ordered(true).multiple(false).origin("3417961920246570124").done();
     b.alias("app");
@@ -138,7 +139,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForConfiguration() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Configuration", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL);
-    b.class_(false, false, false);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777615");
     b.version(2);
@@ -174,7 +175,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("size", 0x4b0f3085b2f7dadeL).type(PrimitiveTypeId.STRING).origin("5408595028286626526").done();
     b.property("color", 0x4b0f3085b2f7dae0L).type(PrimitiveTypeId.STRING).origin("5408595028286626528").done();
-    b.associate("icon", 0x4b0f3085b2f7dadcL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad9L).optional(true).origin("5408595028286626524").done();
+    b.property("icon", 0x4dac150aa8d2cc98L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f7dad4L)).origin("5596871572440927384").done();
     b.alias("icon");
     return b.create();
   }
@@ -195,16 +196,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246534021");
     b.version(2);
+    b.alias("navbar");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPage() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Page", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L);
-    b.class_(false, true, false);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/3417961920246551424");
     b.version(2);
-    b.associate("route", 0x2f6f0a41e01d0876L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L).optional(false).origin("3417961920246646902").done();
+    b.aggregate("route", 0x4dac150aa8dd8aa0L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01ce203L).optional(false).ordered(true).multiple(false).origin("5596871572441631392").done();
+    b.alias("page");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRoute() {
@@ -250,6 +253,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForTemplateElement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
     b.class_(false, true, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706883");
     b.version(2);
     return b.create();
@@ -277,7 +281,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Timeline", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7dL);
     b.class_(false, false, false);
     b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
-    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889469");
     b.version(2);
     b.associate("displayPost", 0x61177c7e5530a43fL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL).optional(false).origin("6996197428180329535").done();

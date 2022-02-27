@@ -53,7 +53,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "click");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "click event");
     editorCell.setCellId("Constant_ica9io_a0");
     editorCell.setDefaultText("");
     return editorCell;

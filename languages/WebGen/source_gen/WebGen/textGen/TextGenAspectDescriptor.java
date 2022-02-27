@@ -54,6 +54,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
   @Override
   public void breakdownToUnits(@NotNull TextGenModelOutline outline) {
     for (SNode root : outline.getModel().getRootNodes()) {
+      if (root.getConcept().equals(CONCEPTS.Configuration$Wf)) {
+        String fname = getFileName_Configuration(root);
+        String ext = getFileExtension_Configuration(root);
+        outline.registerTextUnit((ext == null ? fname : (fname + '.' + ext)), root);
+        continue;
+      }
       if (root.getConcept().equals(CONCEPTS.App$UM)) {
         String fname = getFileName_App(root);
         String ext = getFileExtension_App(root);
@@ -62,14 +68,21 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
       }
     }
   }
+  private static String getFileName_Configuration(SNode node) {
+    return node.getName();
+  }
   private static String getFileName_App(SNode node) {
     return "App.js";
+  }
+  private static String getFileExtension_Configuration(SNode node) {
+    return null;
   }
   private static String getFileExtension_App(SNode node) {
     return "js";
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept Configuration$Wf = MetaAdapterFactory.getConcept(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL, "WebGen.structure.Configuration");
     /*package*/ static final SConcept App$UM = MetaAdapterFactory.getConcept(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL, "WebGen.structure.App");
   }
 }

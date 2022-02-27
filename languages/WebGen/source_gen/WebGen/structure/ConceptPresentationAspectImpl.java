@@ -43,7 +43,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Button:
         if (props_Button == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("button");
+          cpb.presentationByName();
           props_Button = cpb.create();
         }
         return props_Button;
@@ -64,41 +64,42 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DisplayPost == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Object that represent a post with title, message and image");
-          cpb.rawPresentation("post");
+          cpb.presentationByName();
           props_DisplayPost = cpb.create();
         }
         return props_DisplayPost;
       case LanguageConceptSwitch.Grid:
         if (props_Grid == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("grid");
+          cpb.presentationByName();
           props_Grid = cpb.create();
         }
         return props_Grid;
       case LanguageConceptSwitch.Icon:
         if (props_Icon == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("icon");
+          cpb.presentationByName();
           props_Icon = cpb.create();
         }
         return props_Icon;
       case LanguageConceptSwitch.Image:
         if (props_Image == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("img");
+          cpb.presentationByName();
           props_Image = cpb.create();
         }
         return props_Image;
       case LanguageConceptSwitch.NavBar:
         if (props_NavBar == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template", "", "");
+          cpb.presentationByName();
           props_NavBar = cpb.create();
         }
         return props_NavBar;
       case LanguageConceptSwitch.Page:
         if (props_Page == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
           props_Page = cpb.create();
         }
         return props_Page;
@@ -112,7 +113,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Search:
         if (props_Search == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("searchBar");
+          cpb.presentationByName();
           props_Search = cpb.create();
         }
         return props_Search;
@@ -138,14 +139,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Tendance:
         if (props_Tendance == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template", "", "");
+          cpb.presentationByName();
           props_Tendance = cpb.create();
         }
         return props_Tendance;
       case LanguageConceptSwitch.Texte:
         if (props_Texte == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("texte");
+          cpb.presentationByName();
           props_Texte = cpb.create();
         }
         return props_Texte;
@@ -153,7 +154,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Timeline == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("Object that represent the timeline where all the post are shown");
-          cpb.rawPresentation("timeline");
+          cpb.presentationByName();
           props_Timeline = cpb.create();
         }
         return props_Timeline;
