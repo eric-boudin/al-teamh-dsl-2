@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f741f7bd-3b9c-477a-bdca-f9cc3b135602" name="Changes" comment="Template + config concept / non testé">
+      <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/classes_gen/WebGen/textGen/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.structure.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/models/WebGen.textGen.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/sandbox/models/WebGen.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen.caches/WebGen/textGen/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/LanguageConceptSwitch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/StructureAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/structure/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Button_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Clickable_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/NavBar_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/Search_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/TextGenAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/WebGen/source_gen/WebGen/textGen/trace.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ConsoleHistory">
+    <option name="tabs">
+      <list>
+        <TabState>
+          <option name="title" value="Console" />
+          <tab>
+            <model ref="6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/r:ee3cdb38-ace8-4086-9cb7-92fc790e3640(TempModule6b48f084-d6f9-4ae1-a12f-d5fc8d26786c/ConsoleModel_601478854624400)">
+              <persistence version="9" />
+              <languages>
+                <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
+              </languages>
+              <imports />
+              <registry>
+                <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
+                  <concept id="1583916890557930028" name="jetbrains.mps.console.base.structure.ConsoleRoot" flags="ng" index="aymSD">
+                    <child id="1583916890557930415" name="history" index="aymYE" />
+                    <child id="1583916890557930417" name="commandHolder" index="aymYO" />
+                    <child id="9025248442620242919" name="cursor" index="1PhJh3" />
+                  </concept>
+                  <concept id="5758176878586720817" name="jetbrains.mps.console.base.structure.CommandHolderRef" flags="ng" index="2_V_lH">
+                    <reference id="5758176878586720818" name="target" index="2_V_lI" />
+                  </concept>
+                  <concept id="351968380916615243" name="jetbrains.mps.console.base.structure.CommandHolder" flags="ng" index="2Clz$F" />
+                  <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
+                </language>
+              </registry>
+              <node concept="aymSD" id="64nv7TlbDM2">
+                <node concept="3balQm" id="64nv7TlbDM3" role="aymYE" />
+                <node concept="2Clz$F" id="64nv7TlbDM4" role="aymYO" />
+                <node concept="2_V_lH" id="64nv7TlbDM5" role="1PhJh3">
+                  <ref role="2_V_lI" node="64nv7TlbDM4" resolve="CommandHolder" />
+                </node>
+              </node>
+            </model>
+          </tab>
+        </TabState>
+      </list>
+    </option>
+  </component>
+  <component name="DefaultSearchOptions3">
+    <search_options>
+      <finders>
+        <finders />
+      </finders>
+      <scope>
+        <scope_type scope_type="PROJECT" module="&lt;default&gt;" model="&lt;default&gt;" />
+      </scope>
+      <view>
+        <flags show_one_result="true" new_tab="false" />
+      </view>
+    </search_options>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MPSBookmarkManager">
+    <option name="myBookmarkInfos">
+      <array>
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+        <BookmarkInfo />
+      </array>
+    </option>
+  </component>
+  <component name="MessagesViewTool">
+    <option name="defaultListState">
+      <MessageListState>
+        <option name="autoscrollToSource" value="true" />
+        <option name="info" value="true" />
+        <option name="warnings" value="true" />
+      </MessageListState>
+    </option>
+  </component>
+  <component name="ProjectId" id="24reakjQeXlAYsRm8GYTBFTJLTY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectPluginManager">
+    <option name="pluginsState">
+      <option name="jetbrains.mps.ide.actions.Ide_ProjectPlugin">
+        <value>
+          <PluginState>
+            <option name="myComponentsState">
+              <list>
+                <ComponentState>
+                  <option name="first" value="jetbrains.mps.ide.actions.BehaviorDialogsPersistentOptions_PreferencesComponent" />
+                  <params>
+                    <option name="addReturnsOnImplement" value="false" />
+                    <option name="sortAlphabetically" value="false" />
+                    <option name="removeAttributes" value="true" />
+                  </params>
+                </ComponentState>
+              </list>
+            </option>
+          </PluginState>
+        </value>
+      </option>
+    </option>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="FileSystem" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:ee03dd4b-6bbc-42fb-bc42-65915962a1b2(WebGen.sandbox) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/sandbox/models/WebGen.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure) in IdeaFile[path: C:/Users/Mini/Documents/Polytech/S10/DLS/al-teamh-dsl-2/languages/WebGen/models/WebGen.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen.generator" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="915b922b-b322-4451-aea6-d5056fb89b8b" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="0524c482-858c-411c-9a4e-e783c820e868(WebGen)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen.generator" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebGen" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArduinoML/external" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f741f7bd-3b9c-477a-bdca-f9cc3b135602" name="Changes" comment="" />
+      <created>1644393199212</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644393199212</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Template + config concept / non testé">
+      <created>1645114170385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645114170385</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Template + config concept / non testé">
+      <created>1645114202327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645114202327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="UsagesViewTool">
+    <version id="1" />
+    <tabs />
+    <default_view_options>
+      <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
+    </default_view_options>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Template + config concept / non testé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template + config concept / non testé" />
+  </component>
+</project>

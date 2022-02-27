@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="EditorAspectDescriptorImpl.java">
+      <unit at="16,0,50,0" name="WebGen.editor.EditorAspectDescriptorImpl" />
+    </file>
+    <file name="NavBar_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="WebGen.editor.NavBar_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="WebGen.editor.NavBar_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="WebGen.editor.NavBar_SubstituteMenu$SMP_ReferenceScope_20wias_a" />
+      <unit at="68,0,89,0" name="WebGen.editor.NavBar_SubstituteMenu$SMP_Subconcepts_20wias_b" />
+      <unit at="26,0,98,0" name="WebGen.editor.NavBar_SubstituteMenu" />
+    </file>
+  </root>
+  <root nodeRef="r:1c3aaae8-19a3-4761-ba7f-4e2f4ccc9c3d(WebGen.editor)/5408595028286691947">
+    <file name="ClickFunction.java">
+      <node id="5408595028286691947" at="15,47,16,35" concept="6" />
+      <node id="5408595028286691947" at="18,79,19,82" concept="6" />
+      <node id="5408595028286691947" at="18,0,21,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5408595028286691947" at="14,0,18,0" concept="4" trace="getContextHints#()Ljava/util/Collection;" />
+      <scope id="5408595028286691947" at="15,47,16,35" />
+      <scope id="5408595028286691947" at="18,79,19,82" />
+      <scope id="5408595028286691947" at="18,0,21,0">
+        <var name="editorContext" id="5408595028286691947" />
+        <var name="node" id="5408595028286691947" />
+      </scope>
+      <scope id="5408595028286691947" at="14,0,18,0" />
+      <unit id="5408595028286691947" at="13,0,22,0" name="WebGen.editor.ClickFunction" />
+    </file>
+    <file name="ClickFunction_ComponentBuilder_a.java">
+      <node id="5408595028286691947" at="33,96,34,19" concept="8" />
+      <node id="5408595028286691947" at="34,19,35,18" concept="1" />
+      <node id="5408595028286691947" at="40,26,41,18" concept="6" />
+      <node id="5408595028286691947" at="44,39,45,32" concept="6" />
+      <node id="5408595028286691947" at="48,43,49,118" concept="5" />
+      <node id="5408595028286691947" at="49,118,50,48" concept="1" />
+      <node id="5408595028286691959" at="50,48,51,49" concept="1" />
+      <node id="5408595028286691965" at="51,49,52,49" concept="1" />
+      <node id="5408595028286691947" at="52,49,53,22" concept="6" />
+      <node id="5408595028286691959" at="55,41,56,98" concept="5" />
+      <node id="5408595028286691959" at="56,98,57,47" concept="1" />
+      <node id="5408595028286691959" at="57,47,58,34" concept="1" />
+      <node id="5408595028286691959" at="58,34,59,22" concept="6" />
+      <node id="5408595028286691965" at="61,41,62,39" concept="1" />
+      <node id="5408595028286691965" at="63,9,64,57" concept="5" />
+      <node id="5408595028286691965" at="64,57,65,76" concept="1" />
+      <node id="5408595028286691965" at="65,76,66,149" concept="5" />
+      <node id="5408595028286691965" at="66,149,67,53" concept="1" />
+      <node id="5408595028286691965" at="67,53,68,55" concept="1" />
+      <node id="5408595028286691965" at="68,55,69,86" concept="1" />
+      <node id="5408595028286691965" at="69,86,70,33" concept="1" />
+      <node id="5408595028286691965" at="70,33,71,155" concept="5" />
+      <node id="5408595028286691965" at="73,41,74,118" concept="6" />
+      <node id="5408595028286691965" at="77,74,78,89" concept="5" />
+      <node id="5408595028286691965" at="78,89,79,145" concept="6" />
+      <node id="5408595028286691965" at="80,12,81,24" concept="6" />
+      <node id="5408595028286691965" at="82,15,83,40" concept="1" />
+      <node id="5408595028286691947" at="88,0,89,0" concept="7" trace="functionName$uM6c" />
+      <node id="5408595028286691947" at="92,0,93,0" concept="7" trace="PropertyAttribute$Gb" />
+      <node id="5408595028286691947" at="30,0,32,0" concept="2" trace="myNode" />
+      <node id="5408595028286691947" at="44,0,47,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5408595028286691965" at="73,0,76,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5408595028286691947" at="33,0,37,0" concept="0" trace="ClickFunction_ComponentBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5408595028286691947" at="38,0,43,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5408595028286691965" at="71,155,76,9" concept="5" />
+      <node id="5408595028286691965" at="76,9,81,24" concept="3" />
+      <node id="5408595028286691959" at="55,0,61,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5408595028286691947" at="48,0,55,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5408595028286691965" at="62,39,84,5" concept="9" />
+      <node id="5408595028286691965" at="61,0,86,0" concept="4" trace="createProperty_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="5408595028286691947" at="40,26,41,18" />
+      <scope id="5408595028286691947" at="44,39,45,32" />
+      <scope id="5408595028286691965" at="73,41,74,118" />
+      <scope id="5408595028286691965" at="82,15,83,40" />
+      <scope id="5408595028286691947" at="33,96,35,18" />
+      <scope id="5408595028286691965" at="77,74,79,145">
+        <var name="manager" id="5408595028286691965" />
+      </scope>
+      <scope id="5408595028286691947" at="44,0,47,0" />
+      <scope id="5408595028286691965" at="73,0,76,0">
+        <var name="it" id="5408595028286691965" />
+      </scope>
+      <scope id="5408595028286691947" at="33,0,37,0">
+        <var name="context" id="5408595028286691947" />
+        <var name="node" id="5408595028286691947" />
+      </scope>
+      <scope id="5408595028286691959" at="55,41,59,22">
+        <var name="editorCell" id="5408595028286691959" />
+      </scope>
+      <scope id="5408595028286691947" at="38,0,43,0" />
+      <scope id="5408595028286691947" at="48,43,53,22">
+        <var name="editorCell" id="5408595028286691947" />
+      </scope>
+      <scope id="5408595028286691959" at="55,0,61,0" />
+      <scope id="5408595028286691947" at="48,0,55,0" />
+      <scope id="5408595028286691965" at="63,9,81,24">
+        <var name="currentPropertyAttributes" id="5408595028286691965" />
+        <var name="editorCell" id="5408595028286691965" />
+        <var name="property" id="5408595028286691965" />
+        <var name="propertyAttributes" id="5408595028286691965" />
+      </scope>
+      <scope id="5408595028286691965" at="61,41,84,5" />
+      <scope id="5408595028286691965" at="61,0,86,0" />
+      <unit id="5408595028286691947" at="87,0,90,0" name="WebGen.editor.ClickFunction_ComponentBuilder_a$PROPS" />
+      <unit id="5408595028286691947" at="91,0,94,0" name="WebGen.editor.ClickFunction_ComponentBuilder_a$CONCEPTS" />
+      <unit id="5408595028286691965" at="72,102,76,7" name="WebGen.editor.ClickFunction_ComponentBuilder_a$1" />
+      <unit id="5408595028286691947" at="29,0,95,0" name="WebGen.editor.ClickFunction_ComponentBuilder_a" />
+    </file>
+  </root>
+</debug-info>
+
