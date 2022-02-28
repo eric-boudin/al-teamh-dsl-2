@@ -25,12 +25,16 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.App:
         return new App_TextGen();
+      case LanguageConceptSwitch.Area:
+        return new Area_TextGen();
       case LanguageConceptSwitch.Button:
         return new Button_TextGen();
       case LanguageConceptSwitch.Clickable:
         return new Clickable_TextGen();
       case LanguageConceptSwitch.Configuration:
         return new Configuration_TextGen();
+      case LanguageConceptSwitch.Grid:
+        return new Grid_TextGen();
       case LanguageConceptSwitch.Icon:
         return new Icon_TextGen();
       case LanguageConceptSwitch.Image:
@@ -43,6 +47,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Route_TextGen();
       case LanguageConceptSwitch.Search:
         return new Search_TextGen();
+      case LanguageConceptSwitch.SizeValue:
+        return new SizeValue_TextGen();
       case LanguageConceptSwitch.Template:
         return new Template_TextGen();
       case LanguageConceptSwitch.Texte:
@@ -72,7 +78,7 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     return node.getName();
   }
   private static String getFileName_App(SNode node) {
-    return "App.js";
+    return "App";
   }
   private static String getFileExtension_Configuration(SNode node) {
     return null;

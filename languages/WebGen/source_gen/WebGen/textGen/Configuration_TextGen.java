@@ -14,7 +14,9 @@ public class Configuration_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("const theme = ");
+    tgs.append("const ");
+    tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
+    tgs.append(" = ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.json$Eeul));
     tgs.append(";");
     tgs.newLine();
@@ -22,6 +24,7 @@ public class Configuration_TextGen extends TextGenDescriptorBase {
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty json$Eeul = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL, 0x4b0f3085b2fa2910L, "json");
   }
 }

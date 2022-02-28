@@ -13,15 +13,6 @@ public class Search_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.indent();
-    tgs.append("() => {");
-    tgs.newLine();
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
-    tgs.append("return (");
-    tgs.newLine();
-    ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
     tgs.append("<Grommet.Form onSubmit={({ value }) => ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$wkMl));
     tgs.append("(value)}>");
@@ -53,13 +44,6 @@ public class Search_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("</Grommet.Form>");
     tgs.newLine();
-    ctx.getBuffer().area().decreaseIndent();
-    tgs.indent();
-    tgs.append(");");
-    tgs.newLine();
-    ctx.getBuffer().area().decreaseIndent();
-    tgs.indent();
-    tgs.append("}");
   }
 
   private static final class PROPS {

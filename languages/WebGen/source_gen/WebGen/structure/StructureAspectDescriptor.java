@@ -17,6 +17,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptApp = createDescriptorForApp();
+  /*package*/ final ConceptDescriptor myConceptArea = createDescriptorForArea();
   /*package*/ final ConceptDescriptor myConceptButton = createDescriptorForButton();
   /*package*/ final ConceptDescriptor myConceptClickable = createDescriptorForClickable();
   /*package*/ final ConceptDescriptor myConceptConfiguration = createDescriptorForConfiguration();
@@ -28,6 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPage = createDescriptorForPage();
   /*package*/ final ConceptDescriptor myConceptRoute = createDescriptorForRoute();
   /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
+  /*package*/ final ConceptDescriptor myConceptSizeValue = createDescriptorForSizeValue();
   /*package*/ final ConceptDescriptor myConceptTemplatable = createDescriptorForTemplatable();
   /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
   /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
@@ -35,6 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTexte = createDescriptorForTexte();
   /*package*/ final ConceptDescriptor myConceptTimeline = createDescriptorForTimeline();
   /*package*/ final EnumerationDescriptor myEnumerationIcons = new EnumerationDescriptor_Icons();
+  /*package*/ final EnumerationDescriptor myEnumerationSize = new EnumerationDescriptor_Size();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -49,7 +52,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptDisplayPost, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTendance, myConceptTexte, myConceptTimeline);
+    return Arrays.asList(myConceptApp, myConceptArea, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptDisplayPost, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptSizeValue, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTendance, myConceptTexte, myConceptTimeline);
   }
 
   @Override
@@ -58,6 +61,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.App:
         return myConceptApp;
+      case LanguageConceptSwitch.Area:
+        return myConceptArea;
       case LanguageConceptSwitch.Button:
         return myConceptButton;
       case LanguageConceptSwitch.Clickable:
@@ -80,6 +85,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptRoute;
       case LanguageConceptSwitch.Search:
         return myConceptSearch;
+      case LanguageConceptSwitch.SizeValue:
+        return myConceptSizeValue;
       case LanguageConceptSwitch.Templatable:
         return myConceptTemplatable;
       case LanguageConceptSwitch.Template:
@@ -99,7 +106,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationIcons);
+    return Arrays.asList(myEnumerationIcons, myEnumerationSize);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -116,6 +123,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("pages", 0x2f6f0a41e01b9383L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x2f6f0a41e01b9380L).optional(false).ordered(true).multiple(true).origin("3417961920246551427").done();
     b.aggregate("theme", 0x2f6f0a41e01bdc8cL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290fL).optional(false).ordered(true).multiple(false).origin("3417961920246570124").done();
     b.alias("app");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForArea() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Area", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4165L);
+    b.class_(false, false, false);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037281125");
+    b.version(2);
+    b.property("name", 0x1b16beb9df5c4166L).type(PrimitiveTypeId.STRING).origin("1951957194037281126").done();
+    b.property("start_r", 0x1b16beb9df5c4168L).type(PrimitiveTypeId.INTEGER).origin("1951957194037281128").done();
+    b.property("start_c", 0x1b16beb9df5c416bL).type(PrimitiveTypeId.INTEGER).origin("1951957194037281131").done();
+    b.property("end_r", 0x1b16beb9df5c416fL).type(PrimitiveTypeId.INTEGER).origin("1951957194037281135").done();
+    b.property("end_c", 0x1b16beb9df5c4174L).type(PrimitiveTypeId.INTEGER).origin("1951957194037281140").done();
+    b.alias("area");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForButton() {
@@ -163,7 +183,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706886");
     b.version(2);
-    b.aggregate("templateElements", 0x4b0f3085b2f914c7L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L).optional(true).ordered(true).multiple(true).origin("5408595028286706887").done();
+    b.aggregate("templateElements", 0x4b0f3085b2f914c7L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L).optional(false).ordered(true).multiple(true).origin("5408595028286706887").done();
+    b.aggregate("areas", 0x1b16beb9df5c4162L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4165L).optional(false).ordered(true).multiple(true).origin("1951957194037281122").done();
+    b.aggregate("colSizes", 0x1b16beb9df5f8e77L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5f8e58L).optional(false).ordered(true).multiple(true).origin("1951957194037497463").done();
+    b.aggregate("rowSizes", 0x1b16beb9df5f8e7bL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5f8e58L).optional(false).ordered(true).multiple(true).origin("1951957194037497467").done();
     b.alias("grid");
     return b.create();
   }
@@ -232,6 +255,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("searchBar");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForSizeValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "SizeValue", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5f8e58L);
+    b.class_(false, false, false);
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037497432");
+    b.version(2);
+    b.property("size", 0x1b16beb9df5f8e75L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("1951957194037497461").done();
+    b.alias("size array");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForTemplatable() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Templatable", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.interface_();
@@ -256,6 +288,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706883");
     b.version(2);
+    b.property("gridArea", 0x1b16beb9df5cc4a6L).type(PrimitiveTypeId.STRING).origin("1951957194037314726").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTendance() {

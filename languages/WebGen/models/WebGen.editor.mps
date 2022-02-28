@@ -52,6 +52,7 @@
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -231,6 +232,18 @@
   <node concept="24kQdi" id="4QG5gECOHMr">
     <ref role="1XX52x" to="wmro:4Gfc8mMYy$c" resolve="App" />
     <node concept="3EZMnI" id="4QG5gECOHMt" role="2wV5jI">
+      <node concept="3F0ifn" id="1GmJFBvorJD" role="3EZMnx">
+        <property role="3F0ifm" value="Script path :" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvorKp" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:64nv7Tlc8JT" resolve="scriptPath" />
+        <node concept="pVoyu" id="1GmJFBvorKM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvorKO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="4QG5gECOHND" role="3EZMnx">
         <property role="3F0ifm" value="Theme :" />
         <node concept="pVoyu" id="4QG5gECOHNT" role="3F10Kt">
@@ -297,7 +310,13 @@
     <ref role="1XX52x" to="wmro:4Gfc8mMYy$f" resolve="Configuration" />
     <node concept="3EZMnI" id="4QG5gECPs$f" role="2wV5jI">
       <node concept="3F0ifn" id="4QG5gECPs$p" role="3EZMnx">
-        <property role="3F0ifm" value="Theme (json) :" />
+        <property role="3F0ifm" value="Theme" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvlywI" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvlywY" role="3EZMnx">
+        <property role="3F0ifm" value=", insert json theme :" />
       </node>
       <node concept="3F0A7n" id="4QG5gECPs$x" role="3EZMnx">
         <ref role="1NtTu8" to="wmro:4Gfc8mMYy$g" resolve="json" />
@@ -418,6 +437,164 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4QG5gECTc_J" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GmJFBvn461">
+    <ref role="1XX52x" to="wmro:1GmJFBvn45_" resolve="Area" />
+    <node concept="3EZMnI" id="1GmJFBvn463" role="2wV5jI">
+      <node concept="l2Vlx" id="1GmJFBvn466" role="2iSdaV" />
+      <node concept="3F0ifn" id="1GmJFBvn46w" role="3EZMnx">
+        <property role="3F0ifm" value="grid area named" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvn46E" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45A" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvn46R" role="3EZMnx">
+        <property role="3F0ifm" value="will start at (row,column) (" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvn477" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45C" resolve="start_r" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvn49N" role="3EZMnx">
+        <property role="3F0ifm" value=", " />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvn47D" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45F" resolve="start_c" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvn48i" role="3EZMnx">
+        <property role="3F0ifm" value=") and end at (" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvn48Y" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45J" resolve="end_r" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvn49C" role="3EZMnx">
+        <property role="3F0ifm" value=", " />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvn4al" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45O" resolve="end_c" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvn4aH" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="1GmJFBvnciJ">
+    <property role="TrG5h" value="GridArea" />
+    <ref role="1XX52x" to="wmro:4Gfc8mMYhj3" resolve="TemplateElement" />
+    <node concept="3EZMnI" id="1GmJFBvnciL" role="2wV5jI">
+      <node concept="3F0ifn" id="1GmJFBvnciV" role="3EZMnx">
+        <property role="3F0ifm" value="Grid area :" />
+      </node>
+      <node concept="3F0A7n" id="1GmJFBvncj5" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvnciA" resolve="gridArea" />
+      </node>
+      <node concept="l2Vlx" id="1GmJFBvnciO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GmJFBvoNoL">
+    <ref role="1XX52x" to="wmro:4Gfc8mMYhj6" resolve="Grid" />
+    <node concept="3EZMnI" id="1GmJFBvoNoN" role="2wV5jI">
+      <node concept="3F0ifn" id="1GmJFBvoNp4" role="3EZMnx">
+        <property role="3F0ifm" value="Grid component with selected sizes :" />
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvp$d8" role="3EZMnx">
+        <property role="3F0ifm" value="columns :" />
+        <node concept="pVoyu" id="1GmJFBvp$eq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvp$es" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="1GmJFBvp$eX" role="3EZMnx">
+        <node concept="pVoyu" id="1GmJFBvp$fs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="1GmJFBvqlmi" role="3EZMnx" />
+      <node concept="3F2HdR" id="1GmJFBvoNpa" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvnSTR" resolve="colSizes" />
+        <node concept="l2Vlx" id="1GmJFBvoNpc" role="2czzBx" />
+        <node concept="lj46D" id="1GmJFBvoNpi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1GmJFBvoNpn" role="2czzBI">
+          <property role="3F0ifm" value="No column sizes declared" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvpWN5" role="3EZMnx">
+        <property role="3F0ifm" value="rows :" />
+        <node concept="pVoyu" id="1GmJFBvpWNA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvpWNC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="1GmJFBvqll8" role="3EZMnx">
+        <node concept="pVoyu" id="1GmJFBvqllG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="1GmJFBvp$fY" role="3EZMnx" />
+      <node concept="3F2HdR" id="1GmJFBvoNq$" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvnSTV" resolve="rowSizes" />
+        <node concept="l2Vlx" id="1GmJFBvoNqA" role="2czzBx" />
+        <node concept="3F0ifn" id="1GmJFBvoNqQ" role="2czzBI">
+          <property role="3F0ifm" value="No row sizes declared" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvqlkz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvp$hz" role="3EZMnx">
+        <property role="3F0ifm" value="with following areas :" />
+        <node concept="pVoyu" id="1GmJFBvp$i3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1GmJFBvoNyj" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvn45y" resolve="areas" />
+        <node concept="l2Vlx" id="1GmJFBvoNyl" role="2czzBx" />
+        <node concept="pVoyu" id="1GmJFBvoNy_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvoNyB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="1GmJFBvoNyG" role="2czzBI">
+          <property role="3F0ifm" value="No areas defined" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1GmJFBvoNzH" role="3EZMnx">
+        <property role="3F0ifm" value="for templates :" />
+        <node concept="pVoyu" id="1GmJFBvoN$2" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="1GmJFBvoN$q" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:4Gfc8mMYhj7" resolve="templateElements" />
+        <node concept="l2Vlx" id="1GmJFBvoN$s" role="2czzBx" />
+        <node concept="3F0ifn" id="1GmJFBvoN$P" role="2czzBI">
+          <property role="3F0ifm" value="No template elements defined" />
+        </node>
+        <node concept="pVoyu" id="1GmJFBvoN$S" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="1GmJFBvoN$U" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1GmJFBvoNoQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1GmJFBvpbHH">
+    <ref role="1XX52x" to="wmro:1GmJFBvnSTo" resolve="SizeValue" />
+    <node concept="3EZMnI" id="1GmJFBvpbHJ" role="2wV5jI">
+      <node concept="3F0A7n" id="1GmJFBvpbHQ" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:1GmJFBvnSTP" resolve="size" />
+      </node>
+      <node concept="l2Vlx" id="1GmJFBvpbHM" role="2iSdaV" />
     </node>
   </node>
 </model>

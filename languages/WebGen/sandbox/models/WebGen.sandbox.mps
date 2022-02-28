@@ -10,21 +10,37 @@
       <concept id="8672709764876883503" name="WebGen.structure.Templatable" flags="ng" index="2ZPZ6V">
         <reference id="8672709764876888339" name="template" index="2ZPWU7" />
       </concept>
+      <concept id="1951957194037497432" name="WebGen.structure.SizeValue" flags="ng" index="34ij3x" />
+      <concept id="1951957194037281125" name="WebGen.structure.Area" flags="ng" index="34iJZs">
+        <property id="1951957194037281140" name="end_c" index="34iJZd" />
+        <property id="1951957194037281128" name="start_r" index="34iJZh" />
+        <property id="1951957194037281131" name="start_c" index="34iJZi" />
+        <property id="1951957194037281135" name="end_r" index="34iJZm" />
+        <property id="1951957194037281126" name="name" index="34iJZv" />
+      </concept>
       <concept id="3417961920246637059" name="WebGen.structure.Route" flags="ng" index="3fsYx2">
         <property id="3417961920246637583" name="route" index="3fsYTe" />
         <property id="3417961920246551430" name="isHome" index="3ft9B7" />
         <reference id="3417961920246643440" name="page" index="3fsZ2L" />
       </concept>
+      <concept id="3417961920246534021" name="WebGen.structure.NavBar" flags="ng" index="3ft4n4" />
       <concept id="3417961920246551424" name="WebGen.structure.Page" flags="ng" index="3ft9B1">
         <child id="5596871572441631392" name="route" index="3_spYE" />
       </concept>
       <concept id="5408595028286777612" name="WebGen.structure.App" flags="ng" index="3TXhA9">
+        <property id="6996197428180323321" name="scriptPath" index="O9Zu7" />
         <child id="3417961920246551427" name="pages" index="3ft9B2" />
         <child id="3417961920246570124" name="theme" index="3ftdrd" />
         <child id="5408595028286777613" name="templates" index="3TXhA8" />
       </concept>
       <concept id="5408595028286777615" name="WebGen.structure.Configuration" flags="ng" index="3TXhAa">
         <property id="5408595028286777616" name="json" index="3TXhAl" />
+      </concept>
+      <concept id="5408595028286706886" name="WebGen.structure.Grid" flags="ng" index="3TXyh3">
+        <child id="1951957194037497467" name="rowSizes" index="34ij32" />
+        <child id="1951957194037497463" name="colSizes" index="34ij3e" />
+        <child id="1951957194037281122" name="areas" index="34iJZr" />
+        <child id="5408595028286706887" name="templateElements" index="3TXyh2" />
       </concept>
       <concept id="5408595028286706889" name="WebGen.structure.Template" flags="ng" index="3TXyhc">
         <child id="5408595028286706892" name="templateElements" index="3TXyh9" />
@@ -40,16 +56,34 @@
     </language>
   </registry>
   <node concept="3TXhA9" id="4QG5gECOF_3">
+    <property role="O9Zu7" value="./scripts.js" />
+    <node concept="3TXyhc" id="1GmJFBvpbH1" role="3TXhA8">
+      <property role="TrG5h" value="Body" />
+      <node concept="3TXyh3" id="1GmJFBvpbHn" role="3TXyh9">
+        <node concept="3ft4n4" id="1GmJFBvqHZ9" role="3TXyh2">
+          <ref role="2ZPWU7" node="4QG5gECPFA$" resolve="navBar" />
+        </node>
+        <node concept="34iJZs" id="1GmJFBvpbHr" role="34iJZr">
+          <property role="34iJZv" value="navbar" />
+          <property role="34iJZh" value="0" />
+          <property role="34iJZi" value="0" />
+          <property role="34iJZm" value="0" />
+          <property role="34iJZd" value="2" />
+        </node>
+        <node concept="34ij3x" id="1GmJFBvpbHt" role="34ij3e" />
+        <node concept="34ij3x" id="1GmJFBvpbHv" role="34ij32" />
+      </node>
+    </node>
     <node concept="3TXyhc" id="4QG5gECPFA$" role="3TXhA8">
       <property role="TrG5h" value="navBar" />
       <node concept="3TXWsz" id="4QG5gECQ9yh" role="3TXyh9">
-        <property role="3TXWsy" value="searchFnc" />
+        <property role="3TXWsy" value="MyScript.Myfnct" />
         <property role="TrG5h" value="searchBar" />
       </node>
     </node>
     <node concept="3ft9B1" id="4QG5gECOF_4" role="3ft9B2">
       <property role="TrG5h" value="Home" />
-      <ref role="2ZPWU7" node="4QG5gECPFA$" resolve="navBar" />
+      <ref role="2ZPWU7" node="1GmJFBvpbH1" resolve="Body" />
       <node concept="3fsYx2" id="4QG5gECSVFo" role="3_spYE">
         <property role="TrG5h" value="/" />
         <property role="3fsYTe" value="/" />
@@ -59,6 +93,7 @@
     </node>
     <node concept="3TXhAa" id="4QG5gECOF_5" role="3ftdrd">
       <property role="3TXhAl" value="{}" />
+      <property role="TrG5h" value="myTheme" />
     </node>
   </node>
 </model>

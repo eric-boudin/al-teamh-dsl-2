@@ -69,6 +69,11 @@
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
         <child id="1237305790512" name="value" index="lb14g" />
       </concept>
+      <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
+        <property id="1237306003719" name="separator" index="lbP0B" />
+        <property id="1237983969951" name="withSeparator" index="XA4eZ" />
+        <child id="1237305945551" name="list" index="lbANJ" />
+      </concept>
       <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
         <property id="1237305576108" name="value" index="lacIc" />
       </concept>
@@ -293,119 +298,83 @@
     <ref role="WuzLi" to="wmro:4Gfc8mMYfuA" resolve="Search" />
     <node concept="11bSqf" id="4Gfc8mMYfuH" role="11c4hB">
       <node concept="3clFbS" id="4Gfc8mMYfuI" role="2VODD2">
-        <node concept="lc7rE" id="4Gfc8mMYfuZ" role="3cqZAp">
-          <node concept="2BGw6n" id="4Gfc8mMYfwn" role="lcghm" />
-          <node concept="la8eA" id="4Gfc8mMYfxE" role="lcghm">
-            <property role="lacIc" value="() =&gt; {" />
+        <node concept="lc7rE" id="4Gfc8mMYg1J" role="3cqZAp">
+          <node concept="la8eA" id="4Gfc8mMYg2D" role="lcghm">
+            <property role="lacIc" value="&lt;Grommet.Form onSubmit={({ value }) =&gt; " />
           </node>
-          <node concept="l8MVK" id="4Gfc8mMYfyK" role="lcghm" />
+          <node concept="l9hG8" id="4Gfc8mMYgOI" role="lcghm">
+            <node concept="2OqwBi" id="4Gfc8mMYgVJ" role="lb14g">
+              <node concept="117lpO" id="4Gfc8mMYgPB" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4Gfc8mMYhax" role="2OqNvi">
+                <ref role="3TsBF5" to="wmro:4Gfc8mMYfuB" resolve="functionName" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4Gfc8mMYhdM" role="lcghm">
+            <property role="lacIc" value="(value)}&gt;" />
+          </node>
+          <node concept="l8MVK" id="4Gfc8mMYg3M" role="lcghm" />
         </node>
-        <node concept="3izx1p" id="4Gfc8mMYfXD" role="3cqZAp">
-          <node concept="3clFbS" id="4Gfc8mMYfXF" role="3izTki">
-            <node concept="lc7rE" id="4Gfc8mMYfY0" role="3cqZAp">
-              <node concept="2BGw6n" id="4Gfc8mMYfYk" role="lcghm" />
-              <node concept="la8eA" id="4Gfc8mMYfYU" role="lcghm">
-                <property role="lacIc" value="return (" />
+        <node concept="3izx1p" id="4Gfc8mMYg4r" role="3cqZAp">
+          <node concept="3clFbS" id="4Gfc8mMYg4t" role="3izTki">
+            <node concept="lc7rE" id="4Gfc8mMYg4N" role="3cqZAp">
+              <node concept="2BGw6n" id="4Gfc8mMYg57" role="lcghm" />
+              <node concept="la8eA" id="4Gfc8mMYg5H" role="lcghm">
+                <property role="lacIc" value="&lt;Grommet.FormField name=&quot;name&quot; htmlFor=&quot;textinput-name&quot;&gt;" />
               </node>
-              <node concept="l8MVK" id="4Gfc8mMYfZL" role="lcghm" />
+              <node concept="l8MVK" id="4Gfc8mMYg7J" role="lcghm" />
             </node>
-            <node concept="3izx1p" id="4Gfc8mMYg1o" role="3cqZAp">
-              <node concept="3clFbS" id="4Gfc8mMYg1q" role="3izTki">
-                <node concept="lc7rE" id="4Gfc8mMYg1J" role="3cqZAp">
-                  <node concept="2BGw6n" id="4Gfc8mMYg23" role="lcghm" />
-                  <node concept="la8eA" id="4Gfc8mMYg2D" role="lcghm">
-                    <property role="lacIc" value="&lt;Grommet.Form onSubmit={({ value }) =&gt; " />
+            <node concept="3izx1p" id="4Gfc8mMYg8n" role="3cqZAp">
+              <node concept="3clFbS" id="4Gfc8mMYg8p" role="3izTki">
+                <node concept="lc7rE" id="4Gfc8mMYg8I" role="3cqZAp">
+                  <node concept="2BGw6n" id="4Gfc8mMYg92" role="lcghm" />
+                  <node concept="la8eA" id="4Gfc8mMYg9C" role="lcghm">
+                    <property role="lacIc" value="&lt;Grommet.TextInput id=&quot;textinput-name&quot; name=&quot;name&quot; /&gt;" />
                   </node>
-                  <node concept="l9hG8" id="4Gfc8mMYgOI" role="lcghm">
-                    <node concept="2OqwBi" id="4Gfc8mMYgVJ" role="lb14g">
-                      <node concept="117lpO" id="4Gfc8mMYgPB" role="2Oq$k0" />
-                      <node concept="3TrcHB" id="4Gfc8mMYhax" role="2OqNvi">
-                        <ref role="3TsBF5" to="wmro:4Gfc8mMYfuB" resolve="functionName" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="la8eA" id="4Gfc8mMYhdM" role="lcghm">
-                    <property role="lacIc" value="(value)}&gt;" />
-                  </node>
-                  <node concept="l8MVK" id="4Gfc8mMYg3M" role="lcghm" />
-                </node>
-                <node concept="3izx1p" id="4Gfc8mMYg4r" role="3cqZAp">
-                  <node concept="3clFbS" id="4Gfc8mMYg4t" role="3izTki">
-                    <node concept="lc7rE" id="4Gfc8mMYg4N" role="3cqZAp">
-                      <node concept="2BGw6n" id="4Gfc8mMYg57" role="lcghm" />
-                      <node concept="la8eA" id="4Gfc8mMYg5H" role="lcghm">
-                        <property role="lacIc" value="&lt;Grommet.FormField name=&quot;name&quot; htmlFor=&quot;textinput-name&quot;&gt;" />
-                      </node>
-                      <node concept="l8MVK" id="4Gfc8mMYg7J" role="lcghm" />
-                    </node>
-                    <node concept="3izx1p" id="4Gfc8mMYg8n" role="3cqZAp">
-                      <node concept="3clFbS" id="4Gfc8mMYg8p" role="3izTki">
-                        <node concept="lc7rE" id="4Gfc8mMYg8I" role="3cqZAp">
-                          <node concept="2BGw6n" id="4Gfc8mMYg92" role="lcghm" />
-                          <node concept="la8eA" id="4Gfc8mMYg9C" role="lcghm">
-                            <property role="lacIc" value="&lt;Grommet.TextInput id=&quot;textinput-name&quot; name=&quot;name&quot; /&gt;" />
-                          </node>
-                          <node concept="l8MVK" id="4Gfc8mMYgb0" role="lcghm" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="lc7rE" id="4Gfc8mMYgbZ" role="3cqZAp">
-                      <node concept="2BGw6n" id="4Gfc8mMYgcv" role="lcghm" />
-                      <node concept="la8eA" id="4Gfc8mMYgd5" role="lcghm">
-                        <property role="lacIc" value="&lt;/Grommet.FormField&gt;" />
-                      </node>
-                      <node concept="l8MVK" id="4Gfc8mMYgdW" role="lcghm" />
-                    </node>
-                    <node concept="lc7rE" id="4Gfc8mMYgeP" role="3cqZAp">
-                      <node concept="2BGw6n" id="4Gfc8mMYgfh" role="lcghm" />
-                      <node concept="la8eA" id="4Gfc8mMYgfR" role="lcghm">
-                        <property role="lacIc" value="&lt;Grommet.Box direction=&quot;row&quot; gap=&quot;medium&quot;&gt;" />
-                      </node>
-                      <node concept="l8MVK" id="4Gfc8mMYggI" role="lcghm" />
-                    </node>
-                    <node concept="3izx1p" id="4Gfc8mMYghF" role="3cqZAp">
-                      <node concept="3clFbS" id="4Gfc8mMYghH" role="3izTki">
-                        <node concept="lc7rE" id="4Gfc8mMYgin" role="3cqZAp">
-                          <node concept="2BGw6n" id="4Gfc8mMYgiF" role="lcghm" />
-                          <node concept="la8eA" id="4Gfc8mMYgj5" role="lcghm">
-                            <property role="lacIc" value="&lt;Grommet.Button type=&quot;submit&quot; primary label=&quot;Submit&quot; /&gt;" />
-                          </node>
-                          <node concept="l8MVK" id="4Gfc8mMYgjW" role="lcghm" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="lc7rE" id="4Gfc8mMYgkZ" role="3cqZAp">
-                      <node concept="2BGw6n" id="4Gfc8mMYglO" role="lcghm" />
-                      <node concept="la8eA" id="4Gfc8mMYgmq" role="lcghm">
-                        <property role="lacIc" value="&lt;/Grommet.Box&gt;" />
-                      </node>
-                      <node concept="l8MVK" id="4Gfc8mMYgnh" role="lcghm" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="lc7rE" id="4Gfc8mMYgqI" role="3cqZAp">
-                  <node concept="2BGw6n" id="4Gfc8mMYgrG" role="lcghm" />
-                  <node concept="la8eA" id="4Gfc8mMYgsi" role="lcghm">
-                    <property role="lacIc" value="&lt;/Grommet.Form&gt;" />
-                  </node>
-                  <node concept="l8MVK" id="4Gfc8mMYgsU" role="lcghm" />
+                  <node concept="l8MVK" id="4Gfc8mMYgb0" role="lcghm" />
                 </node>
               </node>
             </node>
-            <node concept="lc7rE" id="4Gfc8mMYgug" role="3cqZAp">
-              <node concept="2BGw6n" id="4Gfc8mMYgvo" role="lcghm" />
-              <node concept="la8eA" id="4Gfc8mMYgvY" role="lcghm">
-                <property role="lacIc" value=");" />
+            <node concept="lc7rE" id="4Gfc8mMYgbZ" role="3cqZAp">
+              <node concept="2BGw6n" id="4Gfc8mMYgcv" role="lcghm" />
+              <node concept="la8eA" id="4Gfc8mMYgd5" role="lcghm">
+                <property role="lacIc" value="&lt;/Grommet.FormField&gt;" />
               </node>
-              <node concept="l8MVK" id="4Gfc8mMYgwA" role="lcghm" />
+              <node concept="l8MVK" id="4Gfc8mMYgdW" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="4Gfc8mMYgeP" role="3cqZAp">
+              <node concept="2BGw6n" id="4Gfc8mMYgfh" role="lcghm" />
+              <node concept="la8eA" id="4Gfc8mMYgfR" role="lcghm">
+                <property role="lacIc" value="&lt;Grommet.Box direction=&quot;row&quot; gap=&quot;medium&quot;&gt;" />
+              </node>
+              <node concept="l8MVK" id="4Gfc8mMYggI" role="lcghm" />
+            </node>
+            <node concept="3izx1p" id="4Gfc8mMYghF" role="3cqZAp">
+              <node concept="3clFbS" id="4Gfc8mMYghH" role="3izTki">
+                <node concept="lc7rE" id="4Gfc8mMYgin" role="3cqZAp">
+                  <node concept="2BGw6n" id="4Gfc8mMYgiF" role="lcghm" />
+                  <node concept="la8eA" id="4Gfc8mMYgj5" role="lcghm">
+                    <property role="lacIc" value="&lt;Grommet.Button type=&quot;submit&quot; primary label=&quot;Submit&quot; /&gt;" />
+                  </node>
+                  <node concept="l8MVK" id="4Gfc8mMYgjW" role="lcghm" />
+                </node>
+              </node>
+            </node>
+            <node concept="lc7rE" id="4Gfc8mMYgkZ" role="3cqZAp">
+              <node concept="2BGw6n" id="4Gfc8mMYglO" role="lcghm" />
+              <node concept="la8eA" id="4Gfc8mMYgmq" role="lcghm">
+                <property role="lacIc" value="&lt;/Grommet.Box&gt;" />
+              </node>
+              <node concept="l8MVK" id="4Gfc8mMYgnh" role="lcghm" />
             </node>
           </node>
         </node>
-        <node concept="lc7rE" id="4Gfc8mMYgJW" role="3cqZAp">
-          <node concept="2BGw6n" id="4Gfc8mMYgKT" role="lcghm" />
-          <node concept="la8eA" id="4Gfc8mMYgLv" role="lcghm">
-            <property role="lacIc" value="}" />
+        <node concept="lc7rE" id="4Gfc8mMYgqI" role="3cqZAp">
+          <node concept="2BGw6n" id="4Gfc8mMYgrG" role="lcghm" />
+          <node concept="la8eA" id="4Gfc8mMYgsi" role="lcghm">
+            <property role="lacIc" value="&lt;/Grommet.Form&gt;" />
           </node>
+          <node concept="l8MVK" id="4Gfc8mMYgsU" role="lcghm" />
         </node>
       </node>
     </node>
@@ -452,7 +421,18 @@
         <node concept="lc7rE" id="4Gfc8mMYy$_" role="3cqZAp">
           <node concept="2BGw6n" id="4Gfc8mMYy$E" role="lcghm" />
           <node concept="la8eA" id="4Gfc8mMYy_g" role="lcghm">
-            <property role="lacIc" value="const theme = " />
+            <property role="lacIc" value="const " />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvlPXw" role="lcghm">
+            <node concept="2OqwBi" id="1GmJFBvlQ5r" role="lb14g">
+              <node concept="117lpO" id="1GmJFBvlPYR" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1GmJFBvlQoe" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvlQq8" role="lcghm">
+            <property role="lacIc" value=" = " />
           </node>
           <node concept="l9hG8" id="4Gfc8mMYyA_" role="lcghm">
             <node concept="2OqwBi" id="4Gfc8mMYyH_" role="lb14g">
@@ -523,7 +503,7 @@
       <node concept="3clFbS" id="2XJ2$7w6Xg7" role="2VODD2">
         <node concept="3clFbF" id="2XJ2$7w6XgX" role="3cqZAp">
           <node concept="Xl_RD" id="2XJ2$7w6XgW" role="3clFbG">
-            <property role="Xl_RC" value="App.js" />
+            <property role="Xl_RC" value="App" />
           </node>
         </node>
       </node>
@@ -779,7 +759,7 @@
         <node concept="lc7rE" id="2XJ2$7w7ejm" role="3cqZAp">
           <node concept="2BGw6n" id="2XJ2$7w7ejG" role="lcghm" />
           <node concept="la8eA" id="2XJ2$7w7eki" role="lcghm">
-            <property role="lacIc" value="&lt;Route index" />
+            <property role="lacIc" value="&lt;Route" />
           </node>
         </node>
         <node concept="3clFbJ" id="2XJ2$7w7el8" role="3cqZAp">
@@ -951,6 +931,233 @@
             <property role="lacIc" value="/&gt;" />
           </node>
           <node concept="l8MVK" id="60m_Ur_luFK" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1GmJFBvn4aX">
+    <ref role="WuzLi" to="wmro:1GmJFBvn45_" resolve="Area" />
+    <node concept="11bSqf" id="1GmJFBvn4aY" role="11c4hB">
+      <node concept="3clFbS" id="1GmJFBvn4aZ" role="2VODD2">
+        <node concept="lc7rE" id="1GmJFBvn4bg" role="3cqZAp">
+          <node concept="2BGw6n" id="1GmJFBvn4b$" role="lcghm" />
+          <node concept="la8eA" id="1GmJFBvn4ca" role="lcghm">
+            <property role="lacIc" value="{ name: '" />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvn4eu" role="lcghm">
+            <node concept="2OqwBi" id="1GmJFBvn4np" role="lb14g">
+              <node concept="117lpO" id="1GmJFBvn4fn" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1GmJFBvn4AI" role="2OqNvi">
+                <ref role="3TsBF5" to="wmro:1GmJFBvn45A" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvn4DV" role="lcghm">
+            <property role="lacIc" value="', start: [" />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvn4Ic" role="lcghm">
+            <node concept="2YIFZM" id="1GmJFBvn5z1" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <node concept="2OqwBi" id="1GmJFBvn5J7" role="37wK5m">
+                <node concept="117lpO" id="1GmJFBvn5_g" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1GmJFBvn5Zu" role="2OqNvi">
+                  <ref role="3TsBF5" to="wmro:1GmJFBvn45F" resolve="start_c" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvn6Tq" role="lcghm">
+            <property role="lacIc" value=", " />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvn6X7" role="lcghm">
+            <node concept="2YIFZM" id="1GmJFBvn7E3" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <node concept="2OqwBi" id="1GmJFBvn7Qz" role="37wK5m">
+                <node concept="117lpO" id="1GmJFBvn7GG" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1GmJFBvn87t" role="2OqNvi">
+                  <ref role="3TsBF5" to="wmro:1GmJFBvn45C" resolve="start_r" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvn8nZ" role="lcghm">
+            <property role="lacIc" value="], end: [" />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvn8uI" role="lcghm">
+            <node concept="2YIFZM" id="1GmJFBvn9d7" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <node concept="2OqwBi" id="1GmJFBvn9q1" role="37wK5m">
+                <node concept="117lpO" id="1GmJFBvn9ga" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1GmJFBvn9zO" role="2OqNvi">
+                  <ref role="3TsBF5" to="wmro:1GmJFBvn45O" resolve="end_c" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvn9Mi" role="lcghm">
+            <property role="lacIc" value=", " />
+          </node>
+          <node concept="l9hG8" id="1GmJFBvn9Un" role="lcghm">
+            <node concept="2YIFZM" id="1GmJFBvnaEh" role="lb14g">
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <ref role="37wK5l" to="wyt6:~String.valueOf(int)" resolve="valueOf" />
+              <node concept="2OqwBi" id="1GmJFBvnaR_" role="37wK5m">
+                <node concept="117lpO" id="1GmJFBvnaHI" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1GmJFBvnb7W" role="2OqNvi">
+                  <ref role="3TsBF5" to="wmro:1GmJFBvn45J" resolve="end_r" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="1GmJFBvnbro" role="lcghm">
+            <property role="lacIc" value="] }," />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1GmJFBvncjf">
+    <ref role="WuzLi" to="wmro:4Gfc8mMYhj6" resolve="Grid" />
+    <node concept="11bSqf" id="1GmJFBvncjg" role="11c4hB">
+      <node concept="3clFbS" id="1GmJFBvncjh" role="2VODD2">
+        <node concept="lc7rE" id="1GmJFBvncjy" role="3cqZAp">
+          <node concept="la8eA" id="1GmJFBvncjQ" role="lcghm">
+            <property role="lacIc" value="&lt;Grommet.Grid" />
+          </node>
+          <node concept="l8MVK" id="1GmJFBvncl9" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="1GmJFBvrvtO" role="3cqZAp">
+          <node concept="3clFbS" id="1GmJFBvrvtQ" role="3izTki">
+            <node concept="lc7rE" id="1GmJFBvncn5" role="3cqZAp">
+              <node concept="2BGw6n" id="1GmJFBvncnv" role="lcghm" />
+              <node concept="la8eA" id="1GmJFBvnco5" role="lcghm">
+                <property role="lacIc" value="rows={['" />
+              </node>
+              <node concept="l9S2W" id="1GmJFBvnWaM" role="lcghm">
+                <property role="XA4eZ" value="true" />
+                <property role="lbP0B" value="', '" />
+                <node concept="2OqwBi" id="1GmJFBvnWkP" role="lbANJ">
+                  <node concept="117lpO" id="1GmJFBvnWbc" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1GmJFBvnWuC" role="2OqNvi">
+                    <ref role="3TtcxE" to="wmro:1GmJFBvnSTV" resolve="rowSizes" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="1GmJFBvnp0y" role="lcghm">
+                <property role="lacIc" value="']}" />
+              </node>
+              <node concept="l8MVK" id="1GmJFBvnp3O" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="1GmJFBvnp6b" role="3cqZAp">
+              <node concept="2BGw6n" id="1GmJFBvnp6v" role="lcghm" />
+              <node concept="la8eA" id="1GmJFBvnp9e" role="lcghm">
+                <property role="lacIc" value="columns={['" />
+              </node>
+              <node concept="l9S2W" id="1GmJFBvnp9f" role="lcghm">
+                <property role="XA4eZ" value="true" />
+                <property role="lbP0B" value="', '" />
+                <node concept="2OqwBi" id="1GmJFBvnp9g" role="lbANJ">
+                  <node concept="117lpO" id="1GmJFBvnp9h" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="1GmJFBvnY6F" role="2OqNvi">
+                    <ref role="3TtcxE" to="wmro:1GmJFBvnSTR" resolve="colSizes" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="1GmJFBvnp9j" role="lcghm">
+                <property role="lacIc" value="']}" />
+              </node>
+              <node concept="l8MVK" id="1GmJFBvnY7B" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="1GmJFBvnYbF" role="3cqZAp">
+              <node concept="2BGw6n" id="1GmJFBvnYcB" role="lcghm" />
+              <node concept="la8eA" id="1GmJFBvnYdd" role="lcghm">
+                <property role="lacIc" value="gap='small'" />
+              </node>
+              <node concept="l8MVK" id="1GmJFBvnYfm" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="1GmJFBvnYjQ" role="3cqZAp">
+              <node concept="2BGw6n" id="1GmJFBvnYkn" role="lcghm" />
+              <node concept="la8eA" id="1GmJFBvnYlz" role="lcghm">
+                <property role="lacIc" value="areas={[" />
+              </node>
+              <node concept="l8MVK" id="1GmJFBvnYqR" role="lcghm" />
+            </node>
+            <node concept="3izx1p" id="1GmJFBvnYsw" role="3cqZAp">
+              <node concept="3clFbS" id="1GmJFBvnYsy" role="3izTki">
+                <node concept="lc7rE" id="1GmJFBvnYvT" role="3cqZAp">
+                  <node concept="l9S2W" id="1GmJFBvnYwd" role="lcghm">
+                    <property role="XA4eZ" value="true" />
+                    <property role="lbP0B" value="\n" />
+                    <node concept="2OqwBi" id="1GmJFBvnYBj" role="lbANJ">
+                      <node concept="117lpO" id="1GmJFBvnYwz" role="2Oq$k0" />
+                      <node concept="3Tsc0h" id="1GmJFBvnYL6" role="2OqNvi">
+                        <ref role="3TtcxE" to="wmro:1GmJFBvn45y" resolve="areas" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="l8MVK" id="1GmJFBvsDIt" role="lcghm" />
+                </node>
+              </node>
+            </node>
+            <node concept="lc7rE" id="1GmJFBvo1cr" role="3cqZAp">
+              <node concept="2BGw6n" id="1GmJFBvo1dJ" role="lcghm" />
+              <node concept="la8eA" id="1GmJFBvo1eF" role="lcghm">
+                <property role="lacIc" value="]}" />
+              </node>
+              <node concept="l8MVK" id="1GmJFBvo1mo" role="lcghm" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="1GmJFBvo1je" role="3cqZAp">
+          <node concept="2BGw6n" id="1GmJFBvt2m6" role="lcghm" />
+          <node concept="la8eA" id="1GmJFBvo1kV" role="lcghm">
+            <property role="lacIc" value="&gt;" />
+          </node>
+          <node concept="l8MVK" id="1GmJFBvo1lK" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1GmJFBvo1rj" role="3cqZAp">
+          <node concept="2BGw6n" id="1GmJFBvo1v1" role="lcghm" />
+          <node concept="l9S2W" id="1GmJFBvo1vB" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value="\n" />
+            <node concept="2OqwBi" id="1GmJFBvo1AI" role="lbANJ">
+              <node concept="117lpO" id="1GmJFBvo1vY" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="1GmJFBvo1LQ" role="2OqNvi">
+                <ref role="3TtcxE" to="wmro:4Gfc8mMYhj7" resolve="templateElements" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="1GmJFBvrS$w" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1GmJFBvo4p5" role="3cqZAp">
+          <node concept="la8eA" id="1GmJFBvo4qG" role="lcghm">
+            <property role="lacIc" value="&lt;/Grommet.Grid&gt;" />
+          </node>
+          <node concept="l8MVK" id="1GmJFBvo4sN" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="1GmJFBvnV5H">
+    <ref role="WuzLi" to="wmro:1GmJFBvnSTo" resolve="SizeValue" />
+    <node concept="11bSqf" id="1GmJFBvnV5I" role="11c4hB">
+      <node concept="3clFbS" id="1GmJFBvnV5J" role="2VODD2">
+        <node concept="lc7rE" id="1GmJFBvnV60" role="3cqZAp">
+          <node concept="l9hG8" id="1GmJFBvud9W" role="lcghm">
+            <node concept="2YIFZM" id="1GmJFBvudAB" role="lb14g">
+              <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object)" resolve="valueOf" />
+              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+              <node concept="2OqwBi" id="1GmJFBvudQf" role="37wK5m">
+                <node concept="117lpO" id="1GmJFBvudCQ" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1GmJFBvue63" role="2OqNvi">
+                  <ref role="3TsBF5" to="wmro:1GmJFBvnSTP" resolve="size" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

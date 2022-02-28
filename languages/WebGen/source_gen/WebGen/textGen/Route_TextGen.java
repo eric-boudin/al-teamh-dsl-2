@@ -16,7 +16,7 @@ public class Route_TextGen extends TextGenDescriptorBase {
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<Route index");
+    tgs.append("<Route");
     if (SPropertyOperations.getBoolean(ctx.getPrimaryInput(), PROPS.isHome$NU6q)) {
       tgs.append(" index");
     } else {

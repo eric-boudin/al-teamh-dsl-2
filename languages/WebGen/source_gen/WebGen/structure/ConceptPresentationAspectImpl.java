@@ -10,6 +10,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_App;
+  private ConceptPresentation props_Area;
   private ConceptPresentation props_Button;
   private ConceptPresentation props_Clickable;
   private ConceptPresentation props_Configuration;
@@ -21,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Page;
   private ConceptPresentation props_Route;
   private ConceptPresentation props_Search;
+  private ConceptPresentation props_SizeValue;
   private ConceptPresentation props_Templatable;
   private ConceptPresentation props_Template;
   private ConceptPresentation props_TemplateElement;
@@ -40,6 +42,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_App = cpb.create();
         }
         return props_App;
+      case LanguageConceptSwitch.Area:
+        if (props_Area == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("area");
+          props_Area = cpb.create();
+        }
+        return props_Area;
       case LanguageConceptSwitch.Button:
         if (props_Button == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -117,6 +126,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Search = cpb.create();
         }
         return props_Search;
+      case LanguageConceptSwitch.SizeValue:
+        if (props_SizeValue == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("size array");
+          props_SizeValue = cpb.create();
+        }
+        return props_SizeValue;
       case LanguageConceptSwitch.Templatable:
         if (props_Templatable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
