@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
 import * as Grommet from 'grommet';
 import * as Icons from 'grommet-icons';
-import * as Grommet from 'grommet';
 
 const theme = {
   global: {
