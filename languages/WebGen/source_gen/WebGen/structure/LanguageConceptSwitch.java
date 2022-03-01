@@ -23,12 +23,13 @@ public final class LanguageConceptSwitch {
   public static final int Route = 11;
   public static final int Search = 12;
   public static final int SizeValue = 13;
-  public static final int Templatable = 14;
-  public static final int Template = 15;
-  public static final int TemplateElement = 16;
-  public static final int Tendance = 17;
-  public static final int Texte = 18;
-  public static final int Timeline = 19;
+  public static final int StyleOption = 14;
+  public static final int Templatable = 15;
+  public static final int Template = 16;
+  public static final int TemplateElement = 17;
+  public static final int Tendance = 18;
+  public static final int Texte = 19;
+  public static final int Timeline = 20;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x524c482858c411cL, 0x9a4ee783c820e868L);
@@ -46,6 +47,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2f6f0a41e01ce203L, Route);
     builder.put(0x4b0f3085b2f8f7a6L, Search);
     builder.put(0x1b16beb9df5f8e58L, SizeValue);
+    builder.put(0x515c6d8557857470L, StyleOption);
     builder.put(0x785ba794c78c562fL, Templatable);
     builder.put(0x4b0f3085b2f914c9L, Template);
     builder.put(0x4b0f3085b2f914c3L, TemplateElement);

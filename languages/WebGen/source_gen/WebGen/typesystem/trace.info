@@ -11,7 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,16,0" name="WebGen.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,20,0" name="WebGen.typesystem.TypesystemDescriptor" />
     </file>
   </root>
   <root nodeRef="r:99d8ca37-1885-4990-b8b7-f72cf4b3a514(WebGen.typesystem)/1525586864897194311">
@@ -24,59 +24,154 @@
       </scope>
     </file>
     <file name="check_Grid_NonTypesystemRule.java">
-      <node id="1525586864897217602" at="30,11,31,70" concept="5" />
-      <node id="1525586864897217602" at="31,70,32,340" concept="5" />
-      <node id="1525586864897194311" at="38,50,39,28" concept="6" />
-      <node id="1525586864897194311" at="41,68,42,102" concept="6" />
-      <node id="1525586864897194311" at="44,30,45,17" concept="6" />
-      <node id="1525586864897421611" at="47,52,48,40" concept="6" />
-      <node id="1525586864897194311" at="52,0,53,0" concept="7" trace="templateElements$Md3l" />
-      <node id="1525586864897194311" at="56,0,57,0" concept="7" trace="gridArea$AIZu" />
-      <node id="1525586864897194311" at="60,0,61,0" concept="7" trace="Grid$Tp" />
-      <node id="1525586864897194311" at="24,0,26,0" concept="1" trace="check_Grid_NonTypesystemRule#()V" />
-      <node id="1525586864897194311" at="38,0,41,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="1525586864897194311" at="41,0,44,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="1525586864897194311" at="44,0,47,0" concept="4" trace="overrides#()Z" />
-      <node id="1525586864897421611" at="47,0,50,0" concept="8" trace="isEmptyString#(Ljava/lang/String;)Z" />
-      <node id="1525586864897217602" at="29,84,33,11" concept="0" />
-      <node id="1525586864897210156" at="28,35,34,9" concept="3" />
-      <node id="1525586864897209935" at="28,0,36,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1525586864897194341" at="26,117,36,7" concept="2" />
-      <node id="1525586864897194311" at="26,0,38,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="1525586864897194311" at="24,41,24,41" />
-      <scope id="1525586864897194311" at="38,50,39,28" />
-      <scope id="1525586864897194311" at="41,68,42,102" />
-      <scope id="1525586864897194311" at="44,30,45,17" />
-      <scope id="1525586864897421611" at="47,52,48,40" />
-      <scope id="1525586864897194311" at="24,0,26,0" />
-      <scope id="1525586864897217602" at="30,11,32,340">
+      <node id="5862681234396293827" at="32,11,33,70" concept="5" />
+      <node id="5862681234396293827" at="33,70,34,224" concept="5" />
+      <node id="5862681234396295593" at="42,11,43,70" concept="5" />
+      <node id="5862681234396295593" at="43,70,44,221" concept="5" />
+      <node id="1525586864897217602" at="52,11,53,70" concept="5" />
+      <node id="1525586864897217602" at="53,70,54,340" concept="5" />
+      <node id="1525586864897194311" at="60,50,61,28" concept="6" />
+      <node id="1525586864897194311" at="63,68,64,102" concept="6" />
+      <node id="1525586864897194311" at="66,30,67,17" concept="6" />
+      <node id="1525586864897421611" at="69,52,70,40" concept="6" />
+      <node id="1525586864897194311" at="74,0,75,0" concept="7" trace="colSizes$D02P" />
+      <node id="1525586864897194311" at="75,0,76,0" concept="7" trace="rowSizes$D0YT" />
+      <node id="1525586864897194311" at="76,0,77,0" concept="7" trace="templateElements$Md3l" />
+      <node id="1525586864897194311" at="80,0,81,0" concept="7" trace="size$GO8g" />
+      <node id="1525586864897194311" at="81,0,82,0" concept="7" trace="gridArea$AIZu" />
+      <node id="1525586864897194311" at="85,0,86,0" concept="7" trace="Grid$Tp" />
+      <node id="1525586864897194311" at="26,0,28,0" concept="1" trace="check_Grid_NonTypesystemRule#()V" />
+      <node id="1525586864897194311" at="60,0,63,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1525586864897194311" at="63,0,66,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1525586864897194311" at="66,0,69,0" concept="4" trace="overrides#()Z" />
+      <node id="1525586864897421611" at="69,0,72,0" concept="8" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5862681234396293827" at="31,257,35,11" concept="0" />
+      <node id="5862681234396295593" at="41,257,45,11" concept="0" />
+      <node id="1525586864897217602" at="51,84,55,11" concept="0" />
+      <node id="5862681234396286887" at="30,35,36,9" concept="3" />
+      <node id="5862681234396295584" at="40,35,46,9" concept="3" />
+      <node id="1525586864897210156" at="50,35,56,9" concept="3" />
+      <node id="5862681234396284551" at="30,0,38,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5862681234396295582" at="40,0,48,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1525586864897209935" at="50,0,58,0" concept="4" trace="visit#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5862681234396261765" at="28,117,38,7" concept="2" />
+      <node id="5862681234396295576" at="38,7,48,7" concept="2" />
+      <node id="1525586864897194341" at="48,7,58,7" concept="2" />
+      <node id="1525586864897194311" at="28,0,60,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1525586864897194311" at="26,41,26,41" />
+      <scope id="1525586864897194311" at="60,50,61,28" />
+      <scope id="1525586864897194311" at="63,68,64,102" />
+      <scope id="1525586864897194311" at="66,30,67,17" />
+      <scope id="1525586864897421611" at="69,52,70,40" />
+      <scope id="1525586864897194311" at="26,0,28,0" />
+      <scope id="5862681234396293827" at="32,11,34,224">
+        <var name="_reporter_2309309498" id="5862681234396293827" />
+        <var name="errorTarget" id="5862681234396293827" />
+      </scope>
+      <scope id="5862681234396295593" at="42,11,44,221">
+        <var name="_reporter_2309309498" id="5862681234396295593" />
+        <var name="errorTarget" id="5862681234396295593" />
+      </scope>
+      <scope id="1525586864897217602" at="52,11,54,340">
         <var name="_reporter_2309309498" id="1525586864897217602" />
         <var name="errorTarget" id="1525586864897217602" />
       </scope>
-      <scope id="1525586864897194311" at="38,0,41,0" />
-      <scope id="1525586864897194311" at="41,0,44,0">
+      <scope id="1525586864897194311" at="60,0,63,0" />
+      <scope id="1525586864897194311" at="63,0,66,0">
         <var name="argument" id="1525586864897194311" />
       </scope>
-      <scope id="1525586864897194311" at="44,0,47,0" />
-      <scope id="1525586864897421611" at="47,0,50,0">
+      <scope id="1525586864897194311" at="66,0,69,0" />
+      <scope id="1525586864897421611" at="69,0,72,0">
         <var name="str" id="1525586864897421611" />
       </scope>
-      <scope id="1525586864897210158" at="29,84,33,11" />
-      <scope id="1525586864897209936" at="28,35,34,9" />
-      <scope id="1525586864897209935" at="28,0,36,0">
+      <scope id="5862681234396286889" at="31,257,35,11" />
+      <scope id="5862681234396295592" at="41,257,45,11" />
+      <scope id="1525586864897210158" at="51,84,55,11" />
+      <scope id="5862681234396284552" at="30,35,36,9" />
+      <scope id="5862681234396295583" at="40,35,46,9" />
+      <scope id="1525586864897209936" at="50,35,56,9" />
+      <scope id="5862681234396284551" at="30,0,38,0">
+        <var name="it" id="5862681234396284551" />
+      </scope>
+      <scope id="5862681234396295582" at="40,0,48,0">
+        <var name="it" id="5862681234396295582" />
+      </scope>
+      <scope id="1525586864897209935" at="50,0,58,0">
         <var name="it" id="1525586864897209935" />
       </scope>
-      <scope id="1525586864897194312" at="26,117,36,7" />
-      <scope id="1525586864897194311" at="26,0,38,0">
+      <scope id="1525586864897194312" at="28,117,58,7" />
+      <scope id="1525586864897194311" at="28,0,60,0">
         <var name="grid" id="1525586864897194311" />
         <var name="status" id="1525586864897194311" />
         <var name="typeCheckingContext" id="1525586864897194311" />
       </scope>
-      <unit id="1525586864897194311" at="51,0,54,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$LINKS" />
-      <unit id="1525586864897194311" at="55,0,58,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$PROPS" />
-      <unit id="1525586864897194311" at="59,0,62,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$CONCEPTS" />
-      <unit id="1525586864897209935" at="27,103,36,5" name="WebGen.typesystem.check_Grid_NonTypesystemRule$1" />
-      <unit id="1525586864897194311" at="23,0,63,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule" />
+      <unit id="1525586864897194311" at="84,0,87,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$CONCEPTS" />
+      <unit id="1525586864897194311" at="79,0,83,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$PROPS" />
+      <unit id="1525586864897194311" at="73,0,78,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule$LINKS" />
+      <unit id="5862681234396284551" at="29,95,38,5" name="WebGen.typesystem.check_Grid_NonTypesystemRule$1" />
+      <unit id="5862681234396295582" at="39,95,48,5" name="WebGen.typesystem.check_Grid_NonTypesystemRule$2" />
+      <unit id="1525586864897209935" at="49,103,58,5" name="WebGen.typesystem.check_Grid_NonTypesystemRule$3" />
+      <unit id="1525586864897194311" at="25,0,88,0" name="WebGen.typesystem.check_Grid_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:99d8ca37-1885-4990-b8b7-f72cf4b3a514(WebGen.typesystem)/5862681234396125776">
+    <file name="TypesystemDescriptor.java">
+      <node id="5862681234396125776" at="14,5,15,94" concept="5" />
+      <node id="5862681234396125776" at="15,94,16,55" concept="2" />
+      <node id="5862681234396125776" at="13,5,17,5" concept="0" />
+      <scope id="5862681234396125776" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="5862681234396125776" />
+      </scope>
+    </file>
+    <file name="check_StyleOption_NonTypesystemRule.java">
+      <node id="5862681234396131079" at="26,7,27,66" concept="5" />
+      <node id="5862681234396131079" at="27,66,28,236" concept="5" />
+      <node id="5862681234396131153" at="32,7,33,66" concept="5" />
+      <node id="5862681234396131153" at="33,66,34,238" concept="5" />
+      <node id="5862681234396125776" at="38,50,39,35" concept="6" />
+      <node id="5862681234396125776" at="41,68,42,102" concept="6" />
+      <node id="5862681234396125776" at="44,30,45,17" concept="6" />
+      <node id="5862681234396125776" at="49,0,50,0" concept="7" trace="pad$hyqP" />
+      <node id="5862681234396125776" at="50,0,51,0" concept="7" trace="round$$DCd" />
+      <node id="5862681234396125776" at="54,0,55,0" concept="7" trace="StyleOption$$8" />
+      <node id="5862681234396125776" at="22,0,24,0" concept="1" trace="check_StyleOption_NonTypesystemRule#()V" />
+      <node id="5862681234396125776" at="38,0,41,0" concept="4" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5862681234396125776" at="41,0,44,0" concept="4" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5862681234396125776" at="44,0,47,0" concept="4" trace="overrides#()Z" />
+      <node id="5862681234396131079" at="25,261,29,7" concept="0" />
+      <node id="5862681234396131153" at="31,263,35,7" concept="0" />
+      <node id="5862681234396131070" at="24,124,30,5" concept="3" />
+      <node id="5862681234396131144" at="30,5,36,5" concept="3" />
+      <node id="5862681234396125776" at="24,0,38,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5862681234396125776" at="22,48,22,48" />
+      <scope id="5862681234396125776" at="38,50,39,35" />
+      <scope id="5862681234396125776" at="41,68,42,102" />
+      <scope id="5862681234396125776" at="44,30,45,17" />
+      <scope id="5862681234396125776" at="22,0,24,0" />
+      <scope id="5862681234396131079" at="26,7,28,236">
+        <var name="_reporter_2309309498" id="5862681234396131079" />
+        <var name="errorTarget" id="5862681234396131079" />
+      </scope>
+      <scope id="5862681234396131153" at="32,7,34,238">
+        <var name="_reporter_2309309498" id="5862681234396131153" />
+        <var name="errorTarget" id="5862681234396131153" />
+      </scope>
+      <scope id="5862681234396125776" at="38,0,41,0" />
+      <scope id="5862681234396125776" at="41,0,44,0">
+        <var name="argument" id="5862681234396125776" />
+      </scope>
+      <scope id="5862681234396125776" at="44,0,47,0" />
+      <scope id="5862681234396131078" at="25,261,29,7" />
+      <scope id="5862681234396131152" at="31,263,35,7" />
+      <scope id="5862681234396125777" at="24,124,36,5" />
+      <scope id="5862681234396125776" at="24,0,38,0">
+        <var name="status" id="5862681234396125776" />
+        <var name="styleOption" id="5862681234396125776" />
+        <var name="typeCheckingContext" id="5862681234396125776" />
+      </scope>
+      <unit id="5862681234396125776" at="53,0,56,0" name="WebGen.typesystem.check_StyleOption_NonTypesystemRule$CONCEPTS" />
+      <unit id="5862681234396125776" at="48,0,52,0" name="WebGen.typesystem.check_StyleOption_NonTypesystemRule$PROPS" />
+      <unit id="5862681234396125776" at="21,0,57,0" name="WebGen.typesystem.check_StyleOption_NonTypesystemRule" />
     </file>
   </root>
 </debug-info>

@@ -16,7 +16,13 @@ public class Search_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("<Grommet.Form onSubmit={({ value }) => ");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$wkMl));
-    tgs.append("(value)}>");
+    tgs.append("(value)}");
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu)))) {
+      tgs.append(" gridArea='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu));
+      tgs.append("'");
+    }
+    tgs.append(">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
@@ -26,7 +32,7 @@ public class Search_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
-    tgs.append("<Grommet.TextInput id=\"textinput-name\" icon={<Search />} name=\"");
+    tgs.append("<Grommet.TextInput id=\"textinput-name\" icon={<Icons.Search />} name=\"");
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.name$MnvL));
     tgs.append("\" />");
     tgs.newLine();
@@ -39,9 +45,13 @@ public class Search_TextGen extends TextGenDescriptorBase {
     tgs.append("</Grommet.Form>");
     tgs.newLine();
   }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.isEmpty();
+  }
 
   private static final class PROPS {
     /*package*/ static final SProperty functionName$wkMl = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8f7a6L, 0x4b0f3085b2f8f7a7L, "functionName");
+    /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

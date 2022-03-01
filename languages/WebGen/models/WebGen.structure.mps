@@ -169,6 +169,9 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1GmJFBvnSTo" resolve="SizeValue" />
     </node>
+    <node concept="PrWs8" id="55srolnxpVp" role="PzmwI">
+      <ref role="PrY4T" node="55srolnxnhK" resolve="StyleOption" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4Gfc8mMYhj9">
     <property role="EcuMT" value="5408595028286706889" />
@@ -354,7 +357,7 @@
   <node concept="25R3W" id="1GmJFBvn45k">
     <property role="3F6X1D" value="1951957194037281108" />
     <property role="TrG5h" value="Size" />
-    <ref role="1H5jkz" node="1GmJFBvn45l" resolve="xsmall" />
+    <ref role="1H5jkz" node="55srolnxnhQ" resolve="none" />
     <node concept="25R33" id="1GmJFBvn45l" role="25R1y">
       <property role="3tVfz5" value="1951957194037281109" />
       <property role="TrG5h" value="xsmall" />
@@ -374,6 +377,10 @@
     <node concept="25R33" id="1kFYiIOfzPK" role="25R1y">
       <property role="3tVfz5" value="1525586864897932656" />
       <property role="TrG5h" value="auto" />
+    </node>
+    <node concept="25R33" id="55srolnxnhQ" role="25R1y">
+      <property role="3tVfz5" value="5862681234395985014" />
+      <property role="TrG5h" value="none" />
     </node>
   </node>
   <node concept="1TIwiD" id="1GmJFBvn45_">
@@ -415,6 +422,25 @@
     <node concept="1TJgyi" id="1GmJFBvnSTP" role="1TKVEl">
       <property role="IQ2nx" value="1951957194037497461" />
       <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" node="1GmJFBvn45k" resolve="Size" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="55srolnxnhK">
+    <property role="EcuMT" value="5862681234395985008" />
+    <property role="TrG5h" value="StyleOption" />
+    <node concept="1TJgyi" id="55srolnxnhL" role="1TKVEl">
+      <property role="IQ2nx" value="5862681234395985009" />
+      <property role="TrG5h" value="pad" />
+      <ref role="AX2Wp" node="1GmJFBvn45k" resolve="Size" />
+    </node>
+    <node concept="1TJgyi" id="55srolnxnhN" role="1TKVEl">
+      <property role="IQ2nx" value="5862681234395985011" />
+      <property role="TrG5h" value="border" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="55srolnxo6_" role="1TKVEl">
+      <property role="IQ2nx" value="5862681234395988389" />
+      <property role="TrG5h" value="round" />
       <ref role="AX2Wp" node="1GmJFBvn45k" resolve="Size" />
     </node>
   </node>

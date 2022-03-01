@@ -366,6 +366,27 @@
           </node>
         </node>
       </node>
+      <node concept="PMmxH" id="55srolnyWoK" role="3EZMnx">
+        <ref role="PMmxG" node="1GmJFBvnciJ" resolve="GridArea" />
+        <node concept="pkWqt" id="55srolnyWoQ" role="pqm2j">
+          <node concept="3clFbS" id="55srolnyWoR" role="2VODD2">
+            <node concept="3clFbF" id="55srolnyWsQ" role="3cqZAp">
+              <node concept="17R0WA" id="55srolnyY5A" role="3clFbG">
+                <node concept="35c_gC" id="55srolnyYdZ" role="3uHU7w">
+                  <ref role="35c_gD" to="wmro:4Gfc8mMYhj6" resolve="Grid" />
+                </node>
+                <node concept="2OqwBi" id="55srolnyX61" role="3uHU7B">
+                  <node concept="2OqwBi" id="55srolnyWG3" role="2Oq$k0">
+                    <node concept="pncrf" id="55srolnyWsP" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="55srolnyWWY" role="2OqNvi" />
+                  </node>
+                  <node concept="2yIwOk" id="55srolnyXwi" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="l2Vlx" id="4QG5gECOHJf" role="2iSdaV" />
     </node>
   </node>
@@ -381,6 +402,27 @@
           <node concept="3F0A7n" id="4QG5gECOHLw" role="2wV5jI">
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="PMmxH" id="55srolnzuum" role="3EZMnx">
+        <ref role="PMmxG" node="1GmJFBvnciJ" resolve="GridArea" />
+        <node concept="pkWqt" id="55srolnzuus" role="pqm2j">
+          <node concept="3clFbS" id="55srolnzuut" role="2VODD2">
+            <node concept="3clFbF" id="55srolnzuys" role="3cqZAp">
+              <node concept="17R0WA" id="55srolnzwcd" role="3clFbG">
+                <node concept="35c_gC" id="55srolnzwkA" role="3uHU7w">
+                  <ref role="35c_gD" to="wmro:4Gfc8mMYhj6" resolve="Grid" />
+                </node>
+                <node concept="2OqwBi" id="55srolnzvb8" role="3uHU7B">
+                  <node concept="2OqwBi" id="55srolnzuLD" role="2Oq$k0">
+                    <node concept="pncrf" id="55srolnzuyr" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="55srolnzv2$" role="2OqNvi" />
+                  </node>
+                  <node concept="2yIwOk" id="55srolnzvBV" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -531,6 +573,11 @@
           <property role="3F0ifm" value="No template elements defined" />
         </node>
         <node concept="lj46D" id="55srolnqtx7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="35HoNQ" id="55srolnyBH8" role="3EZMnx">
+        <node concept="pVoyu" id="55srolnyBHl" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -700,6 +747,42 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="55srolnxqgg" role="3EZMnx">
+        <property role="3F0ifm" value="Style :" />
+        <node concept="pVoyu" id="55srolnxqhZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="55srolnxqi1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="55srolnxqCI" role="3EZMnx">
+        <node concept="pVoyu" id="55srolnxqEz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="55srolnxqsP" role="3EZMnx" />
+      <node concept="PMmxH" id="55srolnxqjP" role="3EZMnx">
+        <ref role="PMmxG" node="55srolnxpTQ" resolve="Border" />
+      </node>
+      <node concept="3XFhqQ" id="55srolnxqVT" role="3EZMnx">
+        <node concept="pVoyu" id="55srolnxqXJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="55srolnxqXL" role="3EZMnx" />
+      <node concept="PMmxH" id="55srolnxr1y" role="3EZMnx">
+        <ref role="PMmxG" node="55srolnxpSE" resolve="Pad" />
+      </node>
+      <node concept="3XFhqQ" id="55srolnxr5j" role="3EZMnx">
+        <node concept="pVoyu" id="55srolnxr7d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="55srolnxrhp" role="3EZMnx" />
+      <node concept="PMmxH" id="55srolnxrlh" role="3EZMnx">
+        <ref role="PMmxG" node="55srolnxpV2" resolve="Round" />
+      </node>
       <node concept="3F0ifn" id="1GmJFBvp$d8" role="3EZMnx">
         <property role="3F0ifm" value="columns size :" />
         <node concept="pVoyu" id="1GmJFBvp$eq" role="3F10Kt">
@@ -820,6 +903,45 @@
         </node>
       </node>
       <node concept="l2Vlx" id="55srolnp9fb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="55srolnxpSE">
+    <property role="TrG5h" value="Pad" />
+    <ref role="1XX52x" to="wmro:55srolnxnhK" resolve="StyleOption" />
+    <node concept="3EZMnI" id="55srolnxpSG" role="2wV5jI">
+      <node concept="3F0ifn" id="55srolnxpSQ" role="3EZMnx">
+        <property role="3F0ifm" value="Padding :" />
+      </node>
+      <node concept="3F0A7n" id="55srolnxpSW" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:55srolnxnhL" resolve="pad" />
+      </node>
+      <node concept="l2Vlx" id="55srolnxpSJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="55srolnxpTQ">
+    <property role="TrG5h" value="Border" />
+    <ref role="1XX52x" to="wmro:55srolnxnhK" resolve="StyleOption" />
+    <node concept="3EZMnI" id="55srolnxpTS" role="2wV5jI">
+      <node concept="3F0ifn" id="55srolnxpU2" role="3EZMnx">
+        <property role="3F0ifm" value="Border :" />
+      </node>
+      <node concept="3F0A7n" id="55srolnxpU8" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:55srolnxnhN" resolve="border" />
+      </node>
+      <node concept="l2Vlx" id="55srolnxpTV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="55srolnxpV2">
+    <property role="TrG5h" value="Round" />
+    <ref role="1XX52x" to="wmro:55srolnxnhK" resolve="StyleOption" />
+    <node concept="3EZMnI" id="55srolnxpV4" role="2wV5jI">
+      <node concept="3F0ifn" id="55srolnxpVe" role="3EZMnx">
+        <property role="3F0ifm" value="Rounding :" />
+      </node>
+      <node concept="3F0A7n" id="55srolnxpVk" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:55srolnxo6_" resolve="round" />
+      </node>
+      <node concept="l2Vlx" id="55srolnxpV7" role="2iSdaV" />
     </node>
   </node>
 </model>

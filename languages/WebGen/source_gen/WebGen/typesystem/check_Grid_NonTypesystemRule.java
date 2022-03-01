@@ -10,13 +10,15 @@ import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
+import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -24,6 +26,26 @@ public class check_Grid_NonTypesystemRule extends AbstractNonTypesystemRule_Runt
   public check_Grid_NonTypesystemRule() {
   }
   public void applyRule(final SNode grid, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    ListSequence.fromList(SLinkOperations.getChildren(grid, LINKS.colSizes$D02P)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        if (Objects.equals(SPropertyOperations.getEnum(it, PROPS.size$GO8g), SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L, "WebGen.structure.Size"), 0x515c6d8557857476L, "none"))) {
+          {
+            final MessageTarget errorTarget = new NodeMessageTarget();
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(it, "A column size can't be none", "r:99d8ca37-1885-4990-b8b7-f72cf4b3a514(WebGen.typesystem)", "5862681234396293827", null, errorTarget);
+          }
+        }
+      }
+    });
+    ListSequence.fromList(SLinkOperations.getChildren(grid, LINKS.rowSizes$D0YT)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        if (Objects.equals(SPropertyOperations.getEnum(it, PROPS.size$GO8g), SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L, "WebGen.structure.Size"), 0x515c6d8557857476L, "none"))) {
+          {
+            final MessageTarget errorTarget = new NodeMessageTarget();
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(it, "A row size can't be none", "r:99d8ca37-1885-4990-b8b7-f72cf4b3a514(WebGen.typesystem)", "5862681234396295593", null, errorTarget);
+          }
+        }
+      }
+    });
     ListSequence.fromList(SLinkOperations.getChildren(grid, LINKS.templateElements$Md3l)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
         if (isEmptyString(SPropertyOperations.getString(it, PROPS.gridArea$AIZu))) {
@@ -49,10 +71,13 @@ public class check_Grid_NonTypesystemRule extends AbstractNonTypesystemRule_Runt
   }
 
   private static final class LINKS {
+    /*package*/ static final SContainmentLink colSizes$D02P = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x1b16beb9df5f8e77L, "colSizes");
+    /*package*/ static final SContainmentLink rowSizes$D0YT = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x1b16beb9df5f8e7bL, "rowSizes");
     /*package*/ static final SContainmentLink templateElements$Md3l = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x4b0f3085b2f914c7L, "templateElements");
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty size$GO8g = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5f8e58L, 0x1b16beb9df5f8e75L, "size");
     /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
   }
 

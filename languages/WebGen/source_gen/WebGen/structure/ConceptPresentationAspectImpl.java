@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Route;
   private ConceptPresentation props_Search;
   private ConceptPresentation props_SizeValue;
+  private ConceptPresentation props_StyleOption;
   private ConceptPresentation props_Templatable;
   private ConceptPresentation props_Template;
   private ConceptPresentation props_TemplateElement;
@@ -133,6 +134,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SizeValue = cpb.create();
         }
         return props_SizeValue;
+      case LanguageConceptSwitch.StyleOption:
+        if (props_StyleOption == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_StyleOption = cpb.create();
+        }
+        return props_StyleOption;
       case LanguageConceptSwitch.Templatable:
         if (props_Templatable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

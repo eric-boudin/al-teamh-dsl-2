@@ -13,6 +13,11 @@
       <concept id="6923888220196693479" name="WebGen.structure.Image" flags="ng" index="25gR91">
         <property id="6923888220196693482" name="link" index="25gR9c" />
       </concept>
+      <concept id="5862681234395985008" name="WebGen.structure.StyleOption" flags="ng" index="6QhBP">
+        <property id="5862681234395985009" name="pad" index="6QhBO" />
+        <property id="5862681234395985011" name="border" index="6QhBQ" />
+        <property id="5862681234395988389" name="round" index="6QuKw" />
+      </concept>
       <concept id="6996197428180323318" name="WebGen.structure.Tendance" flags="ng" index="O9Zu8" />
       <concept id="8672709764876889469" name="WebGen.structure.Timeline" flags="ng" index="2ZPWFD" />
       <concept id="8672709764876883503" name="WebGen.structure.Templatable" flags="ng" index="2ZPZ6V">
@@ -104,12 +109,18 @@
           <property role="34iJZm" value="1" />
           <property role="34iJZd" value="1" />
         </node>
-        <node concept="34ij3x" id="1GmJFBvpbHt" role="34ij3e" />
-        <node concept="34ij3x" id="1kFYiIOc2Bs" role="34ij3e" />
+        <node concept="34ij3x" id="1GmJFBvpbHt" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45m/small" />
+        </node>
+        <node concept="34ij3x" id="1kFYiIOc2Bs" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45m/small" />
+        </node>
         <node concept="34ij3x" id="1GmJFBvpbHv" role="34ij32">
           <property role="34ij3c" value="1GmJFBvn45m/small" />
         </node>
-        <node concept="34ij3x" id="1kFYiIOc$vt" role="34ij32" />
+        <node concept="34ij3x" id="1kFYiIOc$vt" role="34ij32">
+          <property role="34ij3c" value="1GmJFBvn45m/small" />
+        </node>
       </node>
     </node>
     <node concept="3TXyhc" id="4QG5gECPFA$" role="3TXhA8">
@@ -147,6 +158,12 @@
     <node concept="3TXyhc" id="55srolnrpTd" role="3TXhA8">
       <property role="TrG5h" value="Post" />
       <node concept="3TXyh3" id="55srolnrpTk" role="3TXyh9">
+        <property role="6QhBQ" value="true" />
+        <property role="6QhBO" value="1GmJFBvn45m/small" />
+        <property role="6QuKw" value="1GmJFBvn45p/medium" />
+        <node concept="34ij3x" id="55sroln_EWI" role="34ij32">
+          <property role="34ij3c" value="1GmJFBvn45l/xsmall" />
+        </node>
         <node concept="25gO6y" id="55srolnrpTz" role="3TXyh2">
           <property role="25gO6x" value="Titre" />
           <property role="34iBCv" value="title" />
@@ -173,7 +190,6 @@
         <node concept="34ij3x" id="55srolnrpTq" role="34ij3e">
           <property role="34ij3c" value="1GmJFBvn45p/medium" />
         </node>
-        <node concept="34ij3x" id="55srolnrpTs" role="34ij32" />
         <node concept="34ij3x" id="55srolnsQqB" role="34ij32">
           <property role="34ij3c" value="1GmJFBvn45t/large" />
         </node>
@@ -188,14 +204,59 @@
     </node>
     <node concept="3TXyhc" id="55srolntaGn" role="3TXhA8">
       <property role="TrG5h" value="Home" />
-      <node concept="3ft4n4" id="55srolnux89" role="3TXyh9">
-        <ref role="2ZPWU7" node="55srolnpDX8" resolve="navbar" />
-      </node>
-      <node concept="2ZPWFD" id="55srolnux8L" role="3TXyh9">
-        <ref role="2ZPWU7" node="55srolnrpTd" resolve="Post" />
-      </node>
-      <node concept="O9Zu8" id="55srolnv1oc" role="3TXyh9">
-        <ref role="2ZPWU7" node="55srolnv1on" resolve="Tendance" />
+      <node concept="3TXyh3" id="55srolnyAZW" role="3TXyh9">
+        <property role="6QhBO" value="1GmJFBvn45p/medium" />
+        <node concept="3ft4n4" id="55srolnyB0t" role="3TXyh2">
+          <property role="34iBCv" value="nav" />
+          <ref role="2ZPWU7" node="55srolnpDX8" resolve="navbar" />
+        </node>
+        <node concept="2ZPWFD" id="55srolnux8L" role="3TXyh2">
+          <property role="34iBCv" value="timeline" />
+          <ref role="2ZPWU7" node="55srolnrpTd" resolve="Post" />
+        </node>
+        <node concept="O9Zu8" id="55srolnzutZ" role="3TXyh2">
+          <property role="34iBCv" value="tend" />
+          <ref role="2ZPWU7" node="55srolnv1on" resolve="Tendance" />
+        </node>
+        <node concept="34iJZs" id="55srolnyB00" role="34iJZr">
+          <property role="34iJZv" value="nav" />
+          <property role="34iJZh" value="0" />
+          <property role="34iJZi" value="0" />
+          <property role="34iJZm" value="0" />
+          <property role="34iJZd" value="3" />
+        </node>
+        <node concept="34iJZs" id="55srolnzZna" role="34iJZr">
+          <property role="34iJZv" value="timeline" />
+          <property role="34iJZh" value="1" />
+          <property role="34iJZi" value="1" />
+          <property role="34iJZm" value="1" />
+          <property role="34iJZd" value="1" />
+        </node>
+        <node concept="34iJZs" id="55srolnzZnd" role="34iJZr">
+          <property role="34iJZv" value="tend" />
+          <property role="34iJZh" value="1" />
+          <property role="34iJZi" value="2" />
+          <property role="34iJZm" value="1" />
+          <property role="34iJZd" value="2" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB02" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45m/small" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB0e" role="34ij3e">
+          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB0h" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45m/small" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB0l" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45l/xsmall" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB04" role="34ij32">
+          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
+        </node>
+        <node concept="34ij3x" id="55srolnyB0q" role="34ij32">
+          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
+        </node>
       </node>
     </node>
     <node concept="3ft9B1" id="55srolnpDWU" role="3ft9B2">

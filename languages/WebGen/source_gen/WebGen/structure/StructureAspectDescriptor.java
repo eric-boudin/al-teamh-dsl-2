@@ -30,6 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptRoute = createDescriptorForRoute();
   /*package*/ final ConceptDescriptor myConceptSearch = createDescriptorForSearch();
   /*package*/ final ConceptDescriptor myConceptSizeValue = createDescriptorForSizeValue();
+  /*package*/ final ConceptDescriptor myConceptStyleOption = createDescriptorForStyleOption();
   /*package*/ final ConceptDescriptor myConceptTemplatable = createDescriptorForTemplatable();
   /*package*/ final ConceptDescriptor myConceptTemplate = createDescriptorForTemplate();
   /*package*/ final ConceptDescriptor myConceptTemplateElement = createDescriptorForTemplateElement();
@@ -52,7 +53,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptApp, myConceptArea, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptDisplayPost, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptSizeValue, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTendance, myConceptTexte, myConceptTimeline);
+    return Arrays.asList(myConceptApp, myConceptArea, myConceptButton, myConceptClickable, myConceptConfiguration, myConceptDisplayPost, myConceptGrid, myConceptIcon, myConceptImage, myConceptNavBar, myConceptPage, myConceptRoute, myConceptSearch, myConceptSizeValue, myConceptStyleOption, myConceptTemplatable, myConceptTemplate, myConceptTemplateElement, myConceptTendance, myConceptTexte, myConceptTimeline);
   }
 
   @Override
@@ -87,6 +88,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSearch;
       case LanguageConceptSwitch.SizeValue:
         return myConceptSizeValue;
+      case LanguageConceptSwitch.StyleOption:
+        return myConceptStyleOption;
       case LanguageConceptSwitch.Templatable:
         return myConceptTemplatable;
       case LanguageConceptSwitch.Template:
@@ -182,6 +185,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Grid", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L);
     b.class_(false, false, false);
     b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706886");
     b.version(2);
     b.aggregate("templateElements", 0x4b0f3085b2f914c7L).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L).optional(false).ordered(true).multiple(true).origin("5408595028286706887").done();
@@ -263,6 +267,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("size", 0x1b16beb9df5f8e75L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("1951957194037497461").done();
     b.alias("size value");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForStyleOption() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "StyleOption", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L);
+    b.interface_();
+    b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5862681234395985008");
+    b.version(2);
+    b.property("pad", 0x515c6d8557857471L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("5862681234395985009").done();
+    b.property("border", 0x515c6d8557857473L).type(PrimitiveTypeId.BOOLEAN).origin("5862681234395985011").done();
+    b.property("round", 0x515c6d85578581a5L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("5862681234395988389").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTemplatable() {

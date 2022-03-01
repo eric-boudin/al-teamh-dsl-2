@@ -38,6 +38,7 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.editor.runtime.EditorCell_Empty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -70,6 +71,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createIndentCell_0());
     editorCell.addEditorCell(createRefNodeList_0());
+    editorCell.addEditorCell(createEmpty_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -199,6 +201,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.setDefaultText("");
       return editorCell;
     }
+  }
+  private EditorCell createEmpty_0() {
+    EditorCell_Empty editorCell = new EditorCell_Empty(getEditorContext(), myNode);
+    editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.FORWARD));
+    editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode(), CellAction_DeleteNode.DeleteDirection.BACKWARD));
+    editorCell.setCellId("Empty_63yoo9_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
   }
 
   private static final class PROPS {
