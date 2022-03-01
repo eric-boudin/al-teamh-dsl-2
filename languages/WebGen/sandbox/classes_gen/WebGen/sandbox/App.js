@@ -10,27 +10,28 @@ const myTheme = {};
 const Home= () => {
   return (
     <>
-      <Grommet.Grid
-        rows={['small', 'xsmall']}
-        columns={['xsmall', 'xsmall']}
-        gap='small'
-        areas={[
-          { name: 'navbar', start: [0, 0], end: [1, 0] },
-          { name: 'content', start: [0, 1], end: [1, 1] },
-        ]}
-      >
-        <Grommet.Nav direction="row" background="brand" pad="xxsmall" style={{marginBottom: "1rem"}} gridArea='navbar'>
-          <Grommet.Form onSubmit={({ value }) => MyScript.Myfnct(value)}>
-            <Grommet.FormField name="name" htmlFor="textinput-name">
-              <Grommet.TextInput id="textinput-name" name="name" />
-            </Grommet.FormField>
-            <Grommet.Box direction="row" gap="medium">
-              <Grommet.Button type="submit" primary label="Submit" />
-            </Grommet.Box>
-          </Grommet.Form>
-        </Grommet.Nav>
+      <Grommet.Box
+>        <Grommet.Grid
+          rows={['small', 'small']}
+          columns={['small', 'small']}
+          gap='small'
+          areas={[
+            { name: 'navbar', start: [0, 0], end: [1, 0] },
+            { name: 'content', start: [0, 1], end: [1, 1] },
+          ]}
+        >
+          <Grommet.Nav direction="row" background="brand" pad="xxsmall" style={{marginBottom: "1rem"}} gridArea='navbar'>
+            <Grommet.Form onSubmit={({ value }) => MyScript.Myfnct(value)} gridArea='navbar'>
+              <Grommet.FormField name="searchBar" htmlFor="textinput-name">
+                <Grommet.TextInput id="textinput-name" icon={<Icons.Search />} name="searchBar" />
+              </Grommet.FormField>
+            </Grommet.Form>
+
+          </Grommet.Nav>
+
 <Grommet.Button primary label='Click me !' onClick={() => MyScript.clickFct()} gridArea='content' />
-      </Grommet.Grid>
+        </Grommet.Grid>
+      </Grommet.Box>
 
     </>
   );

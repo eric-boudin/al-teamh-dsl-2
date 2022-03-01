@@ -25,6 +25,8 @@ public class Timeline_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
     ctx.getBuffer().area().decreaseIndent();
     tgs.append("</Grommet.Box>");
   }

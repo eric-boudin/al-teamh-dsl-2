@@ -29,6 +29,9 @@ public class Image_TextGen extends TextGenDescriptorBase {
       tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu));
       tgs.append("'");
     }
+    tgs.append(" fill='");
+    tgs.append(String.valueOf(SPropertyOperations.getEnum(ctx.getPrimaryInput(), PROPS.fill$Ys$E)));
+    tgs.append("'");
     tgs.append("/>");
   }
   private static boolean isEmptyString(String str) {
@@ -39,5 +42,6 @@ public class Image_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SProperty link$PXfc = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x601697a6e555e5e7L, 0x601697a6e555e5eaL, "link");
     /*package*/ static final SProperty functionName$uM6c = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L, 0x4b0f3085b2f8d906L, "functionName");
     /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
+    /*package*/ static final SProperty fill$Ys$E = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x601697a6e555e5e7L, 0x46b3245fb72786deL, "fill");
   }
 }

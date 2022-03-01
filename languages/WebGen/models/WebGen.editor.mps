@@ -227,6 +227,12 @@
             </node>
           </node>
         </node>
+        <node concept="pVoyu" id="4qN95YRark0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YRarkS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4QG5gECOHbI" role="2iSdaV" />
     </node>
@@ -270,6 +276,24 @@
             </node>
           </node>
         </node>
+        <node concept="pVoyu" id="4qN95YR9Soy" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YR9Spr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4qN95YR9S_N" role="3EZMnx">
+        <property role="3F0ifm" value="Filling :" />
+        <node concept="pVoyu" id="4qN95YR9SLu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YR9SLw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4qN95YR9SKi" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:4qN95YR9Sru" resolve="fill" />
       </node>
     </node>
   </node>
@@ -347,6 +371,12 @@
             </node>
           </node>
         </node>
+        <node concept="pVoyu" id="4qN95YRaLIj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YRaLJb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4QG5gECOHIj" role="2iSdaV" />
     </node>
@@ -386,6 +416,12 @@
             </node>
           </node>
         </node>
+        <node concept="pVoyu" id="4qN95YRaLLe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YRaLM6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="l2Vlx" id="4QG5gECOHJf" role="2iSdaV" />
     </node>
@@ -424,6 +460,12 @@
               </node>
             </node>
           </node>
+        </node>
+        <node concept="pVoyu" id="4qN95YRaLWp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="4qN95YRaLWr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
       <node concept="l2Vlx" id="4QG5gECOHKX" role="2iSdaV" />
@@ -783,6 +825,15 @@
       <node concept="PMmxH" id="55srolnxrlh" role="3EZMnx">
         <ref role="PMmxG" node="55srolnxpV2" resolve="Round" />
       </node>
+      <node concept="3XFhqQ" id="4qN95YR9lUh" role="3EZMnx">
+        <node concept="pVoyu" id="4qN95YR9lUi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3XFhqQ" id="4qN95YR9lUg" role="3EZMnx" />
+      <node concept="PMmxH" id="4qN95YR9maw" role="3EZMnx">
+        <ref role="PMmxG" node="4qN95YR9lfG" resolve="AlignCenter" />
+      </node>
       <node concept="3F0ifn" id="1GmJFBvp$d8" role="3EZMnx">
         <property role="3F0ifm" value="columns size :" />
         <node concept="pVoyu" id="1GmJFBvp$eq" role="3F10Kt">
@@ -942,6 +993,19 @@
         <ref role="1NtTu8" to="wmro:55srolnxo6_" resolve="round" />
       </node>
       <node concept="l2Vlx" id="55srolnxpV7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="4qN95YR9lfG">
+    <property role="TrG5h" value="AlignCenter" />
+    <ref role="1XX52x" to="wmro:55srolnxnhK" resolve="StyleOption" />
+    <node concept="3EZMnI" id="4qN95YR9lfI" role="2wV5jI">
+      <node concept="3F0ifn" id="4qN95YR9lfS" role="3EZMnx">
+        <property role="3F0ifm" value="Align center :" />
+      </node>
+      <node concept="3F0A7n" id="4qN95YR9lg2" role="3EZMnx">
+        <ref role="1NtTu8" to="wmro:4qN95YR9lfd" resolve="alignCenter" />
+      </node>
+      <node concept="l2Vlx" id="4qN95YR9lfL" role="2iSdaV" />
     </node>
   </node>
 </model>

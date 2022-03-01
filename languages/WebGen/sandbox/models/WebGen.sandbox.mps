@@ -17,6 +17,7 @@
         <property id="5862681234395985009" name="pad" index="6QhBO" />
         <property id="5862681234395985011" name="border" index="6QhBQ" />
         <property id="5862681234395988389" name="round" index="6QuKw" />
+        <property id="5094455596999332813" name="alignCenter" index="3L_Bui" />
       </concept>
       <concept id="6996197428180323318" name="WebGen.structure.Tendance" flags="ng" index="O9Zu8" />
       <concept id="8672709764876889469" name="WebGen.structure.Timeline" flags="ng" index="2ZPWFD" />
@@ -188,10 +189,10 @@
           <property role="34iJZd" value="0" />
         </node>
         <node concept="34ij3x" id="55srolnrpTq" role="34ij3e">
-          <property role="34ij3c" value="1GmJFBvn45p/medium" />
+          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
         </node>
         <node concept="34ij3x" id="55srolnsQqB" role="34ij32">
-          <property role="34ij3c" value="1GmJFBvn45t/large" />
+          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
         </node>
       </node>
     </node>
@@ -206,6 +207,7 @@
       <property role="TrG5h" value="Home" />
       <node concept="3TXyh3" id="55srolnyAZW" role="3TXyh9">
         <property role="6QhBO" value="1GmJFBvn45p/medium" />
+        <property role="3L_Bui" value="true" />
         <node concept="3ft4n4" id="55srolnyB0t" role="3TXyh2">
           <property role="34iBCv" value="nav" />
           <ref role="2ZPWU7" node="55srolnpDX8" resolve="navbar" />
@@ -223,7 +225,7 @@
           <property role="34iJZh" value="0" />
           <property role="34iJZi" value="0" />
           <property role="34iJZm" value="0" />
-          <property role="34iJZd" value="3" />
+          <property role="34iJZd" value="2" />
         </node>
         <node concept="34iJZs" id="55srolnzZna" role="34iJZr">
           <property role="34iJZv" value="timeline" />
@@ -243,13 +245,10 @@
           <property role="34ij3c" value="1GmJFBvn45m/small" />
         </node>
         <node concept="34ij3x" id="55srolnyB0e" role="34ij3e">
-          <property role="34ij3c" value="1kFYiIOfzPK/auto" />
+          <property role="34ij3c" value="1GmJFBvn45t/large" />
         </node>
         <node concept="34ij3x" id="55srolnyB0h" role="34ij3e">
           <property role="34ij3c" value="1GmJFBvn45m/small" />
-        </node>
-        <node concept="34ij3x" id="55srolnyB0l" role="34ij3e">
-          <property role="34ij3c" value="1GmJFBvn45l/xsmall" />
         </node>
         <node concept="34ij3x" id="55srolnyB04" role="34ij32">
           <property role="34ij3c" value="1kFYiIOfzPK/auto" />

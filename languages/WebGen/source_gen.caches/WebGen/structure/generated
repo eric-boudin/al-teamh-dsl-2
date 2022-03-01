@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="69s6u7hiozc43qt3ambimaw18uewbpu">
-  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_Icons.java:EnumerationDescriptor_Size.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
+<product version="3" modelHash="-ab593odz88rvircjlm1hsszi9qk3ky1">
+  <files names="ConceptPresentationAspectImpl.java:EnumerationDescriptor_FillValue.java:EnumerationDescriptor_Icons.java:EnumerationDescriptor_Size.java:LanguageConceptSwitch.java:StructureAspectDescriptor.java" />
 </product>
 

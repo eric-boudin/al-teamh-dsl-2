@@ -44,8 +44,15 @@ public class Grid_TextGen extends TextGenDescriptorBase {
       tgs.append("'");
       tgs.newLine();
     }
+    if (SPropertyOperations.getBoolean(ctx.getPrimaryInput(), PROPS.alignCenter$LWpj)) {
+      tgs.indent();
+      tgs.append(" align='center'");
+      tgs.newLine();
+    }
     ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
     tgs.append(">");
+    tgs.newLine();
 
     ctx.getBuffer().area().increaseIndent();
     tgs.indent();
@@ -142,6 +149,7 @@ public class Grid_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SProperty border$hBOc = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L, 0x515c6d8557857473L, "border");
     /*package*/ static final SProperty round$$DCd = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L, 0x515c6d85578581a5L, "round");
     /*package*/ static final SProperty pad$hyqP = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L, 0x515c6d8557857471L, "pad");
+    /*package*/ static final SProperty alignCenter$LWpj = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x515c6d8557857470L, 0x46b3245fb72553cdL, "alignCenter");
     /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
   }
 

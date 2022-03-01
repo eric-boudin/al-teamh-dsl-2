@@ -20,6 +20,16 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspectBase" />
   </dependency>
+  <dependency className="WebGen.structure.EnumerationDescriptor_FillValue">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
   <dependency className="WebGen.structure.EnumerationDescriptor_Icons">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -47,6 +57,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
   </dependency>
   <dependency className="WebGen.structure.StructureAspectDescriptor">
+    <classNode dependClassName="WebGen.structure.EnumerationDescriptor_FillValue" />
     <classNode dependClassName="WebGen.structure.EnumerationDescriptor_Icons" />
     <classNode dependClassName="WebGen.structure.EnumerationDescriptor_Size" />
     <classNode dependClassName="WebGen.structure.LanguageConceptSwitch" />

@@ -64,6 +64,8 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
   }
   private Collection<ConceptEditorComponent> getDeclaredEC_1(String editorComponentId) {
     switch (editorComponentId) {
+      case "WebGen.editor.AlignCenter":
+        return Collections.singletonList(new AlignCenter());
       case "WebGen.editor.Border":
         return Collections.singletonList(new Border());
       case "WebGen.editor.Pad":

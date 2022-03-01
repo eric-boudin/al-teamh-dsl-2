@@ -37,6 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptTendance = createDescriptorForTendance();
   /*package*/ final ConceptDescriptor myConceptTexte = createDescriptorForTexte();
   /*package*/ final ConceptDescriptor myConceptTimeline = createDescriptorForTimeline();
+  /*package*/ final EnumerationDescriptor myEnumerationFillValue = new EnumerationDescriptor_FillValue();
   /*package*/ final EnumerationDescriptor myEnumerationIcons = new EnumerationDescriptor_Icons();
   /*package*/ final EnumerationDescriptor myEnumerationSize = new EnumerationDescriptor_Size();
   private final LanguageConceptSwitch myIndexSwitch;
@@ -109,7 +110,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationIcons, myEnumerationSize);
+    return Arrays.asList(myEnumerationFillValue, myEnumerationIcons, myEnumerationSize);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -214,6 +215,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6923888220196693479");
     b.version(2);
     b.property("link", 0x601697a6e555e5eaL).type(PrimitiveTypeId.STRING).origin("6923888220196693482").done();
+    b.property("fill", 0x46b3245fb72786deL).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x46b3245fb72786e1L)).origin("5094455596999476958").done();
     b.alias("image");
     return b.create();
   }
@@ -277,6 +279,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("pad", 0x515c6d8557857471L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("5862681234395985009").done();
     b.property("border", 0x515c6d8557857473L).type(PrimitiveTypeId.BOOLEAN).origin("5862681234395985011").done();
     b.property("round", 0x515c6d85578581a5L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("5862681234395988389").done();
+    b.property("alignCenter", 0x46b3245fb72553cdL).type(PrimitiveTypeId.BOOLEAN).origin("5094455596999332813").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTemplatable() {
