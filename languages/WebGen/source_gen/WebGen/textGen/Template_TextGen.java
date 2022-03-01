@@ -18,7 +18,6 @@ public class Template_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.templateElements$Mjbc)).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        tgs.indent();
         tgs.appendNode(it);
       }
     });

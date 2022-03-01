@@ -17,6 +17,7 @@ public class Grid_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.indent();
     tgs.append("<Grommet.Grid");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();

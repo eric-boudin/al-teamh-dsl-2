@@ -7,6 +7,14 @@
   <imports />
   <registry>
     <language id="0524c482-858c-411c-9a4e-e783c820e868" name="WebGen">
+      <concept id="6923888220196689412" name="WebGen.structure.Texte" flags="ng" index="25gO6y">
+        <property id="6923888220196689415" name="content" index="25gO6x" />
+      </concept>
+      <concept id="6923888220196693479" name="WebGen.structure.Image" flags="ng" index="25gR91">
+        <property id="6923888220196693482" name="link" index="25gR9c" />
+      </concept>
+      <concept id="6996197428180323318" name="WebGen.structure.Tendance" flags="ng" index="O9Zu8" />
+      <concept id="8672709764876889469" name="WebGen.structure.Timeline" flags="ng" index="2ZPWFD" />
       <concept id="8672709764876883503" name="WebGen.structure.Templatable" flags="ng" index="2ZPZ6V">
         <reference id="8672709764876888339" name="template" index="2ZPWU7" />
       </concept>
@@ -68,6 +76,7 @@
   </registry>
   <node concept="3TXhA9" id="4QG5gECOF_3">
     <property role="O9Zu7" value="./scripts.js" />
+    <property role="TrG5h" value="GridUI" />
     <node concept="3TXyhc" id="1GmJFBvpbH1" role="3TXhA8">
       <property role="TrG5h" value="Body" />
       <node concept="3TXyh3" id="1GmJFBvpbHn" role="3TXyh9">
@@ -108,6 +117,7 @@
       <node concept="3TXWsz" id="4QG5gECQ9yh" role="3TXyh9">
         <property role="3TXWsy" value="MyScript.Myfnct" />
         <property role="TrG5h" value="searchBar" />
+        <property role="34iBCv" value="navbar" />
       </node>
     </node>
     <node concept="3ft9B1" id="4QG5gECOF_4" role="3ft9B2">
@@ -123,6 +133,83 @@
     <node concept="3TXhAa" id="4QG5gECOF_5" role="3ftdrd">
       <property role="3TXhAl" value="{}" />
       <property role="TrG5h" value="myTheme" />
+    </node>
+  </node>
+  <node concept="3TXhA9" id="55srolnpDWR">
+    <property role="O9Zu7" value="./script.js" />
+    <property role="TrG5h" value="HomeUI" />
+    <node concept="3TXyhc" id="55srolnv1on" role="3TXhA8">
+      <property role="TrG5h" value="Tendance" />
+      <node concept="25gO6y" id="55srolnv1oF" role="3TXyh9">
+        <property role="25gO6x" value="Here is your tendencies !" />
+      </node>
+    </node>
+    <node concept="3TXyhc" id="55srolnrpTd" role="3TXhA8">
+      <property role="TrG5h" value="Post" />
+      <node concept="3TXyh3" id="55srolnrpTk" role="3TXyh9">
+        <node concept="25gO6y" id="55srolnrpTz" role="3TXyh2">
+          <property role="25gO6x" value="Titre" />
+          <property role="34iBCv" value="title" />
+        </node>
+        <node concept="25gR91" id="55srolnsei2" role="3TXyh2">
+          <property role="25gR9c" value="https://i2.wp.com/www.natura-sciences.com/wp-content/uploads/2012/01/panda-geant.jpg?ssl=1" />
+          <property role="3TXYA3" value="clckImg" />
+          <property role="34iBCv" value="img" />
+        </node>
+        <node concept="34iJZs" id="55srolnrpTo" role="34iJZr">
+          <property role="34iJZv" value="title" />
+          <property role="34iJZh" value="0" />
+          <property role="34iJZi" value="0" />
+          <property role="34iJZm" value="0" />
+          <property role="34iJZd" value="0" />
+        </node>
+        <node concept="34iJZs" id="55srolnsQqE" role="34iJZr">
+          <property role="34iJZv" value="img" />
+          <property role="34iJZh" value="1" />
+          <property role="34iJZi" value="0" />
+          <property role="34iJZm" value="1" />
+          <property role="34iJZd" value="0" />
+        </node>
+        <node concept="34ij3x" id="55srolnrpTq" role="34ij3e">
+          <property role="34ij3c" value="1GmJFBvn45p/medium" />
+        </node>
+        <node concept="34ij3x" id="55srolnrpTs" role="34ij32" />
+        <node concept="34ij3x" id="55srolnsQqB" role="34ij32">
+          <property role="34ij3c" value="1GmJFBvn45t/large" />
+        </node>
+      </node>
+    </node>
+    <node concept="3TXyhc" id="55srolnpDX8" role="3TXhA8">
+      <property role="TrG5h" value="navbar" />
+      <node concept="3TXWsz" id="55srolnpDXe" role="3TXyh9">
+        <property role="TrG5h" value="searchField" />
+        <property role="3TXWsy" value="searchFcnt" />
+      </node>
+    </node>
+    <node concept="3TXyhc" id="55srolntaGn" role="3TXhA8">
+      <property role="TrG5h" value="Home" />
+      <node concept="3ft4n4" id="55srolnux89" role="3TXyh9">
+        <ref role="2ZPWU7" node="55srolnpDX8" resolve="navbar" />
+      </node>
+      <node concept="2ZPWFD" id="55srolnux8L" role="3TXyh9">
+        <ref role="2ZPWU7" node="55srolnrpTd" resolve="Post" />
+      </node>
+      <node concept="O9Zu8" id="55srolnv1oc" role="3TXyh9">
+        <ref role="2ZPWU7" node="55srolnv1on" resolve="Tendance" />
+      </node>
+    </node>
+    <node concept="3ft9B1" id="55srolnpDWU" role="3ft9B2">
+      <property role="TrG5h" value="Home" />
+      <ref role="2ZPWU7" node="55srolntaGn" resolve="Home" />
+      <node concept="3fsYx2" id="55srolnpDWV" role="3_spYE">
+        <property role="3fsYTe" value="/" />
+        <property role="3ft9B7" value="true" />
+        <ref role="3fsZ2L" node="4QG5gECOF_4" resolve="Home" />
+      </node>
+    </node>
+    <node concept="3TXhAa" id="55srolnpDWW" role="3ftdrd">
+      <property role="TrG5h" value="myTheme" />
+      <property role="3TXhAl" value="{}" />
     </node>
   </node>
 </model>

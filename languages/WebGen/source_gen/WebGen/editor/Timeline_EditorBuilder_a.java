@@ -67,14 +67,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefCell_0() {
-    final SReferenceLink referenceLink = LINKS.displayPost$I9oC;
+    final SReferenceLink referenceLink = LINKS.template$4fqK;
     SReferenceCellProvider provider = new SReferenceCellProvider(getNode(), referenceLink, getEditorContext()) {
       protected EditorCell createReferenceCell(final SNode targetNode) {
         EditorCell cell = getUpdateSession().updateReferencedNodeCell(new Computable<EditorCell>() {
           public EditorCell compute() {
             return new Inline_Builder0(getEditorContext(), getNode(), targetNode).createCell();
           }
-        }, targetNode, LINKS.displayPost$I9oC);
+        }, targetNode, LINKS.template$4fqK);
         CellUtil.setupIDeprecatableStyles(targetNode, cell);
         setSemanticNodeToCells(cell, getNode());
         installDeleteActions_notnull(cell);
@@ -82,12 +82,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     };
 
-    provider.setNoTargetText("<no displayPost>");
+    provider.setNoTargetText("<no template>");
     EditorCell editorCell = provider.createCell();
 
     if (editorCell.getSRole() == null) {
       editorCell.setReferenceCell(true);
-      editorCell.setSRole(LINKS.displayPost$I9oC);
+      editorCell.setSRole(LINKS.template$4fqK);
     }
     editorCell.setSubstituteInfo(new SReferenceSubstituteInfo(editorCell, referenceLink));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
@@ -151,7 +151,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink displayPost$I9oC = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7dL, 0x61177c7e5530a43fL, "displayPost");
+    /*package*/ static final SReferenceLink template$4fqK = MetaAdapterFactory.getReferenceLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL, 0x785ba794c78c6913L, "template");
   }
 
   private static final class CONCEPTS {

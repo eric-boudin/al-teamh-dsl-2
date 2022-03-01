@@ -38,7 +38,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.App:
         if (props_App == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("app");
+          cpb.presentationByName();
           props_App = cpb.create();
         }
         return props_App;

@@ -403,7 +403,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }
   }
   private EditorCell createConstant_7() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "for templates :");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "for templates elements :");
     editorCell.setCellId("Constant_koct37_o0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);

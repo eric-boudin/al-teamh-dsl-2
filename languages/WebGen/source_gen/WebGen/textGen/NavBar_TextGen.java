@@ -30,6 +30,7 @@ public class NavBar_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</Grommet.Nav>");
+    tgs.newLine();
   }
   private static boolean isEmptyString(String str) {
     return str == null || str.isEmpty();

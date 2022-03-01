@@ -31,6 +31,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Button_TextGen();
       case LanguageConceptSwitch.Configuration:
         return new Configuration_TextGen();
+      case LanguageConceptSwitch.DisplayPost:
+        return new DisplayPost_TextGen();
       case LanguageConceptSwitch.Grid:
         return new Grid_TextGen();
       case LanguageConceptSwitch.Icon:
@@ -49,8 +51,12 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new SizeValue_TextGen();
       case LanguageConceptSwitch.Template:
         return new Template_TextGen();
+      case LanguageConceptSwitch.Tendance:
+        return new Tendance_TextGen();
       case LanguageConceptSwitch.Texte:
         return new Texte_TextGen();
+      case LanguageConceptSwitch.Timeline:
+        return new Timeline_TextGen();
     }
     return null;
   }

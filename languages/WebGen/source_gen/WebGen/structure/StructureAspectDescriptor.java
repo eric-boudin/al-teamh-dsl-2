@@ -116,6 +116,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForApp() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "App", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2fa290cL);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286777612");
     b.version(2);
     b.property("scriptPath", 0x61177c7e55308bf9L).type(PrimitiveTypeId.STRING).origin("6996197428180323321").done();
@@ -209,7 +210,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6923888220196693479");
     b.version(2);
     b.property("link", 0x601697a6e555e5eaL).type(PrimitiveTypeId.STRING).origin("6923888220196693482").done();
-    b.alias("img");
+    b.alias("image");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNavBar() {
@@ -275,6 +276,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForTemplate() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Template", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c9L);
     b.class_(false, false, false);
+    b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706889");
     b.version(2);
@@ -289,6 +291,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/5408595028286706883");
     b.version(2);
     b.property("gridArea", 0x1b16beb9df5cc4a6L).type(PrimitiveTypeId.STRING).origin("1951957194037314726").done();
+    b.alias("template element");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTendance() {
@@ -298,6 +301,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/6996197428180323318");
     b.version(2);
+    b.alias("tendance");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTexte() {
@@ -314,9 +318,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("WebGen", "Timeline", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7dL);
     b.class_(false, false, false);
     b.super_("WebGen.structure.TemplateElement", 0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L);
+    b.parent(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c562fL);
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/8672709764876889469");
     b.version(2);
-    b.associate("displayPost", 0x61177c7e5530a43fL).target(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x785ba794c78c6d7fL).optional(false).origin("6996197428180329535").done();
     b.alias("timeline");
     return b.create();
   }
