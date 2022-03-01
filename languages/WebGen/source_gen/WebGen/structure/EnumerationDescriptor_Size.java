@@ -19,9 +19,10 @@ public class EnumerationDescriptor_Size extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_small_0 = new EnumerationDescriptor.MemberDescriptor("small", "small", 0x1b16beb9df5c4156L, "r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037281110");
   private final EnumerationDescriptor.MemberDescriptor myMember_medium_0 = new EnumerationDescriptor.MemberDescriptor("medium", "medium", 0x1b16beb9df5c4159L, "r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037281113");
   private final EnumerationDescriptor.MemberDescriptor myMember_large_0 = new EnumerationDescriptor.MemberDescriptor("large", "large", 0x1b16beb9df5c415dL, "r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037281117");
+  private final EnumerationDescriptor.MemberDescriptor myMember_auto_0 = new EnumerationDescriptor.MemberDescriptor("auto", "auto", 0x152bf92bb43e3d70L, "r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1525586864897932656");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L, 0x1b16beb9df5c4155L, 0x1b16beb9df5c4156L, 0x1b16beb9df5c4159L, 0x1b16beb9df5c415dL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_xsmall_0, myMember_small_0, myMember_medium_0, myMember_large_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L, 0x1b16beb9df5c4155L, 0x1b16beb9df5c4156L, 0x1b16beb9df5c4159L, 0x1b16beb9df5c415dL, 0x152bf92bb43e3d70L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_xsmall_0, myMember_small_0, myMember_medium_0, myMember_large_0, myMember_auto_0);
 
   @Nullable
   @Override
@@ -50,6 +51,8 @@ public class EnumerationDescriptor_Size extends EnumerationDescriptorBase {
         return myMember_medium_0;
       case "large":
         return myMember_large_0;
+      case "auto":
+        return myMember_auto_0;
     }
     return null;
   }

@@ -261,7 +261,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:b4f30641-7f1b-428b-b3d8-bf4ba03b50c5(WebGen.structure)/1951957194037497432");
     b.version(2);
     b.property("size", 0x1b16beb9df5f8e75L).type(MetaIdFactory.dataTypeId(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x1b16beb9df5c4154L)).origin("1951957194037497461").done();
-    b.alias("size array");
+    b.alias("size value");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTemplatable() {

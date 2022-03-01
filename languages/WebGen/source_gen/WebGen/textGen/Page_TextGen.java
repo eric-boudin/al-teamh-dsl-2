@@ -25,7 +25,15 @@ public class Page_TextGen extends TextGenDescriptorBase {
     tgs.append("return (");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
+    tgs.indent();
+    tgs.append("<>");
+    tgs.newLine();
+    ctx.getBuffer().area().increaseIndent();
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
+    tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
+    tgs.append("</>");
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();

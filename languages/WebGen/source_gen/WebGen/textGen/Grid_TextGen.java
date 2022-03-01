@@ -8,8 +8,10 @@ import jetbrains.mps.text.impl.TextGenSupport;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class Grid_TextGen extends TextGenDescriptorBase {
   @Override
@@ -68,11 +70,18 @@ public class Grid_TextGen extends TextGenDescriptorBase {
     tgs.indent();
     tgs.append("]}");
     tgs.newLine();
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu)))) {
+      tgs.append(" gridArea='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu));
+      tgs.append("'");
+      tgs.newLine();
+    }
+
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append(">");
     tgs.newLine();
-    tgs.indent();
+    ctx.getBuffer().area().increaseIndent();
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.templateElements$Md3l);
       final SNode lastItem = Sequence.fromIterable(collection).last();
@@ -84,8 +93,13 @@ public class Grid_TextGen extends TextGenDescriptorBase {
       }
     }
     tgs.newLine();
+    ctx.getBuffer().area().decreaseIndent();
+    tgs.indent();
     tgs.append("</Grommet.Grid>");
     tgs.newLine();
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.isEmpty();
   }
 
   private static final class LINKS {
@@ -93,5 +107,9 @@ public class Grid_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SContainmentLink colSizes$D02P = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x1b16beb9df5f8e77L, "colSizes");
     /*package*/ static final SContainmentLink areas$$zKW = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x1b16beb9df5c4162L, "areas");
     /*package*/ static final SContainmentLink templateElements$Md3l = MetaAdapterFactory.getContainmentLink(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c6L, 0x4b0f3085b2f914c7L, "templateElements");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
   }
 }

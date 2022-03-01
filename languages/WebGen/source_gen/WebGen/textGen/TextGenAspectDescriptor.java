@@ -29,8 +29,6 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Area_TextGen();
       case LanguageConceptSwitch.Button:
         return new Button_TextGen();
-      case LanguageConceptSwitch.Clickable:
-        return new Clickable_TextGen();
       case LanguageConceptSwitch.Configuration:
         return new Configuration_TextGen();
       case LanguageConceptSwitch.Grid:

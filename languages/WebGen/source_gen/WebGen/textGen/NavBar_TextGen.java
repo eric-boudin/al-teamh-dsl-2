@@ -5,25 +5,38 @@ package WebGen.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class NavBar_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
-    tgs.append("<Grommet.Nav direction=\"row\" background=\"brand\" pad=\"xxsmall\" style={{marginBottom: \"1rem\"}}>");
+    tgs.append("<Grommet.Nav direction=\"row\" background=\"brand\" pad=\"xxsmall\" style={{marginBottom: \"1rem\"}}");
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu)))) {
+      tgs.append(" gridArea='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu));
+      tgs.append("'");
+    }
+    tgs.append(">");
     tgs.newLine();
     ctx.getBuffer().area().increaseIndent();
-    tgs.indent();
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.template$4fqK));
     tgs.newLine();
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</Grommet.Nav>");
-    tgs.newLine();
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.isEmpty();
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
   }
 
   private static final class LINKS {

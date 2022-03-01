@@ -129,7 +129,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SizeValue:
         if (props_SizeValue == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("size array");
+          cpb.rawPresentation("size value");
           props_SizeValue = cpb.create();
         }
         return props_SizeValue;

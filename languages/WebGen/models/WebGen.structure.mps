@@ -369,6 +369,10 @@
       <property role="3tVfz5" value="1951957194037281117" />
       <property role="TrG5h" value="large" />
     </node>
+    <node concept="25R33" id="1kFYiIOfzPK" role="25R1y">
+      <property role="3tVfz5" value="1525586864897932656" />
+      <property role="TrG5h" value="auto" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1GmJFBvn45_">
     <property role="EcuMT" value="1951957194037281125" />
@@ -404,7 +408,7 @@
   <node concept="1TIwiD" id="1GmJFBvnSTo">
     <property role="EcuMT" value="1951957194037497432" />
     <property role="TrG5h" value="SizeValue" />
-    <property role="34LRSv" value="size array" />
+    <property role="34LRSv" value="size value" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="1GmJFBvnSTP" role="1TKVEl">
       <property role="IQ2nx" value="1951957194037497461" />

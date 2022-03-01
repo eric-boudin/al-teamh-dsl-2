@@ -43,7 +43,6 @@ public class Search_TextGen extends TextGenDescriptorBase {
     ctx.getBuffer().area().decreaseIndent();
     tgs.indent();
     tgs.append("</Grommet.Form>");
-    tgs.newLine();
   }
 
   private static final class PROPS {

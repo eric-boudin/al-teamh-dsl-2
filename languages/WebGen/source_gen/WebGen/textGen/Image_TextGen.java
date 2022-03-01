@@ -5,7 +5,9 @@ package WebGen.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Image_TextGen extends TextGenDescriptorBase {
   @Override
@@ -13,8 +15,25 @@ public class Image_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.indent();
     tgs.append("<Grommet.Image");
-    tgs.appendNode(SNodeOperations.getParent(ctx.getPrimaryInput()));
-    tgs.append("/>");
     tgs.newLine();
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$uM6c)))) {
+      tgs.append(" onClick={() => MyScript.");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.functionName$uM6c));
+      tgs.append("()}");
+    }
+    if (!(isEmptyString(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu)))) {
+      tgs.append(" gridArea='");
+      tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.gridArea$AIZu));
+      tgs.append("'");
+    }
+    tgs.append("/>");
+  }
+  private static boolean isEmptyString(String str) {
+    return str == null || str.isEmpty();
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty functionName$uM6c = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f8d903L, 0x4b0f3085b2f8d906L, "functionName");
+    /*package*/ static final SProperty gridArea$AIZu = MetaAdapterFactory.getProperty(0x524c482858c411cL, 0x9a4ee783c820e868L, 0x4b0f3085b2f914c3L, 0x1b16beb9df5cc4a6L, "gridArea");
   }
 }

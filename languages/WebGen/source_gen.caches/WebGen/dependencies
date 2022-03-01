@@ -56,10 +56,12 @@
     <classNode dependClassName="WebGen.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="WebGen.structure.StructureAspectDescriptor" />
     <classNode dependClassName="WebGen.textGen.TextGenAspectDescriptor" />
+    <classNode dependClassName="WebGen.typesystem.TypesystemDescriptor" />
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
