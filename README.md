@@ -5,7 +5,7 @@
 
 ## Report
 
-* [Report.pdf](report.pdf)
+* [report.pdf](report.pdf)
 
 
 ## Watch MPS build
